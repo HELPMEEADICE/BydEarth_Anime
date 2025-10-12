@@ -8,7 +8,7 @@ bookmarks = {
 		default = yes
 		
 		"CHI"={
-			ideology = neutral
+			ideology = eco_socialism
 			history = "CHI_BE_BOOKMARK_DESC"
 			ideas = {
 				
@@ -18,7 +18,7 @@ bookmarks = {
 			}
 		}
 		"TZN"={
-			ideology = purity
+			ideology = social_liberal
 			history = "TZN_BE_BOOKMARK_DESC"
 			ideas = {
 				
@@ -28,7 +28,7 @@ bookmarks = {
 			}
 		}
 		"SOV"={
-			ideology = purity
+			ideology = social_liberal
 			history = "SOV_BE_BOOKMARK_DESC"
 			ideas = {
 				
@@ -38,7 +38,7 @@ bookmarks = {
 			}
 		}
 		"BRA"={
-			ideology = purity
+			ideology = social_liberal
 			history = "BRA_BE_BOOKMARK_DESC"
 			ideas = {
 				
@@ -48,7 +48,7 @@ bookmarks = {
 			}
 		}
 		"GER"={
-			ideology = harmony
+			ideology = social_democrat
 			history = "GER_BE_BOOKMARK_DESC"
 			ideas = {
 				
@@ -58,7 +58,7 @@ bookmarks = {
 			}
 		}
 		"PNM"={ #used to be ARC but we made PNM focus tree first :)
-			ideology = neutral
+			ideology = eco_socialism
 			history = "ARC_BE_BOOKMARK_DESC"
 			ideas = {
 				
@@ -68,7 +68,7 @@ bookmarks = {
 			}
 		}
 		"FRA"={
-			ideology = purity
+			ideology = social_liberal
 			history = "FRA_BE_BOOKMARK_DESC"
 			ideas = {
 				
@@ -78,7 +78,7 @@ bookmarks = {
 			}
 		}
 		"BHR"={
-			ideology = divinity
+			ideology = conservative
 			history = "BHR_BE_BOOKMARK_DESC"
 			ideas = {
 				

@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "SIB_lei_chang_desc"
-			ideology = purity_ideology
+			ideology = social_liberal_ideology
 		}
 	}
 	SIB_lyubochka_xun = {
@@ -20,7 +20,7 @@
 		}
 		country_leader = {
 			desc = "SIB_lyubochka_xun_desc"
-			ideology = supremacy_ideology
+			ideology = fascist_ideology
 		}
 	}
 	SIB_boris_morozov = {
@@ -32,7 +32,7 @@
 		}
 		country_leader = {
 			desc = "SIB_boris_morozov_desc"
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 		}
 	}
 	SIB_saltanov_balakin = {
@@ -44,7 +44,7 @@
 		}
 		country_leader = {
 			desc = "SIB_saltanov_balakin_desc"
-			ideology = mastery_ideology
+			ideology = communist_ideology
 		}
 	}
 }

@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "KAS_nusrat_bhat_desc"
-			ideology = purity_ideology
+			ideology = social_liberal_ideology
 		}
 	}
 }

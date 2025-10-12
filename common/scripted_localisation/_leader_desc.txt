@@ -356,15 +356,15 @@ defined_text = {
 		}
 		localization_key = ITA_ottaviano_acquati_desc
 	}
-	#JAP
+	#BGD
 	text = {
 		trigger = {
 			has_country_leader = {
-				character = JAP_iwata_masahiro
+				character = BGD_iwata_masahiro
 				ruling_only = yes
 			}
 		}
-		localization_key = JAP_iwata_masahiro_desc
+		localization_key = BGD_iwata_masahiro_desc
 	}
 	#JNG
 	text = {
@@ -747,9 +747,9 @@ defined_text = {
 				character = USA_ulrik_svensgaard
 				ruling_only = yes
 			}
-			has_government = purity
+			has_government = social_liberal
 		}
-		localization_key = USA_ulrik_svensgaard_purity_desc
+		localization_key = USA_ulrik_svensgaard_social_liberal_desc
 	}
 	text = {
 		trigger = {
@@ -757,9 +757,9 @@ defined_text = {
 				character = USA_ulrik_svensgaard
 				ruling_only = yes
 			}
-			has_government = mastery
+			has_government = communist
 		}
-		localization_key = USA_ulrik_svensgaard_mastery_desc
+		localization_key = USA_ulrik_svensgaard_communist_desc
 	}
 	text = {
 		trigger = {
@@ -767,9 +767,9 @@ defined_text = {
 				character = USA_ulrik_svensgaard
 				ruling_only = yes
 			}
-			has_government = divinity
+			has_government = conservative
 		}
-		localization_key = USA_ulrik_svensgaard_divinity_desc
+		localization_key = USA_ulrik_svensgaard_conservative_desc
 	}
 ###
 	text = {

@@ -1,14 +1,14 @@
 ﻿set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	harmony = 45
-	purity = 5
-	supremacy = 0
-	neutral = 50
+	social_democrat = 45
+	social_liberal = 5
+	fascist = 0
+	eco_socialism = 50
 }
 
 oob = "CHL_2200"

@@ -1,17 +1,17 @@
 ﻿set_politics = {
-	ruling_party = synergy
+	ruling_party = transhumanism
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	purity = 7
-	mastery = 12
-	harmony = 4
-	neutral = 4
-	supremacy = 3
-	synergy = 37
-	divinity = 33
+	social_liberal = 7
+	communist = 12
+	social_democrat = 4
+	eco_socialism = 4
+	fascist = 3
+	transhumanism = 37
+	conservative = 33
 }
 
 add_ideas = {

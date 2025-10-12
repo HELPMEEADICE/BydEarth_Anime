@@ -36,16 +36,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 }
 set_popularities = {
-	harmony = 2
-	supremacy = 10
-	purity = 3
-	neutral = 58
-    divinity = 17
-    synergy = 9
-    mastery = 1
+	social_democrat = 2
+	fascist = 10
+	social_liberal = 3
+	eco_socialism = 58
+    conservative = 17
+    transhumanism = 9
+    communist = 1
 }
 
 recruit_character = BAN_abdullah_ghosh

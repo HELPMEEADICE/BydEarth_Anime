@@ -1,17 +1,17 @@
 ﻿set_politics = {
-	ruling_party = purity
+	ruling_party = social_liberal
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	purity = 25
-	supremacy = 10
-	divinity = 8
-	neutral = 5
-	harmony = 18
-	synergy = 9
-	mastery = 25
+	social_liberal = 25
+	fascist = 10
+	conservative = 8
+	eco_socialism = 5
+	social_democrat = 18
+	transhumanism = 9
+	communist = 25
 }
 
 oob = "FRA_2200"

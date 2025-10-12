@@ -37,19 +37,19 @@ oob = "MRT_2200"
 capital = 220
 
 set_politics = {
-	ruling_party = divinity
+	ruling_party = conservative
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	divinity = 60
-	purity = 13
-	mastery = 15
-	harmony = 10
-	neutral = 2
-	supremacy = 0
-	synergy = 0
+	conservative = 60
+	social_liberal = 13
+	communist = 15
+	social_democrat = 10
+	eco_socialism = 2
+	fascist = 0
+	transhumanism = 0
 }
 
 

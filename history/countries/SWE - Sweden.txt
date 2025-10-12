@@ -1,18 +1,18 @@
 ﻿set_politics = {
-	ruling_party = harmony
+	ruling_party = social_democrat
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	purity = 30
-	supremacy = 3
-	divinity = 4
-	neutral = 12
-	harmony = 37
-	synergy = 2
-	mastery = 12
+	social_liberal = 30
+	fascist = 3
+	conservative = 4
+	eco_socialism = 12
+	social_democrat = 37
+	transhumanism = 2
+	communist = 12
 }
 
 oob = "SWE_2200"

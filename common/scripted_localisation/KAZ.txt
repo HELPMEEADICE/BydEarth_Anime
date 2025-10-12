@@ -1,9 +1,9 @@
 defined_text = {
-	name = GETharmony_kaz_value
+	name = GETsocial_democrat_kaz_value
 	text = {
 		trigger = {
 			check_variable = {
-				var = harmony_ticker
+				var = social_democrat_ticker
 				value = 1
 				compare = less_than_or_equals
 			}
@@ -13,7 +13,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				var = harmony_ticker
+				var = social_democrat_ticker
 				value = 5
 				compare = greater_than_or_equals
 			}
@@ -26,11 +26,11 @@ defined_text = {
 }
 
 defined_text = {
-	name = GETdivinity_kaz_value
+	name = GETconservative_kaz_value
 	text = {
 		trigger = {
 			check_variable = {
-				var = divinity_ticker
+				var = conservative_ticker
 				value = 1
 				compare = less_than_or_equals
 			}
@@ -40,7 +40,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				var = divinity_ticker
+				var = conservative_ticker
 				value = 5
 				compare = greater_than_or_equals
 			}
@@ -53,11 +53,11 @@ defined_text = {
 }
 
 defined_text = {
-	name = GETsupremacy_kaz_value
+	name = GETfascist_kaz_value
 	text = {
 		trigger = {
 			check_variable = {
-				var = supremacy_ticker
+				var = fascist_ticker
 				value = 1
 				compare = less_than_or_equals
 			}
@@ -67,7 +67,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				var = supremacy_ticker
+				var = fascist_ticker
 				value = 5
 				compare = greater_than_or_equals
 			}

@@ -52,10 +52,10 @@ COG_mwitanzige_crisis: "Mwitanzige Crisis"
     TZN_a_sea_of_green_tt: "§GEvery coastal state we own will get its ecobalance improved.§!"
     TZN_a_familiar_home_tt: "§GEvery state we own will get its ecobalance improved.§!"
 
-    TZN_compete_with_europe_tt: "Gain decisions to invite neutral nations in §YEurope§!" 
-    TZN_over_the_atlantic_tt: "Gain decisions to invite neutral nations in §YSouth America§!"
-    TZN_assign_indian_priorities_tt: "Gain decisions to invite neutral nations in §YIndia§!"
-    TZN_in_the_land_of_endless_cities_tt: "Gain decisions to invite neutral §Yminor Western African§! nations."
+    TZN_compete_with_europe_tt: "Gain decisions to invite eco_socialism nations in §YEurope§!" 
+    TZN_over_the_atlantic_tt: "Gain decisions to invite eco_socialism nations in §YSouth America§!"
+    TZN_assign_indian_priorities_tt: "Gain decisions to invite eco_socialism nations in §YIndia§!"
+    TZN_in_the_land_of_endless_cities_tt: "Gain decisions to invite eco_socialism §Yminor Western African§! nations."
 
     TZN_beyond_the_homeland_tt: "We have formed the §YPeople's African Union§!!"
 

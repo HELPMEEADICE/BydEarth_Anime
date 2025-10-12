@@ -232,7 +232,7 @@ on_actions = {
 					limit = {
 						check_variable = { ecobalance_ratio < 0.4 }
 					}
-					add_ideas = neutral_ecobalance
+					add_ideas = eco_socialism_ecobalance
 				}
 				else_if = {
 					limit = {
@@ -522,7 +522,7 @@ on_actions = {
 				limit = {
 					check_variable = { ecobalance_ratio < 0.4 }
 				}
-				add_ideas = neutral_ecobalance
+				add_ideas = eco_socialism_ecobalance
 			}
 			else_if = {
 				limit = {

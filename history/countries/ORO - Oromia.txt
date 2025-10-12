@@ -5,19 +5,19 @@ oob = "ORO_2200"
 capital = 633
 
 set_politics = {
-	ruling_party = mastery
+	ruling_party = communist
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	mastery = 60
-	purity = 2
-	harmony = 8
-	neutral = 0
-	supremacy = 13
-	synergy = 17
-	divinity = 0
+	communist = 60
+	social_liberal = 2
+	social_democrat = 8
+	eco_socialism = 0
+	fascist = 13
+	transhumanism = 17
+	conservative = 0
 }
 
 set_stability = 0.63

@@ -689,7 +689,7 @@ tactic_human_wave_tactics = { #People's army attacker tactic
 tactic_banzai_charge = { #Special Japan attacker tactic
 	is_attacker = yes
 	trigger = {
-		tag = JAP
+		tag = BGD
 		is_attacker = yes
 		phase = no
 	}

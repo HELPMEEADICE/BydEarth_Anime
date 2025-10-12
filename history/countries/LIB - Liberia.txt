@@ -29,19 +29,19 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = divinity
+	ruling_party = conservative
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	divinity = 60
-	purity = 2
-	mastery = 14
-	harmony = 22
-	neutral = 2
-	supremacy = 0
-	synergy = 0
+	conservative = 60
+	social_liberal = 2
+	communist = 14
+	social_democrat = 22
+	eco_socialism = 2
+	fascist = 0
+	transhumanism = 0
 }
 
 

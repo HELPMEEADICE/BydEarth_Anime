@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "CAS_haven_barnett_desc"
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 		}
 	}
 }

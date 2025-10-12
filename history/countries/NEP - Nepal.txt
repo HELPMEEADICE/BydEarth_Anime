@@ -33,16 +33,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 }
 set_popularities = {
-	harmony = 2
-	supremacy = 5
-	purity = 3
-	neutral = 72
-    divinity = 0
-    synergy = 5
-    mastery = 13
+	social_democrat = 2
+	fascist = 5
+	social_liberal = 3
+	eco_socialism = 72
+    conservative = 0
+    transhumanism = 5
+    communist = 13
 }
 
 recruit_character = NEP_sushma_kansakar

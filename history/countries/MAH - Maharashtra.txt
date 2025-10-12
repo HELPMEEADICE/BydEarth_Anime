@@ -38,16 +38,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = synergy
+	ruling_party = transhumanism
 }
 set_popularities = {
-	harmony = 8
-	supremacy = 30
-	purity = 3
-	neutral = 3
-    divinity = 6
-    synergy = 46
-    mastery = 4
+	social_democrat = 8
+	fascist = 30
+	social_liberal = 3
+	eco_socialism = 3
+    conservative = 6
+    transhumanism = 46
+    communist = 4
 }
 
 recruit_character = MAH_saroj_dinesh_varadkar

@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "CUA_miriam_godwinson_desc"
-			ideology = divinity_ideology
+			ideology = conservative_ideology
 		}
 	}
 }

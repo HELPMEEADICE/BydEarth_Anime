@@ -39,16 +39,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = purity
+	ruling_party = social_liberal
 }
 set_popularities = {
-	harmony = 5
-	supremacy = 14
-	purity = 38
-	neutral = 17
-    divinity = 9
-    synergy = 9
-    mastery = 8
+	social_democrat = 5
+	fascist = 14
+	social_liberal = 38
+	eco_socialism = 17
+    conservative = 9
+    transhumanism = 9
+    communist = 8
 }
 
 recruit_character = SIN_naaz_fazlani

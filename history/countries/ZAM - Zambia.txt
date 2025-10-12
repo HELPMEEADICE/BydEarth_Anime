@@ -5,19 +5,19 @@ oob = "AAA_filler"
 capital = 506
 
 set_politics = {
-	ruling_party = supremacy
+	ruling_party = fascist
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	supremacy = 60
-	purity = 34
-	mastery = 2
-	harmony = 0
-	neutral = 0
-	synergy = 4
-	divinity = 0
+	fascist = 60
+	social_liberal = 34
+	communist = 2
+	social_democrat = 0
+	eco_socialism = 0
+	transhumanism = 4
+	conservative = 0
 }
 
 

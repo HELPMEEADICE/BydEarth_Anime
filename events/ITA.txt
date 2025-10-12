@@ -10,7 +10,7 @@ country_event = {
 	option = { 
 		name = italy_event_option.1.a
 		add_popularity = {
-			ideology = supremacy
+			ideology = fascist
 			popularity = 0.05
 		}
 	}
@@ -25,7 +25,7 @@ country_event = { #on PAD war declared
 	option = { 
 		name = italy_event_option.2.a
 		add_popularity = {
-			ideology = supremacy
+			ideology = fascist
 			popularity = 0.1
 		}
 	}

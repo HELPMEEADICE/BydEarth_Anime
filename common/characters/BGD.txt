@@ -1,0 +1,52 @@
+﻿characters = {
+
+	BGD_kasumi_char = {
+		name = BGD_kasumi_char
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BGD/BGD_kasumi.png"
+			}
+			army = {
+				large = "gfx/leaders/BGD/BGD_kasumi.png"
+			}
+		}
+		country_leader = {
+			ideology = kirakira_dokidoki
+			desc = BGD_KASUMI_DESC
+			traits = {
+				#arisa_kuilei
+				#yaoyan_xingxing
+			}
+		}
+		field_marshal = {
+			traits = {
+				#shaonv_yvgangtie
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	BGD_arisa_char = {
+		name = BGD_arisa_char
+		portraits = {
+			army = {
+				large = "gfx/leaders/BGD/BGD_arisa.png"
+			}
+		}
+
+		field_marshal = {
+			traits = {
+				#shaonv_yvgangtie
+			}
+			skill = 6
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+}

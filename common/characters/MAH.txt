@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "MAH_saroj_dinesh_varadkar_desc"
-			ideology = supremacy_ideology
+			ideology = fascist_ideology
 		}
 	}
 	MAH_prabhu = {
@@ -20,7 +20,7 @@
 		}
 		country_leader = {
 			desc = "MAH_prabhu_desc"
-			ideology = synergy_ideology
+			ideology = transhumanism_ideology
 		}
 	}
 }

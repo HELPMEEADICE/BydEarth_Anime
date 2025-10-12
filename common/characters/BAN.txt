@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "BAN_abdullah_ghosh_desc"
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 			traits = { little_pravin }
 		}
 	}

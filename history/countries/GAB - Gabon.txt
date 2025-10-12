@@ -3,19 +3,19 @@
 capital = 340
 
 set_politics = {
-	ruling_party = purity
+	ruling_party = social_liberal
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	purity = 60
-	mastery = 27
-	harmony = 5
-	neutral = 7
-	supremacy = 1
-	synergy = 0
-	divinity = 0
+	social_liberal = 60
+	communist = 27
+	social_democrat = 5
+	eco_socialism = 7
+	fascist = 1
+	transhumanism = 0
+	conservative = 0
 }
 
 add_ideas = {

@@ -291,7 +291,7 @@ ideas = {
 			}
 		}
 		
-		neutral_ecobalance = {
+		eco_socialism_ecobalance = {
 			
 			cost = 9999
 			removal_cost = -1

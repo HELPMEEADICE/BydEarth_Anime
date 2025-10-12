@@ -7,7 +7,7 @@
 			}
 		}
 		country_leader = {
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 		}
 	}
 }

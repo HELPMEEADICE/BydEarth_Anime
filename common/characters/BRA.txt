@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "BRA_manuel_velho_desc"
-			ideology = purity_ideology
+			ideology = social_liberal_ideology
 			traits = { old_general_velho }
 		}
 	}
@@ -21,7 +21,7 @@
 		}
 		country_leader = {
 			desc = "BRA_rejinaldo_de_alencar_desc"
-			ideology = purity_ideology
+			ideology = social_liberal_ideology
 		}
 	}
 }

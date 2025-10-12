@@ -48,37 +48,37 @@ on_actions = {
                 create_country_leader = {
                     name = "Goverment"
                     picture = GFX_government_portrait
-                    ideology = purity_ideology
+                    ideology = social_liberal_ideology
                 }
                 create_country_leader = {
                     name = "Goverment"
                     picture = GFX_government_portrait
-                    ideology = harmony_ideology
+                    ideology = social_democrat_ideology
                 }
                 create_country_leader = {
                     name = "Goverment"
                     picture = GFX_government_portrait
-                    ideology = supremacy_ideology
+                    ideology = fascist_ideology
                 }
                 create_country_leader = {
                     name = "Goverment"
                     picture = GFX_government_portrait
-                    ideology = neutral_ideology
+                    ideology = eco_socialism_ideology
                 }
                 create_country_leader = {
                     name = "Goverment"
                     picture = GFX_government_portrait
-                    ideology = synergy_ideology
+                    ideology = transhumanism_ideology
                 }
                 create_country_leader = {
                     name = "Goverment"
                     picture = GFX_government_portrait
-                    ideology = mastery_ideology
+                    ideology = communist_ideology
                 }
                 create_country_leader = {
                     name = "Goverment"
                     picture = GFX_government_portrait
-                    ideology = divinity_ideology
+                    ideology = conservative_ideology
                 }
             }
         }

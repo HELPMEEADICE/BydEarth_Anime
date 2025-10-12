@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "TRE_arc_oversight_board_desc"
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 		}
 	}
 }

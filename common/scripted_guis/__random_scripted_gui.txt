@@ -255,8 +255,8 @@ scripted_gui = {
 			favorable_ecobalance_dudes_visible = {
 				has_idea = favorable_ecobalance
 			}
-			neutral_ecobalance_dudes_visible = {
-				has_idea = neutral_ecobalance
+			eco_socialism_ecobalance_dudes_visible = {
+				has_idea = eco_socialism_ecobalance
 			}
 			precarious_ecobalance_dudes_visible = {
 				has_idea = precarious_ecobalance

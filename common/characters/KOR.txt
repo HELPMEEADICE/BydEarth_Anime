@@ -1,0 +1,14 @@
+characters = {
+	KOR_Shiroko = {
+		name = KOR_Shiroko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KOR/KOR_Shiroko.png"
+			}
+		}
+		country_leader = {
+			desc = KOR_Shiroko_DESC
+			ideology = communist_ideology
+		}
+	}
+}

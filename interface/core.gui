@@ -88,7 +88,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "flag"
-			quadTextureSprite ="GFX_flag_small"
+			quadTextureSprite ="GFX_flag_small2"
 			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}		

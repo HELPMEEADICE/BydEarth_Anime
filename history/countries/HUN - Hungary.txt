@@ -48,19 +48,19 @@ starting_train_buffer = 0.7
 set_convoys = 150
 
 set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	harmony = 19
-	purity = 17
-	mastery = 11
-	neutral = 36
-	supremacy = 9
-	synergy = 2
-	divinity = 6
+	social_democrat = 19
+	social_liberal = 17
+	communist = 11
+	eco_socialism = 36
+	fascist = 9
+	transhumanism = 2
+	conservative = 6
 }
 
 set_stability = 0.8

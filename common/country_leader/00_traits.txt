@@ -1,11 +1,11 @@
 leader_traits = {
 	integr_leadership = {
 		random = no
-		harmony_drift = 0.03
+		social_democrat_drift = 0.03
 	}
 	known_aristocrat = {
 		random = no
-		purity_drift = 0.03
+		social_liberal_drift = 0.03
 	}
 	al_hakim_manifesto = {
 		random = no
@@ -47,18 +47,18 @@ leader_traits = {
 		random = no
 		#stability_weekly = -0.005
 		stability_factor = -0.05
-		neutral_drift = -0.03
+		eco_socialism_drift = -0.03
 	}
     has_emergency_powers = {
 		random = no
-		neutral_drift = 0.03
+		eco_socialism_drift = 0.03
 		stability_factor = 0.05
 	}
 	heart_of_advance = {
 		random = no
         political_power_factor = -0.15
 		stability_factor = 0.10
-		synergy_drift = 0.03
+		transhumanism_drift = 0.03
 	}
 	dardanian_patriot = {
 		random = no

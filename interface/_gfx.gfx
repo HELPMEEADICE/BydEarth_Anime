@@ -2241,33 +2241,38 @@ spriteTypes = {
 ###############################
 
 	spriteType = {
-		name = "GFX_ideology_neutral_group"
-		texturefile = "gfx/interface/ideologies/neutral_group.dds"
+		name = "GFX_ideology_eco_socialism_group"
+		texturefile = "gfx/interface/ideologies/eco_socialism_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_harmony_group"
-		texturefile = "gfx/interface/ideologies/harmony_group.dds"
+		name = "GFX_ideology_social_democrat_group"
+		texturefile = "gfx/interface/ideologies/social_democrat_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_purity_group"
-		texturefile = "gfx/interface/ideologies/purity_group.dds"
+		name = "GFX_ideology_social_liberal_group"
+		texturefile = "gfx/interface/ideologies/social_liberal_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_supremacy_group"
-		texturefile = "gfx/interface/ideologies/supremacy_group.dds"
+		name = "GFX_ideology_fascist_group"
+		texturefile = "gfx/interface/ideologies/fascist_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_mastery_group"
-		texturefile = "gfx/interface/ideologies/mastery_group.dds"
+		name = "GFX_ideology_communist_group"
+		texturefile = "gfx/interface/ideologies/communist_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_synergy_group"
-		texturefile = "gfx/interface/ideologies/synergy_group.dds"
+		name = "GFX_ideology_transhumanism_group"
+		texturefile = "gfx/interface/ideologies/transhumanism_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_divinity_group"
-		texturefile = "gfx/interface/ideologies/divinity_group.dds"
+		name = "GFX_ideology_conservative_group"
+		texturefile = "gfx/interface/ideologies/conservative_group.png"
 	}
+
+	spriteType = {
+		name = "GFX_ideology_kirakira_dokidoki"
+		texturefile = "gfx/interface/ideologies/kirakira_dokidoki.png"
+    }
 }
 
 spriteTypes = {
@@ -2437,78 +2442,78 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_purity_line"
-		texturefile = "gfx/interface/culture/purity_line.dds"
+		name = "GFX_social_liberal_line"
+		texturefile = "gfx/interface/culture/social_liberal_line.dds"
 	}
 	spriteType = {
-		name = "GFX_supremacy_line"
-		texturefile = "gfx/interface/culture/supremacy_line.dds"
+		name = "GFX_fascist_line"
+		texturefile = "gfx/interface/culture/fascist_line.dds"
 	}
 	spriteType = {
-		name = "GFX_harmony_line"
-		texturefile = "gfx/interface/culture/harmony_line.dds"
+		name = "GFX_social_democrat_line"
+		texturefile = "gfx/interface/culture/social_democrat_line.dds"
 	}
 	spriteType = {
-		name = "GFX_divinity_line"
-		texturefile = "gfx/interface/culture/divinity_line.dds"
+		name = "GFX_conservative_line"
+		texturefile = "gfx/interface/culture/conservative_line.dds"
 	}
 	spriteType = {
-		name = "GFX_synergy_line"
-		texturefile = "gfx/interface/culture/synergy_line.dds"
+		name = "GFX_transhumanism_line"
+		texturefile = "gfx/interface/culture/transhumanism_line.dds"
 	}
 	spriteType = {
-		name = "GFX_mastery_line"
-		texturefile = "gfx/interface/culture/mastery_line.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_purity_fade"
-		texturefile = "gfx/interface/culture/purity_fade.dds"
-	}
-	spriteType = {
-		name = "GFX_supremacy_fade"
-		texturefile = "gfx/interface/culture/supremacy_fade.dds"
-	}
-	spriteType = {
-		name = "GFX_harmony_fade"
-		texturefile = "gfx/interface/culture/harmony_fade.dds"
-	}
-	spriteType = {
-		name = "GFX_divinity_fade"
-		texturefile = "gfx/interface/culture/divinity_fade.dds"
-	}
-	spriteType = {
-		name = "GFX_synergy_fade"
-		texturefile = "gfx/interface/culture/synergy_fade.dds"
-	}
-	spriteType = {
-		name = "GFX_mastery_fade"
-		texturefile = "gfx/interface/culture/mastery_fade.dds"
+		name = "GFX_communist_line"
+		texturefile = "gfx/interface/culture/communist_line.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_purity_fade_2"
-		texturefile = "gfx/interface/culture/purity_fade_2.dds"
+		name = "GFX_social_liberal_fade"
+		texturefile = "gfx/interface/culture/social_liberal_fade.dds"
 	}
 	spriteType = {
-		name = "GFX_supremacy_fade_2"
-		texturefile = "gfx/interface/culture/supremacy_fade_2.dds"
+		name = "GFX_fascist_fade"
+		texturefile = "gfx/interface/culture/fascist_fade.dds"
 	}
 	spriteType = {
-		name = "GFX_harmony_fade_2"
-		texturefile = "gfx/interface/culture/harmony_fade_2.dds"
+		name = "GFX_social_democrat_fade"
+		texturefile = "gfx/interface/culture/social_democrat_fade.dds"
 	}
 	spriteType = {
-		name = "GFX_divinity_fade_2"
-		texturefile = "gfx/interface/culture/divinity_fade_2.dds"
+		name = "GFX_conservative_fade"
+		texturefile = "gfx/interface/culture/conservative_fade.dds"
 	}
 	spriteType = {
-		name = "GFX_synergy_fade_2"
-		texturefile = "gfx/interface/culture/synergy_fade_2.dds"
+		name = "GFX_transhumanism_fade"
+		texturefile = "gfx/interface/culture/transhumanism_fade.dds"
 	}
 	spriteType = {
-		name = "GFX_mastery_fade_2"
-		texturefile = "gfx/interface/culture/mastery_fade_2.dds"
+		name = "GFX_communist_fade"
+		texturefile = "gfx/interface/culture/communist_fade.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_social_liberal_fade_2"
+		texturefile = "gfx/interface/culture/social_liberal_fade_2.dds"
+	}
+	spriteType = {
+		name = "GFX_fascist_fade_2"
+		texturefile = "gfx/interface/culture/fascist_fade_2.dds"
+	}
+	spriteType = {
+		name = "GFX_social_democrat_fade_2"
+		texturefile = "gfx/interface/culture/social_democrat_fade_2.dds"
+	}
+	spriteType = {
+		name = "GFX_conservative_fade_2"
+		texturefile = "gfx/interface/culture/conservative_fade_2.dds"
+	}
+	spriteType = {
+		name = "GFX_transhumanism_fade_2"
+		texturefile = "gfx/interface/culture/transhumanism_fade_2.dds"
+	}
+	spriteType = {
+		name = "GFX_communist_fade_2"
+		texturefile = "gfx/interface/culture/communist_fade_2.dds"
 	}
 }
 
@@ -2550,13 +2555,13 @@ spriteTypes = {
 		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 	spriteType = {
-		name = "GFX_ecobalance_state_harmony"
-		texturefile = "gfx/interface/ecobalance_state_harmony.dds"
+		name = "GFX_ecobalance_state_social_democrat"
+		texturefile = "gfx/interface/ecobalance_state_social_democrat.dds"
 		transparencecheck = yes
 	}
 	spriteType = {
-		name = "GFX_ecobalance_state_mastery"
-		texturefile = "gfx/interface/ecobalance_state_mastery.dds"
+		name = "GFX_ecobalance_state_communist"
+		texturefile = "gfx/interface/ecobalance_state_communist.dds"
 		transparencecheck = yes
 	}
 
@@ -2579,13 +2584,13 @@ spriteTypes = {
 		#transparencecheck = yes
 	}
 	spriteType = {
-		name = "GFX_ecobalance_state_load_harmony"
-		texturefile = "gfx/interface/ecobalance_state_load_harmony.dds"
+		name = "GFX_ecobalance_state_load_social_democrat"
+		texturefile = "gfx/interface/ecobalance_state_load_social_democrat.dds"
 		transparencecheck = yes
 	}
 	spriteType = {
-		name = "GFX_ecobalance_state_load_mastery"
-		texturefile = "gfx/interface/ecobalance_state_load_mastery.dds"
+		name = "GFX_ecobalance_state_load_communist"
+		texturefile = "gfx/interface/ecobalance_state_load_communist.dds"
 		transparencecheck = yes
 	}
 

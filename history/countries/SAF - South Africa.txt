@@ -37,19 +37,19 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = supremacy
+	ruling_party = fascist
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	supremacy = 60
-	purity = 6
-	mastery = 32
-	harmony = 1
-	neutral = 1
-	synergy = 0
-	divinity = 0
+	fascist = 60
+	social_liberal = 6
+	communist = 32
+	social_democrat = 1
+	eco_socialism = 1
+	transhumanism = 0
+	conservative = 0
 }
 
 add_ideas = {

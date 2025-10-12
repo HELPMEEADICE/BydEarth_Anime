@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "RAJ_priyanka_sibi_desc"
-			ideology = harmony_ideology
+			ideology = social_democrat_ideology
 		}
 	}
 	RAJ_suresh_devpura = {
@@ -20,7 +20,7 @@
 		}
 		country_leader = {
 			desc = "RAJ_suresh_devpura_desc"
-			ideology = divinity_ideology
+			ideology = conservative_ideology
 		}
 	}
 }

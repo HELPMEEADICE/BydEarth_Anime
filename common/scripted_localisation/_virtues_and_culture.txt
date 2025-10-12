@@ -21,7 +21,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = hostility_tier1_neutral
+		localization_key = hostility_tier1_eco_socialism
 	}
 }
 
@@ -48,7 +48,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = hostility_tier2_neutral
+		localization_key = hostility_tier2_eco_socialism
 	}
 }
 
@@ -75,7 +75,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = hostility_tier3_neutral
+		localization_key = hostility_tier3_eco_socialism
 	}
 }
 
@@ -102,7 +102,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = benevolence_tier1_neutral
+		localization_key = benevolence_tier1_eco_socialism
 	}
 }
 
@@ -129,7 +129,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = benevolence_tier2_neutral
+		localization_key = benevolence_tier2_eco_socialism
 	}
 }
 
@@ -156,7 +156,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = benevolence_tier3_neutral
+		localization_key = benevolence_tier3_eco_socialism
 	}
 }
 
@@ -183,7 +183,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = tradition_tier1_neutral
+		localization_key = tradition_tier1_eco_socialism
 	}
 }
 
@@ -210,7 +210,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = tradition_tier2_neutral
+		localization_key = tradition_tier2_eco_socialism
 	}
 }
 
@@ -237,7 +237,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = tradition_tier3_neutral
+		localization_key = tradition_tier3_eco_socialism
 	}
 }
 
@@ -264,7 +264,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = progress_tier1_neutral
+		localization_key = progress_tier1_eco_socialism
 	}
 }
 
@@ -291,7 +291,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = progress_tier2_neutral
+		localization_key = progress_tier2_eco_socialism
 	}
 }
 
@@ -318,7 +318,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = progress_tier3_neutral
+		localization_key = progress_tier3_eco_socialism
 	}
 }
 
@@ -345,7 +345,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = body_tier1_neutral
+		localization_key = body_tier1_eco_socialism
 	}
 }
 
@@ -372,7 +372,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = body_tier2_neutral
+		localization_key = body_tier2_eco_socialism
 	}
 }
 
@@ -399,7 +399,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = body_tier3_neutral
+		localization_key = body_tier3_eco_socialism
 	}
 }
 
@@ -426,7 +426,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = mind_tier1_neutral
+		localization_key = mind_tier1_eco_socialism
 	}
 }
 
@@ -453,7 +453,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = mind_tier2_neutral
+		localization_key = mind_tier2_eco_socialism
 	}
 }
 
@@ -480,6 +480,6 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = mind_tier3_neutral
+		localization_key = mind_tier3_eco_socialism
 	}
 }

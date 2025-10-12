@@ -1703,9 +1703,9 @@
 #                AND = {
 #                    NOT = {
 #                        OR = {
-#                            has_government = harmony
-#                            has_government = purity
-#                            has_government = divinity
+#                            has_government = social_democrat
+#                            has_government = social_liberal
+#                            has_government = conservative
 #                        }
 #                    }
 #                    has_tech = support_augment_2
@@ -1745,10 +1745,10 @@
 #                AND = {
 #                    NOT = {
 #                        OR = {
-#                            has_government = harmony
-#                            has_government = purity
-#                            has_government = divinity
-#                            has_government = mastery
+#                            has_government = social_democrat
+#                            has_government = social_liberal
+#                            has_government = conservative
+#                            has_government = communist
 #                        }
 #                    }
 #                    has_tech = support_augment_3

@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "PER_farhad_hushang_desc"
-			ideology = supremacy_ideology
+			ideology = fascist_ideology
 		}
 	}
 }

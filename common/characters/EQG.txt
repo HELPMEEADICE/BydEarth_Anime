@@ -8,7 +8,7 @@ characters={
 		}
 		country_leader = {
 			desc = "EQG_nwabudike_morgan_desc"
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 		}
 	}
 }

@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "PAD_matteo_bossi_desc"
-			ideology = divinity_ideology
+			ideology = conservative_ideology
 			traits = { highrise_pioneer }
 		}
 	}

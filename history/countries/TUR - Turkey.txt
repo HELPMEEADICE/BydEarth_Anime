@@ -1,18 +1,18 @@
 ﻿set_politics = {
-	ruling_party = purity
+	ruling_party = social_liberal
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	purity = 48
-	mastery = 8
-	harmony = 4
-	neutral = 26
-	supremacy = 10
-	synergy = 3
-	divinity = 1
+	social_liberal = 48
+	communist = 8
+	social_democrat = 4
+	eco_socialism = 26
+	fascist = 10
+	transhumanism = 3
+	conservative = 1
 }
 
 set_technology = {

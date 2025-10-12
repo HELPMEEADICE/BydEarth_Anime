@@ -1,17 +1,17 @@
 ﻿set_politics = {
-	ruling_party = divinity
+	ruling_party = conservative
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	harmony = 4
-	purity = 27
-	supremacy = 2
-	neutral = 19
-	divinity = 31
-	mastery = 7
-	synergy = 10
+	social_democrat = 4
+	social_liberal = 27
+	fascist = 2
+	eco_socialism = 19
+	conservative = 31
+	communist = 7
+	transhumanism = 10
 }
 
 oob = "PAD_2200"

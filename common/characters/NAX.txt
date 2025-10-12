@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "NAX_kaushal_rajan_desc"
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 		}
 	}
 }

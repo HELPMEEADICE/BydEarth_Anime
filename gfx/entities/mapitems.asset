@@ -4,7 +4,7 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 1
-		event = { trigger_once = yes sound = { soundeffect = "amb_neutral_wind" } }
+		event = { trigger_once = yes sound = { soundeffect = "amb_eco_socialism_wind" } }
 	}
 }
 

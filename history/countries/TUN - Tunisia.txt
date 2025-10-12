@@ -45,19 +45,19 @@ set_technology = {
 
 
 set_politics = {
-	ruling_party = harmony
+	ruling_party = social_democrat
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	harmony = 60
-	purity = 3
-	mastery = 0
-	neutral = 32
-	supremacy = 0
-	synergy = 2
-	divinity = 3
+	social_democrat = 60
+	social_liberal = 3
+	communist = 0
+	eco_socialism = 32
+	fascist = 0
+	transhumanism = 2
+	conservative = 3
 }
 
 

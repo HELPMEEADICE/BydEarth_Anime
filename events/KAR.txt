@@ -153,7 +153,7 @@ country_event = {
 	option = { 
 		name = karelia_event_option.7.a 
 		add_popularity = {
-			ideology = harmony
+			ideology = social_democrat
 			popularity = 0.05
 		}
 		GER = {
@@ -169,7 +169,7 @@ country_event = {
 	option = { 
 		name = karelia_event_option.7.b
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = 0.05
 		}
 		SCO = {

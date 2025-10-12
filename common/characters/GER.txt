@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "GER_lena_ebner_desc"
-			ideology = harmony_ideology
+			ideology = social_democrat_ideology
 			traits = { integr_leadership }
 		}
 	}
@@ -21,7 +21,7 @@
 		}
 		country_leader = {
 			desc = "GER_eva_rosenfeld_desc"
-			ideology = divinity_ideology
+			ideology = conservative_ideology
 		}
 	}
 	GER_eugen_langer = {
@@ -33,7 +33,7 @@
 		}
 		country_leader = {
 			desc = "GER_eugen_langer_desc"
-			ideology = synergy_ideology
+			ideology = transhumanism_ideology
 		}
 	}
 }

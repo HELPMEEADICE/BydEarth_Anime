@@ -1,18 +1,18 @@
 ﻿set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	purity = 35
-	supremacy = 1
-	divinity = 4
-	neutral = 50
-	harmony = 5
-	synergy = 2
-	mastery = 3
+	social_liberal = 35
+	fascist = 1
+	conservative = 4
+	eco_socialism = 50
+	social_democrat = 5
+	transhumanism = 2
+	communist = 3
 }
 
 oob = "ROM_2200"

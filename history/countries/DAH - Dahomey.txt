@@ -3,19 +3,19 @@
 capital = 293
 
 set_politics = {
-	ruling_party = supremacy
+	ruling_party = fascist
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	supremacy = 60
-	purity = 20
-	mastery = 6
-	harmony = 7
-	neutral = 5
-	synergy = 2
-	divinity = 0
+	fascist = 60
+	social_liberal = 20
+	communist = 6
+	social_democrat = 7
+	eco_socialism = 5
+	transhumanism = 2
+	conservative = 0
 }
 
 add_ideas = {

@@ -1,0 +1,94 @@
+﻿set_politics = {
+	ruling_party = social_democrat
+	last_election = "2200.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	social_democrat = 80
+	social_liberal = 3
+	communist = 0
+	eco_socialism = 12
+	fascist = 0
+	transhumanism = 2
+	conservative = 3
+}
+
+set_technology = {
+    heavy_weapons = 1
+	mbt_tech = 1
+    
+    
+    
+    
+    
+	
+	rocket_artillery_tech = 1
+	artillery_tech = 1
+    
+    
+    hovercraft_tech = 1
+    automation = 1
+    sresearch_lines = 1
+    light_weapons = 1
+
+    apc_tech = 1
+    be_tech_support = 1
+    
+    
+    be_field_hospital_tech = 1
+    be_logistics_tech = 1
+    
+    be_signal_company_tech = 1
+    
+    be_prototype_maglev = 1
+    
+    advanced_infantry_weapons = 1
+    crawler = 1
+    rover_tech = 1
+    
+    augment_equipment_tech = 1
+}
+
+oob = "BGD_2200"
+
+recruit_character = BGD_kasumi_char
+recruit_character = BGD_arisa_char
+
+capital = 1003
+
+add_ideas = {
+	digital_democracy
+	free_trade
+	mixed_economy
+}
+
+set_stability = 1
+set_war_support = 0.7
+
+set_fuel_ratio = 0.8 #High: 0.6-0.9, Med: 0.3-0.6, Low: 0-0.3
+starting_train_buffer = 1.3 #High: 1.0-1.5, Med: 0.5-1.0, Low: 0-0.5
+set_convoys = 200
+
+add_offsite_building = {
+	type = civilian_complex
+	level = 200
+}
+
+puppet = NPR
+
+create_faction = BGD_united_asian
+add_to_faction = BGD
+add_to_faction = CHI
+add_to_faction = MON
+add_to_faction = KOR
+add_to_faction = AMU
+add_to_faction = NEP
+add_to_faction = BRM
+add_to_faction = SIA
+add_to_faction = CAM
+add_to_faction = VIN
+add_to_faction = LAO
+add_to_faction = ASM
+add_to_faction = INS
+add_to_faction = NPR

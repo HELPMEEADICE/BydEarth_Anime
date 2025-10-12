@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "OCH_gabriel_ivanov_desc"
-			ideology = supremacy_ideology
+			ideology = fascist_ideology
 		}
 	}
 }

@@ -11,7 +11,7 @@ country_event = { #ELECTION EVENT
 	option = { 
 		name = franco_event_option.1.a
 		add_popularity = {
-			ideology = purity
+			ideology = social_liberal
 			popularity = 0.1
 		}
 		set_country_flag = FRA_election_ended
@@ -29,11 +29,11 @@ country_event = { #ELECTION EVENT
 	option = { 
 		name = franco_event_option.1.b
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = 0.1
 		}
 		set_politics = {
-			ruling_party = mastery
+			ruling_party = communist
 		}
 		set_country_flag = FRA_election_ended
 		#complete_national_focus = FRA_with_alhakim
@@ -410,7 +410,7 @@ country_event = { #FRA-TUN WAR
 	option = { 
 		name = franco_event_option.13.a 
 		trigger = {
-			has_government = purity
+			has_government = social_liberal
 		}
 		add_state_core = 240
 		declare_war_on = {
@@ -422,7 +422,7 @@ country_event = { #FRA-TUN WAR
 		name = franco_event_option.13.b
 		trigger = {
 			NOT = {
-				has_government = purity
+				has_government = social_liberal
 			}
 		}
 	}

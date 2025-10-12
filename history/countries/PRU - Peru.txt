@@ -1,18 +1,18 @@
 ﻿## Andean Compact
 set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	purity = 3
-	mastery = 10
-	harmony = 19
-	neutral = 32
-	supremacy = 14
-	synergy = 16
-	divinity = 6
+	social_liberal = 3
+	communist = 10
+	social_democrat = 19
+	eco_socialism = 32
+	fascist = 14
+	transhumanism = 16
+	conservative = 6
 }
 
 capital = 104

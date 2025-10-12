@@ -1,5 +1,5 @@
 ﻿set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -41,13 +41,13 @@ set_stability = 0.5
 set_war_support = 0.5
 
 set_popularities = {
-	purity = 10
-	supremacy = 23
-	divinity = 16
-	neutral = 24
-	harmony = 21
-	synergy = 4
-	mastery = 2
+	social_liberal = 10
+	fascist = 23
+	conservative = 16
+	eco_socialism = 24
+	social_democrat = 21
+	transhumanism = 4
+	communist = 2
 }
 
 add_ideas = {

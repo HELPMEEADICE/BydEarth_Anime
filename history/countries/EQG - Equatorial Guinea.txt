@@ -3,19 +3,19 @@
 capital = 309
 
 set_politics = {
-	ruling_party = harmony
+	ruling_party = social_democrat
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	harmony = 60
-	purity = 40
-	mastery = 0
-	neutral = 0
-	supremacy = 0
-	synergy = 0
-	divinity = 0
+	social_democrat = 60
+	social_liberal = 40
+	communist = 0
+	eco_socialism = 0
+	fascist = 0
+	transhumanism = 0
+	conservative = 0
 }
 
 add_ideas = {

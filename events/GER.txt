@@ -10,7 +10,7 @@ country_event = { #LEADER SELECTION EVENT!
 	option = { 
 		name = german_event_option.1.a
 		add_popularity = {
-			ideology = harmony
+			ideology = social_democrat
 			popularity = 0.1
 		}
 		hidden_effect = {
@@ -26,11 +26,11 @@ country_event = { #LEADER SELECTION EVENT!
 	option = { 
 		name = german_event_option.1.b
 		add_popularity = {
-			ideology = divinity
+			ideology = conservative
 			popularity = 0.1
 		}
 		set_politics = {
-			ruling_party = divinity
+			ruling_party = conservative
 		}
 		hidden_effect = {
 			country_event = {
@@ -45,18 +45,18 @@ country_event = { #LEADER SELECTION EVENT!
 	option = { 
 		name = german_event_option.1.c
 		add_popularity = {
-			ideology = synergy
+			ideology = transhumanism
 			popularity = 0.1
 		}
 		set_politics = {
-			ruling_party = synergy
+			ruling_party = transhumanism
 		}
 		ai_chance = {
 			factor = 1
 		}
 	}
 }
-country_event = { #ECW - HARMONY VICTORY!
+country_event = { #ECW - SOCIAL_DEMOCRAT VICTORY!
 	id = german_event.2
 	title = german_event.2.t
 	desc = german_event.2.d
@@ -221,23 +221,23 @@ country_event = { #Veron my beloved
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Leopold Geißler" 
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 			picture = GFX_portrait_GER_leopold_geibler
 			traits = { has_emergency_powers }
 		}
 		set_party_name = { 
-			ideology = neutral
+			ideology = eco_socialism
 			long_name = GER_military_government
 			name = GER_military_government
 		}
 	    set_cosmetic_tag = GER_federal_army
 	    add_ideas = autocratic_authority
 		set_politics = {
-	        ruling_party = neutral
+	        ruling_party = eco_socialism
 	        elections_allowed = no
 		}
 		add_popularity = {
-	        ideology = neutral
+	        ideology = eco_socialism
 	        popularity = 0.2
         }
 		ai_chance = {
@@ -247,15 +247,15 @@ country_event = { #Veron my beloved
 	option = { #The Heer is beaten back
 	    name = german_event_option.7.b
 		add_popularity = {
-	        ideology = harmony
+	        ideology = social_democrat
 	        popularity = -0.02
 	    }
 		add_popularity = {
-	        ideology = divinity
+	        ideology = conservative
 	        popularity = -0.01
 	    }
 		add_popularity = {
-	        ideology = synergy
+	        ideology = transhumanism
 	        popularity = -0.01
 	    }
 		ai_chance = {
@@ -290,7 +290,7 @@ country_event = { #this one for MrKrabs!
 	option = { #
 	    name = german_event_option.9.a
         set_party_name = { 
-            ideology = neutral
+            ideology = eco_socialism
 			long_name = GER_national_salvation
 			name = GER_national_salvation
         }
@@ -299,7 +299,7 @@ country_event = { #this one for MrKrabs!
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "National Salvation Council" 
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 			picture = GFX_
 			traits = { final_defense_directive }
 		}
@@ -308,7 +308,7 @@ country_event = { #this one for MrKrabs!
 		add_ideas = closed_economy
 		add_ideas = war_economy
 		add_popularity = {
-	        ideology = neutral
+	        ideology = eco_socialism
 	        popularity = 1
         }
 		ai_chance = {
@@ -320,7 +320,7 @@ country_event = { #this one for MrKrabs!
 		add_stability = -0.1
 		add_war_support = -0.1
 		add_popularity = {
-	        ideology = neutral
+	        ideology = eco_socialism
 	        popularity = -0.1
         }
 		ai_chance = {

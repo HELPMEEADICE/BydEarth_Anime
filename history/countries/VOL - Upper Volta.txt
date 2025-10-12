@@ -31,19 +31,19 @@ set_technology = {
 capital = 269
 
 set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutral = 60
-	purity = 26
-	mastery = 12
-	harmony = 1
-	supremacy = 0
-	synergy = 1
-	divinity = 0
+	eco_socialism = 60
+	social_liberal = 26
+	communist = 12
+	social_democrat = 1
+	fascist = 0
+	transhumanism = 1
+	conservative = 0
 }
 
 

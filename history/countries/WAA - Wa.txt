@@ -1,17 +1,17 @@
 ﻿set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	purity = 14
-	mastery = 15
-	harmony = 11
-	neutral = 37
-	supremacy = 16
-	synergy = 4
-	divinity = 3
+	social_liberal = 14
+	communist = 15
+	social_democrat = 11
+	eco_socialism = 37
+	fascist = 16
+	transhumanism = 4
+	conservative = 3
 }
 
 capital = 868

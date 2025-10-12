@@ -5,19 +5,19 @@ oob = "ANG_2200"
 capital = 355
 
 set_politics = {
-	ruling_party = supremacy
+	ruling_party = fascist
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	supremacy = 60
-	purity = 12
-	mastery = 28
-	harmony = 0
-	neutral = 0
-	synergy = 0
-	divinity = 0
+	fascist = 60
+	social_liberal = 12
+	communist = 28
+	social_democrat = 0
+	eco_socialism = 0
+	transhumanism = 0
+	conservative = 0
 }
 
 add_ideas = {

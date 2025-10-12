@@ -43,16 +43,16 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = purity
+	ruling_party = social_liberal
 }
 set_popularities = {
-	harmony = 1
-	supremacy = 2
-	purity = 45
-	neutral = 4
-    divinity = 7
-    synergy = 3
-    mastery = 38
+	social_democrat = 1
+	fascist = 2
+	social_liberal = 45
+	eco_socialism = 4
+    conservative = 7
+    transhumanism = 3
+    communist = 38
 }
 
 recruit_character = ASM_assam_supervision_council

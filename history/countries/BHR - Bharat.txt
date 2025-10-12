@@ -38,16 +38,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = divinity
+	ruling_party = conservative
 }
 set_popularities = {
-	harmony = 12
-	supremacy = 3
-	purity = 5
-	neutral = 13
-    divinity = 54
-    synergy = 8
-    mastery = 5
+	social_democrat = 12
+	fascist = 3
+	social_liberal = 5
+	eco_socialism = 13
+    conservative = 54
+    transhumanism = 8
+    communist = 5
 }
 
 

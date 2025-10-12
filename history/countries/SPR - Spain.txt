@@ -5,19 +5,19 @@ oob = "AAA_filler"
 capital = 256
 
 set_politics = {
-	ruling_party = divinity
+	ruling_party = conservative
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	divinity = 60
-	purity = 27
-	mastery = 4
-	harmony = 6
-	neutral = 0
-	supremacy = 1
-	synergy = 2
+	conservative = 60
+	social_liberal = 27
+	communist = 4
+	social_democrat = 6
+	eco_socialism = 0
+	fascist = 1
+	transhumanism = 2
 }
 
 

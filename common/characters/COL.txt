@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "COL_ezequiel_leon_desc"
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 		}
 	}	
 	COL_elisa_ariaz = {
@@ -20,7 +20,7 @@
 		}
 		country_leader = {
 			desc = "COL_elisa_ariaz_desc"
-			ideology = divinity_ideology
+			ideology = conservative_ideology
 		}
 	}	
 	COL_gabriel_tarragona = {
@@ -32,7 +32,7 @@
 		}
 		country_leader = {
 			desc = "COL_gabriel_tarragona_desc"
-			ideology = synergy_ideology
+			ideology = transhumanism_ideology
 		}
 	}	
 	COL_juan_ruiz = {
@@ -44,7 +44,7 @@
 		}
 		country_leader = {
 			desc = "COL_juan_ruiz_desc"
-			ideology = harmony_ideology
+			ideology = social_democrat_ideology
 		}
 	}	
 	COL_carmen_maria_zaragoza = {
@@ -56,7 +56,7 @@
 		}
 		country_leader = {
 			desc = "COL_carmen_maria_zaragoza_desc"
-			ideology = harmony_ideology
+			ideology = social_democrat_ideology
 		}
 	}
 }

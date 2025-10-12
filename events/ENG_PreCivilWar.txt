@@ -168,7 +168,7 @@
 #	option = {
 #		name = pre_cw_england_event.10.a #Start Digging
 #		add_popularity = {
-#			ideology = harmony
+#			ideology = social_democrat
 #			popularity = 0.03
 #		}
 #	}
@@ -184,7 +184,7 @@
 #	option = {
 #		name = pre_cw_england_event.11.a #Serve England
 #		add_popularity = {
-#			ideology = purity
+#			ideology = social_liberal
 #			popularity = 0.03
 #		}
 #	}
@@ -200,7 +200,7 @@
 #	option = {
 #		name = pre_cw_england_event.12.a #Stiff Upper Lip
 #		add_popularity = {
-#			ideology = neutral
+#			ideology = eco_socialism
 #			popularity = 0.03
 #		}
 #	}

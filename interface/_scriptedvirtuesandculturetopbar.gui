@@ -85,112 +85,112 @@ guiTypes = {
 			clipping = no
 			#
 			iconType = {
-				name = "purity_fade_2"
-				spriteType = "GFX_purity_fade_2"
+				name = "social_liberal_fade_2"
+				spriteType = "GFX_social_liberal_fade_2"
 				position = { x = 6 y = 52 }
 				alwaystransparent = yes
 			}
 			iconType = {
-				name = "supremacy_fade_2"
-				spriteType = "GFX_supremacy_fade_2"
+				name = "fascist_fade_2"
+				spriteType = "GFX_fascist_fade_2"
 				position = { x = 6 y = 52 }
 				alwaystransparent = yes
 			}
 			iconType = {
-				name = "harmony_fade_2"
-				spriteType = "GFX_harmony_fade_2"
+				name = "social_democrat_fade_2"
+				spriteType = "GFX_social_democrat_fade_2"
 				position = { x = 6 y = 52 }
 				alwaystransparent = yes
 			}
 			iconType = {
-				name = "divinity_fade_2"
-				spriteType = "GFX_divinity_fade_2"
+				name = "conservative_fade_2"
+				spriteType = "GFX_conservative_fade_2"
 				position = { x = 6 y = 52 }
 				alwaystransparent = yes
 			}
 			iconType = {
-				name = "synergy_fade_2"
-				spriteType = "GFX_synergy_fade_2"
+				name = "transhumanism_fade_2"
+				spriteType = "GFX_transhumanism_fade_2"
 				position = { x = 6 y = 52 }
 				alwaystransparent = yes
 			}
 			iconType = {
-				name = "mastery_fade_2"
-				spriteType = "GFX_mastery_fade_2"
-				position = { x = 6 y = 52 }
-				alwaystransparent = yes
-			}
-			#
-			iconType = {
-				name = "purity_fade"
-				spriteType = "GFX_purity_fade"
-				position = { x = 6 y = 52 }
-				alwaystransparent = yes
-			}
-			iconType = {
-				name = "supremacy_fade"
-				spriteType = "GFX_supremacy_fade"
-				position = { x = 6 y = 52 }
-				alwaystransparent = yes
-			}
-			iconType = {
-				name = "harmony_fade"
-				spriteType = "GFX_harmony_fade"
-				position = { x = 6 y = 52 }
-				alwaystransparent = yes
-			}
-			iconType = {
-				name = "divinity_fade"
-				spriteType = "GFX_divinity_fade"
-				position = { x = 6 y = 52 }
-				alwaystransparent = yes
-			}
-			iconType = {
-				name = "synergy_fade"
-				spriteType = "GFX_synergy_fade"
-				position = { x = 6 y = 52 }
-				alwaystransparent = yes
-			}
-			iconType = {
-				name = "mastery_fade"
-				spriteType = "GFX_mastery_fade"
+				name = "communist_fade_2"
+				spriteType = "GFX_communist_fade_2"
 				position = { x = 6 y = 52 }
 				alwaystransparent = yes
 			}
 			#
 			iconType = {
-				name = "purity_line"
-				spriteType = "GFX_purity_line"
+				name = "social_liberal_fade"
+				spriteType = "GFX_social_liberal_fade"
 				position = { x = 6 y = 52 }
 				alwaystransparent = yes
 			}
 			iconType = {
-				name = "supremacy_line"
-				spriteType = "GFX_supremacy_line"
+				name = "fascist_fade"
+				spriteType = "GFX_fascist_fade"
 				position = { x = 6 y = 52 }
 				alwaystransparent = yes
 			}
 			iconType = {
-				name = "harmony_line"
-				spriteType = "GFX_harmony_line"
+				name = "social_democrat_fade"
+				spriteType = "GFX_social_democrat_fade"
 				position = { x = 6 y = 52 }
 				alwaystransparent = yes
 			}
 			iconType = {
-				name = "divinity_line"
-				spriteType = "GFX_divinity_line"
+				name = "conservative_fade"
+				spriteType = "GFX_conservative_fade"
 				position = { x = 6 y = 52 }
 				alwaystransparent = yes
 			}
 			iconType = {
-				name = "synergy_line"
-				spriteType = "GFX_synergy_line"
+				name = "transhumanism_fade"
+				spriteType = "GFX_transhumanism_fade"
 				position = { x = 6 y = 52 }
 				alwaystransparent = yes
 			}
 			iconType = {
-				name = "mastery_line"
-				spriteType = "GFX_mastery_line"
+				name = "communist_fade"
+				spriteType = "GFX_communist_fade"
+				position = { x = 6 y = 52 }
+				alwaystransparent = yes
+			}
+			#
+			iconType = {
+				name = "social_liberal_line"
+				spriteType = "GFX_social_liberal_line"
+				position = { x = 6 y = 52 }
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "fascist_line"
+				spriteType = "GFX_fascist_line"
+				position = { x = 6 y = 52 }
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "social_democrat_line"
+				spriteType = "GFX_social_democrat_line"
+				position = { x = 6 y = 52 }
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "conservative_line"
+				spriteType = "GFX_conservative_line"
+				position = { x = 6 y = 52 }
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "transhumanism_line"
+				spriteType = "GFX_transhumanism_line"
+				position = { x = 6 y = 52 }
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "communist_line"
+				spriteType = "GFX_communist_line"
 				position = { x = 6 y = 52 }
 				alwaystransparent = yes
 			}
@@ -206,7 +206,7 @@ guiTypes = {
 			buttonType = {
 				name = "hostility_button"
 				position = { x = -303 y = 212 }
-				quadTextureSprite ="GFX_ideology_purity_group"
+				quadTextureSprite ="GFX_ideology_social_liberal_group"
 				Orientation = "UPPER_RIGHT"
 				clicksound = click_close
 				oversound = ui_menu_over
@@ -216,7 +216,7 @@ guiTypes = {
 			buttonType = {
 				name = "benevolence_button"
 				position = { x = -303 y = 664 }
-				quadTextureSprite ="GFX_ideology_synergy_group"
+				quadTextureSprite ="GFX_ideology_transhumanism_group"
 				Orientation = "UPPER_RIGHT"
 				clicksound = click_close
 				oversound = ui_menu_over
@@ -225,7 +225,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "tradition_button"
-				quadTextureSprite ="GFX_ideology_supremacy_group"
+				quadTextureSprite ="GFX_ideology_fascist_group"
 				position = { x = -504 y = 552 }
 				Orientation = "UPPER_RIGHT"
 				clicksound = click_close
@@ -235,7 +235,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "progress_button"
-				quadTextureSprite ="GFX_ideology_divinity_group"
+				quadTextureSprite ="GFX_ideology_conservative_group"
 				position = { x = -104 y = 324 }
 				Orientation = "UPPER_RIGHT"
 				clicksound = click_close
@@ -245,7 +245,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "body_button"
-				quadTextureSprite ="GFX_ideology_mastery_group"
+				quadTextureSprite ="GFX_ideology_communist_group"
 				position = { x = -504 y = 324 }
 				Orientation = "UPPER_RIGHT"
 				clicksound = click_close
@@ -255,7 +255,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "mind_button"
-				quadTextureSprite ="GFX_ideology_harmony_group"
+				quadTextureSprite ="GFX_ideology_social_democrat_group"
 				position = { x = -104 y = 552 }
 				Orientation = "UPPER_RIGHT"
 				clicksound = click_close
@@ -266,46 +266,46 @@ guiTypes = {
 
 			###
 			iconType = {
-				name = "purity_icon"
-				spriteType = "GFX_ideology_purity_group"
+				name = "social_liberal_icon"
+				spriteType = "GFX_ideology_social_liberal_group"
 				position = { x= 245 y = 442 } 
-				pdx_tooltip = "purity_ideology_desc"
+				pdx_tooltip = "social_liberal_ideology_desc"
 			}
 			iconType = {
-				name = "supremacy_icon"
-				spriteType = "GFX_ideology_supremacy_group"
+				name = "fascist_icon"
+				spriteType = "GFX_ideology_fascist_group"
 				position = { x= 245 y = 442 } 
-				pdx_tooltip = "supremacy_ideology_desc"
+				pdx_tooltip = "fascist_ideology_desc"
 			}
 			iconType = {
-				name = "harmony_icon"
-				spriteType = "GFX_ideology_harmony_group"
+				name = "social_democrat_icon"
+				spriteType = "GFX_ideology_social_democrat_group"
 				position = { x= 245 y = 442 } 
-				pdx_tooltip = "harmony_ideology_desc"
+				pdx_tooltip = "social_democrat_ideology_desc"
 			}
 			iconType = {
-				name = "neutral_icon"
-				spriteType = "GFX_ideology_neutral_group"
+				name = "eco_socialism_icon"
+				spriteType = "GFX_ideology_eco_socialism_group"
 				position = { x= 245 y = 442 } 
-				pdx_tooltip = "neutral_ideology_desc"
+				pdx_tooltip = "eco_socialism_ideology_desc"
 			}
 			iconType = {
-				name = "divinity_icon"
-				spriteType = "GFX_ideology_divinity_group"
+				name = "conservative_icon"
+				spriteType = "GFX_ideology_conservative_group"
 				position = { x= 245 y = 442 }
-				pdx_tooltip = "divinity_ideology_desc" 
+				pdx_tooltip = "conservative_ideology_desc" 
 			}
 			iconType = {
-				name = "synergy_icon"
-				spriteType = "GFX_ideology_synergy_group"
+				name = "transhumanism_icon"
+				spriteType = "GFX_ideology_transhumanism_group"
 				position = { x= 245 y = 442 } 
-				pdx_tooltip = "synergy_ideology_desc"
+				pdx_tooltip = "transhumanism_ideology_desc"
 			}
 			iconType = {
-				name = "mastery_icon"
-				spriteType = "GFX_ideology_mastery_group"
+				name = "communist_icon"
+				spriteType = "GFX_ideology_communist_group"
 				position = { x= 245 y = 442 } 
-				pdx_tooltip = "mastery_ideology_desc"
+				pdx_tooltip = "communist_ideology_desc"
 			}
 		}
     }

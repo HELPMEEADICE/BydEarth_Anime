@@ -40,16 +40,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 }
 set_popularities = {
-	harmony = 4
-	supremacy = 14
-	purity = 16
-	neutral = 41
-    divinity = 16
-    synergy = 6
-    mastery = 3
+	social_democrat = 4
+	fascist = 14
+	social_liberal = 16
+	eco_socialism = 41
+    conservative = 16
+    transhumanism = 6
+    communist = 3
 }
 
 recruit_character = TAM_mandalini_vijayakumar

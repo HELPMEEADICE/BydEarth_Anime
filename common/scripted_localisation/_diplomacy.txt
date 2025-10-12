@@ -94,9 +94,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_idea = neutral_ecobalance
+			has_idea = eco_socialism_ecobalance
 		}
-		localization_key = neutral_ecobalance
+		localization_key = eco_socialism_ecobalance
 	}
 	text = {
 		trigger = {
@@ -134,9 +134,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_idea = neutral_ecobalance
+			has_idea = eco_socialism_ecobalance
 		}
-		localization_key = neutral_ecobalance_effects
+		localization_key = eco_socialism_ecobalance_effects
 	}
 	text = {
 		trigger = {

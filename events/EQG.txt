@@ -98,13 +98,13 @@ country_event = { #Forging a Community
 			add_idea = oligarchic_government
 		}
 		set_popularities = {
-			harmony = 5
-			supremacy = 3
-			purity = 29
-			neutral = 43
-			divinity = 12
-			synergy = 3
-			mastery = 5
+			social_democrat = 5
+			fascist = 3
+			social_liberal = 29
+			eco_socialism = 43
+			conservative = 12
+			transhumanism = 3
+			communist = 5
 		}
 		add_ideas = EQG_the_african_economic_community
 	}

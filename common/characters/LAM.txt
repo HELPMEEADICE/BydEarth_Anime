@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "LAM_lucio_ximenes_desc"
-			ideology = harmony_ideology
+			ideology = social_democrat_ideology
 		}
 	}
 }

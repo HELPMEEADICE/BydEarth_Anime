@@ -38,16 +38,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = synergy
+	ruling_party = transhumanism
 }
 set_popularities = {
-	harmony = 0
-	supremacy = 24
-	purity = 0
-	neutral = 0
-    divinity = 2
-    synergy = 74
-    mastery = 0
+	social_democrat = 0
+	fascist = 24
+	social_liberal = 0
+	eco_socialism = 0
+    conservative = 2
+    transhumanism = 74
+    communist = 0
 }
 
 recruit_character = PUN_ishit_singh

@@ -76,7 +76,7 @@ news_event = { #East African Federation Unites Africa
 		text = tzn.5.d.a
 		trigger = {
 			TZN = {
-				has_government = purity
+				has_government = social_liberal
 			}
 		}
 	}
@@ -84,7 +84,7 @@ news_event = { #East African Federation Unites Africa
 		text = tzn.5.d.b
 		trigger = {
 			TZN = {
-				has_government = neutral
+				has_government = eco_socialism
 			}
 		}
 	}
@@ -92,7 +92,7 @@ news_event = { #East African Federation Unites Africa
 		text = tzn.5.d.c
 		trigger = {
 			TZN = {
-				has_government = mastery
+				has_government = communist
 			}
 		}
 	}
@@ -100,7 +100,7 @@ news_event = { #East African Federation Unites Africa
 		text = tzn.5.d.a
 		trigger = {
 			TZN = {
-				has_government = supremacy
+				has_government = fascist
 			}
 		}
 	}
@@ -113,28 +113,28 @@ news_event = { #East African Federation Unites Africa
 		name = tzn.5.a.a
 		trigger = {
 			tag = TZN
-			has_government = purity
+			has_government = social_liberal
 		}
 	}
 	option = {
 		name = tzn.5.a.b
 		trigger = {
 			tag = TZN
-			has_government = neutral
+			has_government = eco_socialism
 		}
 	}
 	option = {
 		name = tzn.5.a.c
 		trigger = {
 			tag = TZN
-			has_government = mastery
+			has_government = communist
 		}
 	}
 	option = {
 		name = tzn.5.a.d
 		trigger = {
 			tag = TZN
-			has_government = supremacy
+			has_government = fascist
 		}
 	}
 	option = {
@@ -158,13 +158,13 @@ country_event = { #Sauti ya Watu
 		name = tzn.6.a
 		hidden_effect = {
 			set_popularities = {
-				harmony = 11
-				supremacy = 14
-				purity = 27
-				neutral = 24
-				divinity = 4
-				synergy = 3
-				mastery = 17
+				social_democrat = 11
+				fascist = 14
+				social_liberal = 27
+				eco_socialism = 24
+				conservative = 4
+				transhumanism = 3
+				communist = 17
 			}
 		}
 		ai_chance = {
@@ -174,18 +174,18 @@ country_event = { #Sauti ya Watu
 	option = {
 		name = tzn.6.b
 		hidden_effect = {
-			set_country_leader_ideology = neutral_ideology
+			set_country_leader_ideology = eco_socialism_ideology
 			set_politics = {
-				ruling_party = neutral
+				ruling_party = eco_socialism
 			}
 			set_popularities = {
-				harmony = 7
-				supremacy = 15
-				purity = 22
-				neutral = 24
-				divinity = 13
-				synergy = 7
-				mastery = 12
+				social_democrat = 7
+				fascist = 15
+				social_liberal = 22
+				eco_socialism = 24
+				conservative = 13
+				transhumanism = 7
+				communist = 12
 			}
 		}
 		ai_chance = {
@@ -195,18 +195,18 @@ country_event = { #Sauti ya Watu
 	option = {
 		name = tzn.6.c
 		hidden_effect = {
-			set_country_leader_ideology = mastery_ideology
+			set_country_leader_ideology = communist_ideology
 			set_politics = {
-				ruling_party = mastery
+				ruling_party = communist
 			}
 			set_popularities = {
-				harmony = 12
-				supremacy = 13
-				purity = 21
-				neutral = 16
-				divinity = 9
-				synergy = 5
-				mastery = 24
+				social_democrat = 12
+				fascist = 13
+				social_liberal = 21
+				eco_socialism = 16
+				conservative = 9
+				transhumanism = 5
+				communist = 24
 			}
 		}
 		ai_chance = {
@@ -216,18 +216,18 @@ country_event = { #Sauti ya Watu
 	option = {
 		name = tzn.6.d
 		hidden_effect = {
-			set_country_leader_ideology = supremacy_ideology
+			set_country_leader_ideology = fascist_ideology
 			set_politics = {
-				ruling_party = supremacy
+				ruling_party = fascist
 			}
 			set_popularities = {
-				harmony = 8
-				supremacy = 24
-				purity = 21
-				neutral = 19
-				divinity = 7
-				synergy = 4
-				mastery = 17
+				social_democrat = 8
+				fascist = 24
+				social_liberal = 21
+				eco_socialism = 19
+				conservative = 7
+				transhumanism = 4
+				communist = 17
 			}
 		}
 		ai_chance = {

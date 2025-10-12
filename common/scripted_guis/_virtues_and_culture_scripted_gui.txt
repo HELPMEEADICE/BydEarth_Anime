@@ -36,7 +36,7 @@ scripted_gui = {
                     }
                     add_political_power = -150
                     add_popularity = {
-                        ideology = purity
+                        ideology = social_liberal
                         popularity = 0.05
                     }
                 }
@@ -54,7 +54,7 @@ scripted_gui = {
                     }
                     add_political_power = -200
                     add_popularity = {
-                        ideology = purity
+                        ideology = social_liberal
                         popularity = 0.05
                     }
                 }
@@ -72,7 +72,7 @@ scripted_gui = {
                     }
                     add_political_power = -300
                     add_popularity = {
-                        ideology = purity
+                        ideology = social_liberal
                         popularity = 0.05
                     }
                 }
@@ -95,7 +95,7 @@ scripted_gui = {
                     }
                     add_political_power = -150
                     add_popularity = {
-                        ideology = synergy
+                        ideology = transhumanism
                         popularity = 0.05
                     }
                 }
@@ -113,7 +113,7 @@ scripted_gui = {
                     }
                     add_political_power = -200
                     add_popularity = {
-                        ideology = synergy
+                        ideology = transhumanism
                         popularity = 0.05
                     }
                 }
@@ -131,7 +131,7 @@ scripted_gui = {
                     }
                     add_political_power = -300
                     add_popularity = {
-                        ideology = synergy
+                        ideology = transhumanism
                         popularity = 0.05
                     }
                 }
@@ -154,7 +154,7 @@ scripted_gui = {
                     }
                     add_political_power = -150
                     add_popularity = {
-                        ideology = supremacy
+                        ideology = fascist
                         popularity = 0.05
                     }
                 }
@@ -172,7 +172,7 @@ scripted_gui = {
                     }
                     add_political_power = -200
                     add_popularity = {
-                        ideology = supremacy
+                        ideology = fascist
                         popularity = 0.05
                     }
                 }
@@ -190,7 +190,7 @@ scripted_gui = {
                     }
                     add_political_power = -300
                     add_popularity = {
-                        ideology = supremacy
+                        ideology = fascist
                         popularity = 0.05
                     }
                 }
@@ -213,7 +213,7 @@ scripted_gui = {
                     }
                     add_political_power = -150
                     add_popularity = {
-                        ideology = divinity
+                        ideology = conservative
                         popularity = 0.05
                     }
                 }
@@ -231,7 +231,7 @@ scripted_gui = {
                     }
                     add_political_power = -200
                     add_popularity = {
-                        ideology = divinity
+                        ideology = conservative
                         popularity = 0.05
                     }
                 }
@@ -249,7 +249,7 @@ scripted_gui = {
                     }
                     add_political_power = -300
                     add_popularity = {
-                        ideology = divinity
+                        ideology = conservative
                         popularity = 0.05
                     }
                 }
@@ -272,7 +272,7 @@ scripted_gui = {
                     }
                     add_political_power = -150
                     add_popularity = {
-                        ideology = mastery
+                        ideology = communist
                         popularity = 0.05
                     }
                 }
@@ -290,7 +290,7 @@ scripted_gui = {
                     }
                     add_political_power = -200
                     add_popularity = {
-                        ideology = mastery
+                        ideology = communist
                         popularity = 0.05
                     }
                 }
@@ -308,7 +308,7 @@ scripted_gui = {
                     #}
                     add_political_power = -300
                     add_popularity = {
-                        ideology = mastery
+                        ideology = communist
                         popularity = 0.05
                     }
                 }
@@ -331,7 +331,7 @@ scripted_gui = {
                     }
                     add_political_power = -150
                     add_popularity = {
-                        ideology = harmony
+                        ideology = social_democrat
                         popularity = 0.05
                     }
                 }
@@ -349,7 +349,7 @@ scripted_gui = {
                     }
                     add_political_power = -200
                     add_popularity = {
-                        ideology = harmony
+                        ideology = social_democrat
                         popularity = 0.05
                     }
                 }
@@ -367,7 +367,7 @@ scripted_gui = {
                     #}
                     add_political_power = -300
                     add_popularity = {
-                        ideology = harmony
+                        ideology = social_democrat
                         popularity = 0.05
                     }
                 }
@@ -383,7 +383,7 @@ scripted_gui = {
                     ROOT = {
                         OR = {
                             has_country_flag = has_benevolence_tier1
-                            has_government = synergy
+                            has_government = transhumanism
                         }
                     }
                 }
@@ -414,7 +414,7 @@ scripted_gui = {
                     ROOT = {
                         OR = {
                             has_country_flag = has_hostility_tier1
-                            has_government = purity
+                            has_government = social_liberal
                         }
                     }
                 }
@@ -445,7 +445,7 @@ scripted_gui = {
                     ROOT = {
                         OR = {
                             has_country_flag = has_progress_tier1
-                            has_government = divinity
+                            has_government = conservative
                         }
                     }
                 }
@@ -476,7 +476,7 @@ scripted_gui = {
                     ROOT = {
                         OR = {
                             has_country_flag = has_tradition_tier1
-                            has_government = supremacy
+                            has_government = fascist
                         }
                     }
                 }
@@ -507,7 +507,7 @@ scripted_gui = {
                     ROOT = {
                         OR = {
                             has_country_flag = has_mind_tier1
-                            has_government = harmony
+                            has_government = social_democrat
                         }
                     }
                 }
@@ -538,7 +538,7 @@ scripted_gui = {
                     ROOT = {
                         OR = {
                             has_country_flag = has_body_tier1
-                            has_government = mastery
+                            has_government = communist
                         }
                     }
                 }
@@ -567,82 +567,82 @@ scripted_gui = {
 
             ###
 
-            supremacy_icon_visible = {
-				has_government = supremacy
+            fascist_icon_visible = {
+				has_government = fascist
 			}
-			purity_icon_visible = {
-				has_government = purity
+			social_liberal_icon_visible = {
+				has_government = social_liberal
 			}
-			harmony_icon_visible = {
-				has_government = harmony
+			social_democrat_icon_visible = {
+				has_government = social_democrat
 			}
-			neutral_icon_visible = {
-				has_government = neutral
+			eco_socialism_icon_visible = {
+				has_government = eco_socialism
 			}
-			divinity_icon_visible = {
-				has_government = divinity
+			conservative_icon_visible = {
+				has_government = conservative
 			}
-			synergy_icon_visible = {
-				has_government = synergy
+			transhumanism_icon_visible = {
+				has_government = transhumanism
 			}
-			mastery_icon_visible = {
-				has_government = mastery
+			communist_icon_visible = {
+				has_government = communist
 			}
 
-            supremacy_line_visible = {
+            fascist_line_visible = {
 				has_country_flag = has_tradition_tier1
 			}
-			purity_line_visible = {
+			social_liberal_line_visible = {
 				has_country_flag = has_hostility_tier1
 			}
-			harmony_line_visible = {
+			social_democrat_line_visible = {
 				has_country_flag = has_mind_tier1
 			}
-			divinity_line_visible = {
+			conservative_line_visible = {
 				has_country_flag = has_progress_tier1
 			}
-			synergy_line_visible = {
+			transhumanism_line_visible = {
 				has_country_flag = has_benevolence_tier1
 			}
-			mastery_line_visible = {
+			communist_line_visible = {
 				has_country_flag = has_body_tier1
 			}
             ###
-            supremacy_fade_visible = {
+            fascist_fade_visible = {
 				has_country_flag = has_tradition_tier2
 			}
-			purity_fade_visible = {
+			social_liberal_fade_visible = {
 				has_country_flag = has_hostility_tier2
 			}
-			harmony_fade_visible = {
+			social_democrat_fade_visible = {
 				has_country_flag = has_mind_tier2
 			}
-			divinity_fade_visible = {
+			conservative_fade_visible = {
 				has_country_flag = has_progress_tier2
 			}
-			synergy_fade_visible = {
+			transhumanism_fade_visible = {
 				has_country_flag = has_benevolence_tier2
 			}
-			mastery_fade_visible = {
+			communist_fade_visible = {
 				has_country_flag = has_body_tier2
 			}
             ###
-            supremacy_fade_2_visible = {
+            fascist_fade_2_visible = {
 				has_country_flag = has_tradition_tier3
 			}
-			purity_fade_2_visible = {
+			social_liberal_fade_2_visible = {
 				has_country_flag = has_hostility_tier3
 			}
-			harmony_fade_2_visible = {
+			social_democrat_fade_2_visible = {
 				has_country_flag = has_mind_tier3
 			}
-			divinity_fade_2_visible = {
+			conservative_fade_2_visible = {
 				has_country_flag = has_progress_tier3
 			}
-			synergy_fade_2_visible = {
+			transhumanism_fade_2_visible = {
 				has_country_flag = has_benevolence_tier3
 			}
-			mastery_fade_2_visible = {
+			communist_fade_2_visible = {
 				has_country_flag = has_body_tier3
 			}
             ###
@@ -691,7 +691,7 @@ scripted_gui = {
                     factor = 1
                     modifier = {
                         has_political_power > 150
-                        has_government = harmony
+                        has_government = social_democrat
                         add = 10
                     }
                 }

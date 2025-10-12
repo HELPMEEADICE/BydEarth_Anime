@@ -11,7 +11,7 @@ country_event = {
 		name = ukraine_event_option.1.a 
 		leave_faction = yes
 		add_popularity = {
-			ideology = harmony
+			ideology = social_democrat
 			popularity = 0.05
 		}
 		ai_chance = {
@@ -60,15 +60,15 @@ country_event = {
 	option = { 
 		name = ukraine_event_option.3.a 
 		add_popularity = {
-			ideology = neutral
+			ideology = eco_socialism
 			popularity = -0.15
 		}
 		add_popularity = {
-			ideology = purity
+			ideology = social_liberal
 			popularity = 0.05
 		}
 		set_politics = {
-			ruling_party = purity
+			ruling_party = social_liberal
 		}
 	}
 }
@@ -83,7 +83,7 @@ country_event = {
 	option = { 
 		name = ukraine_event_option.4.a 
 		add_popularity = {
-			ideology = neutral
+			ideology = eco_socialism
 			popularity = 0.05
 		}
 	}
@@ -91,11 +91,11 @@ country_event = {
 	option = { 
 		name = ukraine_event_option.4.b 
 		add_popularity = {
-			ideology = harmony
+			ideology = social_democrat
 			popularity = 0.05
 		}
 		set_politics = {
-			ruling_party = harmony
+			ruling_party = social_democrat
 		}
 	}
 }

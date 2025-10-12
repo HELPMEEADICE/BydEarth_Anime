@@ -1,5 +1,5 @@
 ﻿set_politics = {
-	ruling_party = mastery
+	ruling_party = communist
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -21,13 +21,13 @@ add_ideas = {
 }
 
 set_popularities = {
-	harmony = 1
-	supremacy = 5
-	purity = 19
-	neutral = 5
-    divinity = 12
-    synergy = 6
-    mastery = 52
+	social_democrat = 1
+	fascist = 5
+	social_liberal = 19
+	eco_socialism = 5
+    conservative = 12
+    transhumanism = 6
+    communist = 52
 }
 
 set_technology = {

@@ -7,7 +7,7 @@
 			}
 		}
 		country_leader = {
-			ideology = purity_ideology
+			ideology = social_liberal_ideology
 		}
 	}
 	ASM_shen_zhiqiang = {
@@ -18,7 +18,7 @@
 			}
 		}
 		country_leader = {
-			ideology = mastery_ideology
+			ideology = communist_ideology
 		}
 	}
 }

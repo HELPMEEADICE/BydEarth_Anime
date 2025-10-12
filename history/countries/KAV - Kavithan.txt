@@ -33,16 +33,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = divinity
+	ruling_party = conservative
 }
 set_popularities = {
-	harmony = 18
-	supremacy = 9
-	purity = 11
-	neutral = 2
-    divinity = 44
-    synergy = 0
-    mastery = 16
+	social_democrat = 18
+	fascist = 9
+	social_liberal = 11
+	eco_socialism = 2
+    conservative = 44
+    transhumanism = 0
+    communist = 16
 }
 
 recruit_character = KAV_kavitha_thakur

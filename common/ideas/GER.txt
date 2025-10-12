@@ -7,7 +7,7 @@ ideas = {
 			}
 			
 			modifier = {
-				#purity_acceptance = -50
+				#social_liberal_acceptance = -50
 			}
 		}
 		GER_transhumanism = {

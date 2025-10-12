@@ -36,16 +36,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 }
 set_popularities = {
-	harmony = 0
-	supremacy = 0
-	purity = 0
-	neutral = 100
-    divinity = 0
-    synergy = 0
-    mastery = 0
+	social_democrat = 0
+	fascist = 0
+	social_liberal = 0
+	eco_socialism = 100
+    conservative = 0
+    transhumanism = 0
+    communist = 0
 }
 
 recruit_character = NAX_kaushal_rajan

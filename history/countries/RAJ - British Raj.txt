@@ -40,16 +40,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = divinity
+	ruling_party = conservative
 }
 set_popularities = {
-	harmony = 28
-	supremacy = 9
-	purity = 6
-	neutral = 12
-    divinity = 34
-    synergy = 0
-    mastery = 11
+	social_democrat = 28
+	fascist = 9
+	social_liberal = 6
+	eco_socialism = 12
+    conservative = 34
+    transhumanism = 0
+    communist = 11
 }
 
 recruit_character = RAJ_priyanka_sibi

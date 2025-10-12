@@ -1,9 +1,0 @@
-#JAP_the_ultimate_weapon = {
-#	icon = GFX_decision_category_generic
-#	available = { 
-#		tag = JAP
-#	}
-#	visible = {
-#		tag = JAP
-#	}
-#}

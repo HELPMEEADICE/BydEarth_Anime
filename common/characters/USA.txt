@@ -7,16 +7,16 @@
 			}
 		}
 		country_leader = {
-			desc = "USA_ulrik_svensgaard_purity_desc"
-			ideology = purity_ideology
+			desc = "USA_ulrik_svensgaard_social_liberal_desc"
+			ideology = social_liberal_ideology
 		}
 		country_leader = {
-			desc = "USA_ulrik_svensgaard_mastery_desc"
-			ideology = mastery_ideology
+			desc = "USA_ulrik_svensgaard_communist_desc"
+			ideology = communist_ideology
 		}
 		country_leader = {
-			desc = "USA_ulrik_svensgaard_divinity_desc"
-			ideology = divinity_ideology
+			desc = "USA_ulrik_svensgaard_conservative_desc"
+			ideology = conservative_ideology
 		}
 	}
 }

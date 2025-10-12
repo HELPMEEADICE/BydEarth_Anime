@@ -37,16 +37,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = mastery
+	ruling_party = communist
 }
 set_popularities = {
-	harmony = 11
-	supremacy = 7
-	purity = 21
-	neutral = 0
-    divinity = 4
-    synergy = 2
-    mastery = 55
+	social_democrat = 11
+	fascist = 7
+	social_liberal = 21
+	eco_socialism = 0
+    conservative = 4
+    transhumanism = 2
+    communist = 55
 }
 
 recruit_character = ODS_brajinath_das

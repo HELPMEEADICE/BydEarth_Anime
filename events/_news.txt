@@ -50,7 +50,7 @@ news_event = {
 				is_neighbor_of = FRA
 			}
 			add_popularity = {
-				ideology = purity
+				ideology = social_liberal
 				popularity = 0.01
 			}
 		}
@@ -61,7 +61,7 @@ news_event = {
 				}
 			}
 			add_popularity = {
-				ideology = divinity
+				ideology = conservative
 				popularity = 0.01
 			}
 		}
@@ -125,7 +125,7 @@ news_event = {
 				is_neighbor_of = GER
 			}
 			add_popularity = {
-				ideology = harmony
+				ideology = social_democrat
 				popularity = 0.01
 			}
 		}

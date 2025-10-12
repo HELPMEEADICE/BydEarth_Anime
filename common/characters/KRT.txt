@@ -7,7 +7,7 @@
 			}
 		}
 		country_leader = {
-			ideology = purity_ideology
+			ideology = social_liberal_ideology
 		}
 	}
 	KRT_harsh_ajagavakar = {
@@ -18,7 +18,7 @@
 			}
 		}
 		country_leader = {
-			ideology = harmony_ideology
+			ideology = social_democrat_ideology
 		}
 	}
 	KRT_headmaster_ghanaanand_kapadia = {
@@ -30,7 +30,7 @@
 		}
 		country_leader = {
 			desc = "KRT_headmaster_ghanaanand_kapadia_desc"
-			ideology = supremacy_ideology
+			ideology = fascist_ideology
 		}
 	}
 }

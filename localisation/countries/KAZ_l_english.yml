@@ -5,7 +5,7 @@
 ###############################
 
   election_season_kaz: "Election Season"
-  election_season_kaz_desc: "It is that time of the year again, and the entire Federation is bustling with excitement. The 7th election of the Federation is upon us, and the government is up for grabs. The City-Village Party, despite a strong year in government, has tough opposition. The Cohesion Patriotic Front, a conglomerate of Supremacist, Voracist, and Masterist groups, has rallied following its defeat in Parliament twelve years ago. The Harmonist Steppe Alliance, ever the protectors of Central Asia's natural heritage, hope to replicate their success in the Northern provinces by gaining majority seats. The Islamist Divinists, holding strong in the Southern regions, are gathering much traction, so the election will definitely be close.\n\nSteppe Alliance Popularity is §H[GETharmony_kaz_value]§!\nIslamist Popularity is §H[GETdivinity_kaz_value]§!\nCohesion Popularity is §H[GETsupremacy_kaz_value]§!\nCity-Village Popularity is §H[GETundecided_kaz_value]§!"
+  election_season_kaz_desc: "It is that time of the year again, and the entire Federation is bustling with excitement. The 7th election of the Federation is upon us, and the government is up for grabs. The City-Village Party, despite a strong year in government, has tough opposition. The Cohesion Patriotic Front, a conglomerate of Supremacist, Voracist, and Masterist groups, has rallied following its defeat in Parliament twelve years ago. The Harmonist Steppe Alliance, ever the protectors of Central Asia's natural heritage, hope to replicate their success in the Northern provinces by gaining majority seats. The Islamist Divinists, holding strong in the Southern regions, are gathering much traction, so the election will definitely be close.\n\nSteppe Alliance Popularity is §H[GETsocial_democrat_kaz_value]§!\nIslamist Popularity is §H[GETconservative_kaz_value]§!\nCohesion Popularity is §H[GETfascist_kaz_value]§!\nCity-Village Popularity is §H[GETundecided_kaz_value]§!"
   last_minute_budget_reviews: "Last-Minute Budget Reviews §R5 Industrial Power§!"
   northern_garrison_report: "Northern Garrison Report §R5 Industrial Power§!"
   allocate_construction_fundings: "Allocate Construction Fundings §R5 Industrial Power§!"
@@ -25,7 +25,7 @@
  centralasia_event_option.1.a: "The Cohesionists will present the new VR technology."
  centralasia_event_option.1.b: "Let the Alliance showcase its steppe restoration module."
  centralasia_event_option.1.c: "Allow the Islamists to reenact during the festival."
- centralasia_event_option.1.d: "Deny all requests! The Sun Celebration will remain neutral."
+ centralasia_event_option.1.d: "Deny all requests! The Sun Celebration will remain eco_socialism."
 
  centralasia_event.2.t: "The Federation's Heart"
  centralasia_event.2.d: "The Federation maintains an extensive network of surveys and employs thousands of statisticians. This way, we can quickly identify demographic trends in our society. The current outlook is worrisome, to say the least. Many citizens report that they do not wish to vote in the next election. This may be for a variety of reasons, including:\n\n-Dissatisfaction with the election process\n-Safety concerns\n-Lack of time\n-Lack of knowledge/interest in politics.\n\nTo resolve this issue, the parties have proposed their own, unique ways to promote voting. While either method will no doubt be effective to some degree, the parties will not hesitate to use this power against their opponents."

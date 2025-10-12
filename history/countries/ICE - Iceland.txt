@@ -1,18 +1,18 @@
 ﻿set_politics = {
-	ruling_party = mastery
+	ruling_party = communist
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	purity = 3
-	supremacy = 2
-	divinity = 6
-	neutral = 4
-	harmony = 1
-	synergy = 8
-	mastery = 76
+	social_liberal = 3
+	fascist = 2
+	conservative = 6
+	eco_socialism = 4
+	social_democrat = 1
+	transhumanism = 8
+	communist = 76
 }
 
 oob = "ICE_2200"

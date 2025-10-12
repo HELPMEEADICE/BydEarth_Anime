@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "RSA_resettlement_authority_desc"
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 		}
 	}
 }

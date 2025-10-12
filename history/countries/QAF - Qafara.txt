@@ -5,19 +5,19 @@ oob = "QAF_2200"
 capital = 653
 
 set_politics = {
-	ruling_party = supremacy
+	ruling_party = fascist
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	supremacy = 60
-	purity = 14
-	mastery = 9
-	harmony = 3
-	neutral = 8
-	synergy = 2
-	divinity = 4
+	fascist = 60
+	social_liberal = 14
+	communist = 9
+	social_democrat = 3
+	eco_socialism = 8
+	transhumanism = 2
+	conservative = 4
 }
 
 set_technology = {

@@ -39,16 +39,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = supremacy
+	ruling_party = fascist
 }
 set_popularities = {
-	harmony = 14
-	supremacy = 29
-	purity = 18
-	neutral = 25
-    divinity = 6
-    synergy = 8
-    mastery = 0
+	social_democrat = 14
+	fascist = 29
+	social_liberal = 18
+	eco_socialism = 25
+    conservative = 6
+    transhumanism = 8
+    communist = 0
 }
 
 recruit_character = KRT_nith_shajra

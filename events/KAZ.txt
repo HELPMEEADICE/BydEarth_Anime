@@ -11,7 +11,7 @@ country_event = {
 		name = centralasia_event_option.1.a
 		hidden_effect = {
 		add_to_variable = {
-			var = supremacy_ticker
+			var = fascist_ticker
 			value = 1
 		} 
 	}
@@ -20,7 +20,7 @@ country_event = {
 		name = centralasia_event_option.1.b
 		hidden_effect = {
 		add_to_variable = {
-			var = harmony_ticker
+			var = social_democrat_ticker
 			value = 1
 		} 
 	}
@@ -29,7 +29,7 @@ country_event = {
 		name = centralasia_event_option.1.c
 		hidden_effect = {
 		add_to_variable = {
-			var = divinity_ticker
+			var = conservative_ticker
 			value = 1
 		} 
 	}
@@ -55,7 +55,7 @@ country_event = {
 		name = centralasia_event_option.2.a
 		hidden_effect = {
 		add_to_variable = {
-			var = supremacy_ticker
+			var = fascist_ticker
 			value = 1
 		} 
 	}
@@ -64,7 +64,7 @@ country_event = {
 		name = centralasia_event_option.2.b
 		hidden_effect = {
 		add_to_variable = {
-			var = harmony_ticker
+			var = social_democrat_ticker
 			value = 1
 		} 
 	}
@@ -73,7 +73,7 @@ country_event = {
 		name = centralasia_event_option.2.c
 		hidden_effect = {
 		add_to_variable = {
-			var = divinity_ticker
+			var = conservative_ticker
 			value = 1
 		} 
 	}
@@ -99,7 +99,7 @@ country_event = {
 		name = centralasia_event_option.3.a
 		hidden_effect = {
 		add_to_variable = {
-			var = supremacy_ticker
+			var = fascist_ticker
 			value = 1
 		} 
 	}
@@ -108,7 +108,7 @@ country_event = {
 		name = centralasia_event_option.3.b
 		hidden_effect = {
 		add_to_variable = {
-			var = harmony_ticker
+			var = social_democrat_ticker
 			value = 1
 		} 
 		add_to_variable = {
@@ -121,7 +121,7 @@ country_event = {
 		name = centralasia_event_option.3.c
 		hidden_effect = {
 		add_to_variable = {
-			var = divinity_ticker
+			var = conservative_ticker
 			value = 1
 		}
 	} 
@@ -138,11 +138,11 @@ country_event = {
 		name = centralasia_event_option.4.a
 		hidden_effect = {
 		add_to_variable = {
-			var = supremacy_ticker
+			var = fascist_ticker
 			value = 1
 		} 
 		add_to_variable = {
-			var = divinity_ticker
+			var = conservative_ticker
 			value = 1
 		} 
 	}
@@ -151,7 +151,7 @@ country_event = {
 		name = centralasia_event_option.4.b
 		hidden_effect = {
 		add_to_variable = {
-			var = harmony_ticker
+			var = social_democrat_ticker
 			value = 1
 		} 
 	}
@@ -177,15 +177,15 @@ country_event = {
 		name = centralasia_event_option.5.a
 		hidden_effect = {
 		add_to_variable = {
-			var = supremacy_ticker
+			var = fascist_ticker
 			value = 1
 		} 
 		add_to_variable = {
-			var = divinity_ticker
+			var = conservative_ticker
 			value = 1
 		} 
 		add_to_variable = {
-			var = harmony_ticker
+			var = social_democrat_ticker
 			value = 1
 		} 
 	}
@@ -348,8 +348,8 @@ country_event = {
 		name = centralasia_event_option.10.a
 		if = {
 			limit = {
-				check_variable = { undecided_ticker > harmony_ticker }
-				check_variable = { undecided_ticker > divinity_ticker }
+				check_variable = { undecided_ticker > social_democrat_ticker }
+				check_variable = { undecided_ticker > conservative_ticker }
 				check_variable = { undecided_ticker > supremacist_ticker }
 			}
 			country_event = {
@@ -358,9 +358,9 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { harmony_ticker > undecided_ticker }
-				check_variable = { harmony_ticker > divinity_ticker }
-				check_variable = { harmony_ticker > supremacist_ticker }
+				check_variable = { social_democrat_ticker > undecided_ticker }
+				check_variable = { social_democrat_ticker > conservative_ticker }
+				check_variable = { social_democrat_ticker > supremacist_ticker }
 			}
 			country_event = {
 				id = centralasia_event.12
@@ -368,9 +368,9 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { divinity_ticker > undecided_ticker }
-				check_variable = { divinity_ticker > harmony_ticker }
-				check_variable = { divinity_ticker > supremacist_ticker }
+				check_variable = { conservative_ticker > undecided_ticker }
+				check_variable = { conservative_ticker > social_democrat_ticker }
+				check_variable = { conservative_ticker > supremacist_ticker }
 			}
 			country_event = {
 				id = centralasia_event.13
@@ -379,8 +379,8 @@ country_event = {
 		else_if = {
 			limit = {
 				check_variable = { supremacist_ticker > undecided_ticker }
-				check_variable = { supremacist_ticker > harmony_ticker }
-				check_variable = { supremacist_ticker > divinity_ticker }
+				check_variable = { supremacist_ticker > social_democrat_ticker }
+				check_variable = { supremacist_ticker > conservative_ticker }
 			}
 			country_event = {
 				id = centralasia_event.14
@@ -398,13 +398,13 @@ country_event = {
 	option = { 
 		name = centralasia_event_option.11.a
 		add_popularity = {
-			ideology = neutral
+			ideology = eco_socialism
 			popularity = 0.1
 		}
 		#create_country_leader = {
 		#	name = "Turlan Diasov"
 		#	desc = "POLITICS_TURLAN_DIASOV_DESC"
-		#	ideology = neutral_ideology
+		#	ideology = eco_socialism_ideology
 		#	traits = {
 		#		#
 		#	}
@@ -421,16 +421,16 @@ country_event = {
 	option = { 
 		name = centralasia_event_option.12.a
 		add_popularity = {
-			ideology = harmony
+			ideology = social_democrat
 			popularity = 0.2
 		}
 		set_politics = {
-			ruling_party = harmony
+			ruling_party = social_democrat
 		}
 		#create_country_leader = {
 		#	name = "Turlan Diasov"
 		#	desc = "POLITICS_TURLAN_DIASOV_DESC"
-		#	ideology = neutral_ideology
+		#	ideology = eco_socialism_ideology
 		#	traits = {
 		#		#
 		#	}
@@ -447,16 +447,16 @@ country_event = {
 	option = { 
 		name = centralasia_event_option.13.a
 		add_popularity = {
-			ideology = divinity
+			ideology = conservative
 			popularity = 0.25
 		}
 		set_politics = {
-			ruling_party = divinity
+			ruling_party = conservative
 		}
 		#create_country_leader = {
 		#	name = "Turlan Diasov"
 		#	desc = "POLITICS_TURLAN_DIASOV_DESC"
-		#	ideology = neutral_ideology
+		#	ideology = eco_socialism_ideology
 		#	traits = {
 		#		#
 		#	}
@@ -473,16 +473,16 @@ country_event = {
 	option = { 
 		name = centralasia_event_option.14.a
 		add_popularity = {
-			ideology = supremacy
+			ideology = fascist
 			popularity = 0.2
 		}
 		set_politics = {
-			ruling_party = supremacy
+			ruling_party = fascist
 		}
 		#create_country_leader = {
 		#	name = "Turlan Diasov"
 		#	desc = "POLITICS_TURLAN_DIASOV_DESC"
-		#	ideology = neutral_ideology
+		#	ideology = eco_socialism_ideology
 		#	traits = {
 		#		#
 		#	}

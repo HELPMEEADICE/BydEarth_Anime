@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "ODS_brajinath_das_desc"
-			ideology = mastery_ideology
+			ideology = communist_ideology
 		}
 	}
 }

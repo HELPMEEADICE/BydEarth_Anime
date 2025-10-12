@@ -313,8 +313,8 @@ is_core_or_compliance_60 = {
 #				ROOT = { has_government = communism }
 #			}
 #			AND = {
-#				has_government = neutrality
-#				ROOT = { has_government = neutrality }
+#				has_government = eco_socialismity
+#				ROOT = { has_government = eco_socialismity }
 #			}
 #		}
 #	}

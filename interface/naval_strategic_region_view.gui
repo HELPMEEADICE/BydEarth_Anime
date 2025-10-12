@@ -143,7 +143,7 @@ guiTypes = {
 			maxWidth = 100
 			maxHeight = 40
 			format = left
-			tooltip = "EFFECT_OF_OUR_AIR_SUPERIORITY_ON_NAVAL_SUPREMACY"
+			tooltip = "EFFECT_OF_OUR_AIR_SUPERIORITY_ON_NAVAL_FASCIST"
 		}
 
 		instantTextboxType = {
@@ -155,7 +155,7 @@ guiTypes = {
 			maxWidth = 100
 			maxHeight = 40
 			format = left
-			tooltip = "EFFECT_OF_OUR_MINES_ON_NAVAL_SUPREMACY"
+			tooltip = "EFFECT_OF_OUR_MINES_ON_NAVAL_FASCIST"
 		}
 
 		instantTextboxType = {
@@ -179,7 +179,7 @@ guiTypes = {
 			maxWidth = 100
 			maxHeight = 40
 			format = right
-			tooltip = "EFFECT_OF_ENEMY_AIR_SUPERIORITY_ON_NAVAL_SUPREMACY"
+			tooltip = "EFFECT_OF_ENEMY_AIR_SUPERIORITY_ON_NAVAL_FASCIST"
 		}
 		
 		instantTextboxType = {
@@ -191,7 +191,7 @@ guiTypes = {
 			maxWidth = 100
 			maxHeight = 40
 			format = right
-			tooltip = "EFFECT_OF_ENEMY_MINES_ON_NAVAL_SUPREMACY"
+			tooltip = "EFFECT_OF_ENEMY_MINES_ON_NAVAL_FASCIST"
 		}
 
 		iconType = {
@@ -211,7 +211,7 @@ guiTypes = {
 			name = "progress_disabled"
 			spriteType = "GFX_strategicnavy_progress_disabled"
 			position = {x=10000 y=68}
-			tooltip = "NO_NAVAL_SUPREMACY_INFO"
+			tooltip = "NO_NAVAL_FASCIST_INFO"
 		}
 		
 		iconType = {

@@ -1,18 +1,18 @@
 set_politics = {
-	ruling_party = purity
+	ruling_party = social_liberal
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	purity = 100
-	mastery = 0
-	harmony = 0
-	neutral = 0
-	supremacy = 0
-	synergy = 0
-	divinity = 0
+	social_liberal = 100
+	communist = 0
+	social_democrat = 0
+	eco_socialism = 0
+	fascist = 0
+	transhumanism = 0
+	conservative = 0
 }
 
 recruit_character = ENG_nigel_john_hall

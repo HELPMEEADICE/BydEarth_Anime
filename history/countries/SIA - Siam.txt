@@ -41,19 +41,19 @@ set_fuel_ratio = 0.4 #High: 0.6-0.9, Med: 0.3-0.6, Low: 0-0.3
 starting_train_buffer = 0.8 #High: 1.0-1.5, Med: 0.5-1.0, Low: 0-0.5
 
 set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	mastery = 2
-	purity = 35
-	harmony = 3
-	neutral = 60
-	supremacy = 0
-	synergy = 0
-	divinity = 0
+	communist = 2
+	social_liberal = 35
+	social_democrat = 3
+	eco_socialism = 60
+	fascist = 0
+	transhumanism = 0
+	conservative = 0
 }
 
 

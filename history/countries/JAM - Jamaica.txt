@@ -3,19 +3,19 @@
 capital = 166
 
 set_politics = {
-	ruling_party = mastery
+	ruling_party = communist
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	mastery = 60
-	purity = 15
-	harmony = 14
-	neutral = 9
-	supremacy = 2
-	synergy = 0
-	divinity = 0
+	communist = 60
+	social_liberal = 15
+	social_democrat = 14
+	eco_socialism = 9
+	fascist = 2
+	transhumanism = 0
+	conservative = 0
 }
 
 

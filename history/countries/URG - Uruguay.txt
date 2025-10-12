@@ -43,19 +43,19 @@ starting_train_buffer = 1.2 #High: 1.0-1.5, Med: 0.5-1.0, Low: 0-0.5
 set_convoys = 200
 
 set_politics = {
-	ruling_party = synergy
+	ruling_party = transhumanism
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	synergy = 60
-	purity = 36
-	mastery = 3
-	harmony = 1
-	neutral = 0
-	supremacy = 0
-	divinity = 0
+	transhumanism = 60
+	social_liberal = 36
+	communist = 3
+	social_democrat = 1
+	eco_socialism = 0
+	fascist = 0
+	conservative = 0
 }
 
 

@@ -4,14 +4,15 @@ state = {
 	manpower = 1504995
 	state_category = state_1
 	history = {
-		owner = JAP
-		add_core_of = JAP
+		owner = BGD
+		add_core_of = BGD
 		victory_points = { #Okinawa
 			12888 3
 		}
 		buildings = {
 			infrastructure = 3
 		}
+		add_extra_state_shared_building_slots = 40
 	}
 	provinces = {12888 12952 12962}
 }

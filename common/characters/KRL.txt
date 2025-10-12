@@ -7,7 +7,7 @@
 			}
 		}
 		country_leader = {
-			ideology = purity_ideology
+			ideology = social_liberal_ideology
 		}
 	}
 	KRL_grand_council = {
@@ -19,7 +19,7 @@
 		}
 		country_leader = {
 			desc = "KRL_grand_council_desc"
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 		}
 	}
 	KRL_third_sister = {
@@ -30,7 +30,7 @@
 			}
 		}
 		country_leader = {
-			ideology = divinity_ideology
+			ideology = conservative_ideology
 		}
 	}
 	KRL_first_sister = {
@@ -41,7 +41,7 @@
 			}
 		}
 		country_leader = {
-			ideology = synergy_ideology
+			ideology = transhumanism_ideology
 		}
 	}
 }

@@ -96,7 +96,7 @@ country_event = {	#meeting in vuktyl
 			add_ideas = autocratic_authority
 			add_ideas = war_economy
 			set_party_name = { 
-				ideology = synergy
+				ideology = transhumanism
 				long_name = URA_NEW_PARTY_NAME_LONG
 				name = URA_NEW_PARTY_NAME_SHORT
 			}

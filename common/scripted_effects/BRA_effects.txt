@@ -36,7 +36,7 @@ BRA_set_borders = {
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Northern Command"
-			ideology = purity_ideology
+			ideology = social_liberal_ideology
 			picture = GFX_
 		}
 	}
@@ -64,7 +64,7 @@ BRA_set_borders = {
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Eastern Command"
-			ideology = purity_ideology
+			ideology = social_liberal_ideology
 			picture = GFX_
 		}
 	}
@@ -93,7 +93,7 @@ BRA_set_borders = {
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Southern Command"
-			ideology = purity_ideology
+			ideology = social_liberal_ideology
 			picture = GFX_
 		}
 	}

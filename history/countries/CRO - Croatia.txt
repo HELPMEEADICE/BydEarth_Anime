@@ -8,19 +8,19 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = harmony
+	ruling_party = social_democrat
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutral = 8
-	purity = 22
-	mastery = 4
-	harmony = 60
-	supremacy = 4
-	synergy = 1
-	divinity = 1
+	eco_socialism = 8
+	social_liberal = 22
+	communist = 4
+	social_democrat = 60
+	fascist = 4
+	transhumanism = 1
+	conservative = 1
 }
 
 set_technology = {

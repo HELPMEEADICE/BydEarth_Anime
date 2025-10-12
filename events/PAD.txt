@@ -10,7 +10,7 @@ country_event = {
 	option = { 
 		name = padania_event_option.1.a
 		add_popularity = {
-			ideology = divinity
+			ideology = conservative
 			popularity = 0.05
 		}
 	}
@@ -25,7 +25,7 @@ country_event = { #on ITA war declared
 	option = { 
 		name = padania_event_option.2.a
 		add_popularity = {
-			ideology = divinity
+			ideology = conservative
 			popularity = 0.1
 		}
 	}

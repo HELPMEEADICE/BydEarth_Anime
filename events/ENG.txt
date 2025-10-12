@@ -205,7 +205,7 @@ news_event = {
 			FRA = {
 				if = {
 					limit = {
-						has_government = purity
+						has_government = social_liberal
 					}
 					country_event = {
 						id = franco_event.7
@@ -397,11 +397,11 @@ country_event = { #jail for HNG
 		name = england_event_option.6.a
 		add_stability = -0.05
 		add_popularity = {
-			ideology = harmony
+			ideology = social_democrat
 			popularity = -0.05
 		}
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = 0.05
 		}
 		country_event = {
@@ -416,11 +416,11 @@ country_event = { #jail for HNG
 		name = england_event_option.6.b
 		add_stability = -0.02
 		add_popularity = {
-			ideology = harmony
+			ideology = social_democrat
 			popularity = -0.02
 		}
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = 0.02
 		}
 		country_event = {
@@ -435,11 +435,11 @@ country_event = { #jail for HNG
 		name = england_event_option.6.c
 		add_political_power = 50
 		add_popularity = {
-			ideology = harmony
+			ideology = social_democrat
 			popularity = 0.03
 		}
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = -0.03
 		}
 		country_event = {
@@ -462,11 +462,11 @@ country_event = { #jail for JNG
 		name = england_event_option.7.a
 		add_stability = -0.05
 		add_popularity = {
-			ideology = purity
+			ideology = social_liberal
 			popularity = -0.05
 		}
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = 0.05
 		}
 		country_event = {
@@ -481,11 +481,11 @@ country_event = { #jail for JNG
 		name = england_event_option.7.b
 		add_stability = -0.02
 		add_popularity = {
-			ideology = purity
+			ideology = social_liberal
 			popularity = -0.02
 		}
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = 0.02
 		}
 		country_event = {
@@ -500,11 +500,11 @@ country_event = { #jail for JNG
 		name = england_event_option.7.c
 		add_political_power = 50
 		add_popularity = {
-			ideology = purity
+			ideology = social_liberal
 			popularity = 0.03
 		}
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = -0.03
 		}
 		country_event = {
@@ -527,11 +527,11 @@ country_event = { #jail for CNG
 		name = england_event_option.8.a
 		add_stability = -0.05
 		add_popularity = {
-			ideology = neutral
+			ideology = eco_socialism
 			popularity = -0.05
 		}
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = 0.05
 		}
 		ai_chance = {
@@ -542,11 +542,11 @@ country_event = { #jail for CNG
 		name = england_event_option.8.b
 		add_stability = -0.02
 		add_popularity = {
-			ideology = neutral
+			ideology = eco_socialism
 			popularity = -0.02
 		}
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = 0.02
 		}
 		ai_chance = {
@@ -557,11 +557,11 @@ country_event = { #jail for CNG
 		name = england_event_option.8.c
 		add_political_power = 50
 		add_popularity = {
-			ideology = neutral
+			ideology = eco_socialism
 			popularity = 0.03
 		}
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = -0.03
 		}
 		ai_chance = {
@@ -644,7 +644,7 @@ country_event = { #Purity Victory
 				if = {
 					limit = {
 						FRA = {
-							has_government = purity
+							has_government = social_liberal
 						}
 					}
 					FRA = {
@@ -747,11 +747,11 @@ country_event = { #jail for HNG
 		name = england_event_option.15.a
 		add_stability = -0.05
 		add_popularity = {
-			ideology = harmony
+			ideology = social_democrat
 			popularity = -0.05
 		}
 		add_popularity = {
-			ideology = purity
+			ideology = social_liberal
 			popularity = 0.05
 		}
 		country_event = {
@@ -766,11 +766,11 @@ country_event = { #jail for HNG
 		name = england_event_option.15.b
 		add_stability = -0.02
 		add_popularity = {
-			ideology = harmony
+			ideology = social_democrat
 			popularity = -0.02
 		}
 		add_popularity = {
-			ideology = purity
+			ideology = social_liberal
 			popularity = 0.02
 		}
 		country_event = {
@@ -785,11 +785,11 @@ country_event = { #jail for HNG
 		name = england_event_option.15.c
 		add_political_power = 50
 		add_popularity = {
-			ideology = harmony
+			ideology = social_democrat
 			popularity = 0.03
 		}
 		add_popularity = {
-			ideology = purity
+			ideology = social_liberal
 			popularity = -0.03
 		}
 		country_event = {
@@ -812,11 +812,11 @@ country_event = { #jail for ENG
 		name = england_event_option.16.a
 		add_stability = -0.05
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = -0.05
 		}
 		add_popularity = {
-			ideology = purity
+			ideology = social_liberal
 			popularity = 0.05
 		}
 		country_event = {
@@ -831,11 +831,11 @@ country_event = { #jail for ENG
 		name = england_event_option.16.b
 		add_stability = -0.02
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = -0.02
 		}
 		add_popularity = {
-			ideology = purity
+			ideology = social_liberal
 			popularity = 0.02
 		}
 		country_event = {
@@ -850,11 +850,11 @@ country_event = { #jail for ENG
 		name = england_event_option.16.c
 		add_political_power = 50
 		add_popularity = {
-			ideology = mastery
+			ideology = communist
 			popularity = 0.03
 		}
 		add_popularity = {
-			ideology = purity
+			ideology = social_liberal
 			popularity = -0.03
 		}
 		country_event = {
@@ -925,7 +925,7 @@ country_event = { #JNG without FRA
 		has_global_flag = ECW_end
 		tag = JNG
 		FRA = {
-			has_government = mastery
+			has_government = communist
 		}
 	}
 	

@@ -353,3 +353,7 @@ ONU5 = {
 	color = rgb { 50 158 229 }
 	color_ui = rgb { 50 158 229 }
 }
+NPR_PR = {
+	color = rgb { 232 88 119 }
+	color_ui = rgb { 232 88 119 }
+}

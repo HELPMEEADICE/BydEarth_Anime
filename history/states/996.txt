@@ -4,8 +4,8 @@ state = {
 	manpower = 12498154
 	state_category = state_7
 	history = {
-		owner = JAP
-		add_core_of = JAP
+		owner = BGD
+		add_core_of = BGD
 		victory_points = { #Kasai
 			13151 13
 		}
@@ -20,6 +20,7 @@ state = {
             military_complex = 2
             civilian_complex = 2
         }
+		add_extra_state_shared_building_slots = 40
 	}
 	provinces = {13151 13155 13160 13169 13171 13178 13185 13190 13194 13199 13200 13208 13211}
 }

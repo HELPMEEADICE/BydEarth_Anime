@@ -3,19 +3,19 @@
 capital = 528
 
 set_politics = {
-	ruling_party = divinity
+	ruling_party = conservative
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	divinity = 60
-	purity = 27
-	mastery = 9
-	harmony = 4
-	neutral = 0
-	supremacy = 0
-	synergy = 0
+	conservative = 60
+	social_liberal = 27
+	communist = 9
+	social_democrat = 4
+	eco_socialism = 0
+	fascist = 0
+	transhumanism = 0
 }
 
 set_technology = {

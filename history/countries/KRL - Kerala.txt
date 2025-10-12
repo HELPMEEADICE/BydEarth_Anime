@@ -38,16 +38,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 }
 set_popularities = {
-	harmony = 0
-	supremacy = 0
-	purity = 20
-	neutral = 40
-    divinity = 20
-    synergy = 20
-    mastery = 0
+	social_democrat = 0
+	fascist = 0
+	social_liberal = 20
+	eco_socialism = 40
+    conservative = 20
+    transhumanism = 20
+    communist = 0
 }
 
 recruit_character = KRL_second_sister

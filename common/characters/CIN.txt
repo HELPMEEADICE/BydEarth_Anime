@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "CIN_great_lakes_committee_desc"
-			ideology = neutral_ideology
+			ideology = eco_socialism_ideology
 		}
 	}
 }

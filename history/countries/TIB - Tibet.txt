@@ -1,5 +1,5 @@
 ﻿set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -8,10 +8,10 @@
 set_cosmetic_tag = TIB_SCO
 
 set_popularities = {
-	harmony = 5
-	purity = 5
-	supremacy = 5
-	neutral = 85
+	social_democrat = 5
+	social_liberal = 5
+	fascist = 5
+	eco_socialism = 85
 }
 
 oob = "AAA_filler"

@@ -7,7 +7,8 @@ state = {
 		electronics = 56
 	}
 	history = {
-		owner = SIB
+		owner = NPR
+		add_core_of = NPR
 		add_core_of = SIB
 		add_core_of = SOV
 		victory_points = { #Anadyr

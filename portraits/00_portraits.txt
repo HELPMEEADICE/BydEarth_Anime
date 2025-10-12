@@ -34,7 +34,7 @@ default = {
 	}
 
 	political = {
-		purity = {
+		social_liberal = {
 			male = {
 				"GFX_"
 			}
@@ -42,7 +42,7 @@ default = {
 				"GFX_"
 			}
 		}
-		harmony = {
+		social_democrat = {
 			male = {
 				"GFX_"
 			}
@@ -50,7 +50,7 @@ default = {
 				"GFX_"
 			}
 		}
-		supremacy = {
+		fascist = {
 			male = {
 				"GFX_"
 			}
@@ -58,7 +58,7 @@ default = {
 				"GFX_"
 			}
 		}
-		neutral = {
+		eco_socialism = {
 			male = {
 				"GFX_"
 			}
@@ -66,7 +66,7 @@ default = {
 				"GFX_"
 			}
 		}
-		synergy = {
+		transhumanism = {
 			male = {
 				"GFX_"
 			}
@@ -74,7 +74,7 @@ default = {
 				"GFX_"
 			}
 		}
-		mastery = {
+		communist = {
 			male = {
 				"GFX_"
 			}
@@ -82,7 +82,7 @@ default = {
 				"GFX_"
 			}
 		}
-		divinity = {
+		conservative = {
 			male = {
 				"GFX_"
 			}

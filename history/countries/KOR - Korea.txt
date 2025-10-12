@@ -1,22 +1,23 @@
 ﻿set_politics = {
-	ruling_party = neutral
+	ruling_party = communist
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-set_cosmetic_tag = KOR_SCO
 
 set_popularities = {
-	harmony = 5
-	purity = 5
-	supremacy = 5
-	neutral = 85
+	social_democrat = 15
+	social_liberal = 0
+	fascist = 0
+	communist = 85
 }
 
 oob = "KOR_2200"
 
 capital = 982
+
+recruit_character = KOR_Shiroko
 
 set_stability = 0.59
 set_war_support = 0.21

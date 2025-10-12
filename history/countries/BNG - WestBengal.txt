@@ -37,16 +37,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutral
+	ruling_party = eco_socialism
 }
 set_popularities = {
-	harmony = 0
-	supremacy = 0
-	purity = 0
-	neutral = 20
-    divinity = 0
-    synergy = 80
-    mastery = 0
+	social_democrat = 0
+	fascist = 0
+	social_liberal = 0
+	eco_socialism = 20
+    conservative = 0
+    transhumanism = 80
+    communist = 0
 }
 
 recruit_character = BNG_bharat_delegation

@@ -8,7 +8,7 @@
 		}
 		country_leader = {
 			desc = "POL_dyzek_bazinsz_desc"
-			ideology = divinity_ideology
+			ideology = conservative_ideology
 		}
 	}
 	POL_wiktor_smolak = {
@@ -19,7 +19,7 @@
 			}
 		}
 		country_leader = {
-			ideology = purity_ideology
+			ideology = social_liberal_ideology
 			traits = { murderous_comedian }
 		}
 	}

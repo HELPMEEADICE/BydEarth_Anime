@@ -5,19 +5,19 @@ capital = 992
 set_cosmetic_tag = AMU_SCO
 
 set_politics = {
-	ruling_party = harmony
+	ruling_party = social_democrat
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	harmony = 60
-	purity = 11
-	mastery = 3
-	neutral = 3
-	supremacy = 8
-	synergy = 15
-	divinity = 0
+	social_democrat = 60
+	social_liberal = 11
+	communist = 3
+	eco_socialism = 3
+	fascist = 8
+	transhumanism = 15
+	conservative = 0
 }
 
 set_stability = 0.54

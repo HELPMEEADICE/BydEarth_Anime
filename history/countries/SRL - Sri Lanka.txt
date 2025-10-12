@@ -33,19 +33,19 @@ set_fuel_ratio = 0.2 #High: 0.6-0.9, Med: 0.3-0.6, Low: 0-0.3
 starting_train_buffer = 0.1 #High: 1.0-1.5, Med: 0.5-1.0, Low: 0-0.5
 
 set_politics = {
-	ruling_party = synergy
+	ruling_party = transhumanism
 	last_election = "2200.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	synergy = 60
-	purity = 25
-	mastery = 1
-	harmony = 4
-	neutral = 7
-	supremacy = 2
-	divinity = 1
+	transhumanism = 60
+	social_liberal = 25
+	communist = 1
+	social_democrat = 4
+	eco_socialism = 7
+	fascist = 2
+	conservative = 1
 }
 
 

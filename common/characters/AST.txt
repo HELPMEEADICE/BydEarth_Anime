@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "AST_rhonda_campbell_desc"
-			ideology = mastery_ideology
+			ideology = communist_ideology
 			traits = { }
 		}
 	}
@@ -21,7 +21,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "AST_ian_forscyth_desc"
-			ideology = purity_ideology
+			ideology = social_liberal_ideology
 			traits = { }
 		}
 	}
@@ -34,7 +34,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "AST_aunty_sarah_desc"
-			ideology = divinity_ideology
+			ideology = conservative_ideology
 			traits = { }
 		}
 	}

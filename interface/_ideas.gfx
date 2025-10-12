@@ -708,21 +708,21 @@ spriteTypes = {
         legacy_lazy_load = no
     }
 
-    #JAPAN
+    #BGDAN
     spriteType = {
-        name = "GFX_idea_JAP_street_samurai"
+        name = "GFX_idea_BGD_street_samurai"
         texturefile = "gfx/interface/ideas/army_generic_idea.dds"
     }
     spriteType = {
-        name = "GFX_idea_JAP_hikaemena_dairiten"
+        name = "GFX_idea_BGD_hikaemena_dairiten"
         texturefile = "gfx/interface/ideas/economic_generic_idea.dds"
     }
     spriteType = {
-        name = "GFX_idea_JAP_dreams_come_to_life"
+        name = "GFX_idea_BGD_dreams_come_to_life"
         texturefile = "gfx/interface/ideas/yeseconomic_generic_idea.dds"
     }
     spriteType = {
-        name = "GFX_idea_JAP_emperor_raijingutaido"
+        name = "GFX_idea_BGD_emperor_raijingutaido"
         texturefile = "gfx/interface/ideas/resistance_generic_idea.dds"
     }
 
@@ -1319,10 +1319,10 @@ spriteTypes = {
         legacy_lazy_load = no
     }
     spriteType = {
-        name = "GFX_idea_neutral_ecobalance"
-        texturefile = "gfx/interface/ideas/neutral_ecobalance.dds"
+        name = "GFX_idea_eco_socialism_ecobalance"
+        texturefile = "gfx/interface/ideas/eco_socialism_ecobalance.dds"
         animation = {
-			animationmaskfile = "gfx/interface/ideas/neutral_ecobalance.dds"
+			animationmaskfile = "gfx/interface/ideas/eco_socialism_ecobalance.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = yes			# yes or no ;)
@@ -1335,7 +1335,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/ideas/neutral_ecobalance.dds"
+			animationmaskfile = "gfx/interface/ideas/eco_socialism_ecobalance.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = yes			# yes or no ;)

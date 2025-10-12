@@ -8,17 +8,17 @@ set_stability = 0.5
 set_war_support = 0.5
 
 set_politics = {
-	ruling_party = purity
+	ruling_party = social_liberal
 }
 
 set_popularities = {
-	harmony = 0
-	supremacy = 83
-	purity = 4
-	neutral = 0
-    divinity = 0
-    synergy = 0
-    mastery = 13
+	social_democrat = 0
+	fascist = 83
+	social_liberal = 4
+	eco_socialism = 0
+    conservative = 0
+    transhumanism = 0
+    communist = 13
 }
 
 add_ideas = {

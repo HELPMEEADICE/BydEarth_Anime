@@ -36,7 +36,7 @@ scripted_gui = {
                     subtract_from_variable = { industrial_power = 25 }
                 }
 			}
-            reduce_ecobalance_button_harmony_click = {
+            reduce_ecobalance_button_social_democrat_click = {
                 THIS = {
                     decrease_ecobalance = yes
                     set_state_flag = {
@@ -49,7 +49,7 @@ scripted_gui = {
                     subtract_from_variable = { industrial_power = 15 }
                 }
             }
-            reduce_ecobalance_button_mastery_click = {
+            reduce_ecobalance_button_communist_click = {
                 THIS = {
                     engineered_ecobalance = yes
                     set_state_flag = {
@@ -150,17 +150,17 @@ scripted_gui = {
                     }
                 }
             }
-            reduce_ecobalance_button_harmony_visible = {
+            reduce_ecobalance_button_social_democrat_visible = {
                 ROOT = {
                     has_country_flag = has_mind_tier3
                 }
             }
-            reduce_ecobalance_load_harmony_visible = {
+            reduce_ecobalance_load_social_democrat_visible = {
                 ROOT = {
                     has_country_flag = has_mind_tier3
                 }
             }
-            reduce_ecobalance_load_harmony_click_enabled = {
+            reduce_ecobalance_load_social_democrat_click_enabled = {
                 THIS = {
                     OR = {
                         is_owned_by = ROOT
@@ -204,7 +204,7 @@ scripted_gui = {
                     }
                 }
             }
-            reduce_ecobalance_button_harmony_click_enabled = {
+            reduce_ecobalance_button_social_democrat_click_enabled = {
                 THIS = {
                     OR = {
                         is_owned_by = ROOT
@@ -248,17 +248,17 @@ scripted_gui = {
                     }
                 }
             }
-            reduce_ecobalance_button_mastery_visible = {
+            reduce_ecobalance_button_communist_visible = {
                 ROOT = { 
                     has_country_flag = has_body_tier3
                 }
             }
-            reduce_ecobalance_load_mastery_visible = {
+            reduce_ecobalance_load_communist_visible = {
                 ROOT = { 
                     has_country_flag = has_body_tier3
                 }
             }
-            reduce_ecobalance_load_mastery_click_enabled = {
+            reduce_ecobalance_load_communist_click_enabled = {
                 THIS = {
                     OR = {
                         is_owned_by = ROOT
@@ -282,7 +282,7 @@ scripted_gui = {
                     }
                 }
             }
-            reduce_ecobalance_button_mastery_click_enabled = {
+            reduce_ecobalance_button_communist_click_enabled = {
                 THIS = {
                     OR = {
                         is_owned_by = ROOT
@@ -378,14 +378,14 @@ scripted_gui = {
                     modifier = {
                         OWNER = {
                             NOT = {
-                                has_government = harmony
+                                has_government = social_democrat
                             }
                         }
                         add = -90
 			        }
                 }
             }
-            reduce_ecobalance_button_harmony_click = {
+            reduce_ecobalance_button_social_democrat_click = {
                 ai_will_do = {
                     factor = 1
                     modifier = {
@@ -404,7 +404,7 @@ scripted_gui = {
 			        }
                 }
             }
-            reduce_ecobalance_button_mastery_click = {
+            reduce_ecobalance_button_communist_click = {
                 ai_will_do = {
                     factor = 0
                     modifier = {
