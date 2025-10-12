@@ -1,0 +1,50 @@
+ideas = {
+
+	country = {
+		
+		ITA_padania_moment = {
+
+			cancel = {
+				OR = {
+					NOT = {
+						country_exists = PAD
+					}
+					is_puppet = yes
+				}
+			}
+			
+			modifier = {
+				war_support_factor = 0.15
+			}
+		}
+		ITA_rich_exodus = {
+
+			cancel = {
+				OR = {
+					NOT = {
+						country_exists = PAD
+					}
+					is_puppet = yes
+				}
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		ITA_partito_sociale = {
+
+			cancel = {
+				OR = {
+					has_capitulated = yes
+					is_puppet = yes
+				}
+			}
+			
+			modifier = {
+
+			}
+		}		
+		
+	}
+}

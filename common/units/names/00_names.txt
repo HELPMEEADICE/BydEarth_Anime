@@ -1,0 +1,77 @@
+﻿# Names are based on equipment types (picking equipment with highest amount from the pool)
+# Generic are used for countries that are not scripted in.
+generic = {
+	infantry = {
+		prefix = ""
+		generic = { "Infantry Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	shock_troops = {
+		prefix = ""
+		generic = { "Shock Troops" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	augment_unit = {
+		prefix = ""
+		generic = { "Augmented Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	apc = {
+		prefix = ""
+		generic = { "APC" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	artillery_brigade = {
+		prefix = ""
+		generic = { "Artillery Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	anti_tank_brigade = {
+		prefix = ""
+		generic = { "Anti-Tank Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	rocket_artillery_brigade = {
+		prefix = ""
+		generic = { "Rocket Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	MBT = {
+		prefix = "MBT"
+		generic = { "" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	rover = {
+		prefix = ""
+		generic = { "Rover" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	walker = {
+		prefix = ""
+		generic = { "Walker" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+
+	# Operative code names
+	codename = {
+		prefix = ""
+		generic = { "Agent" }
+		generic_pattern = "OPERATIVE_GENERIC_CODENAME_PATTERN"
+		unique = { "Agent 007" }
+	}
+}
+
+# Country specific names.
+# Prefix is always appended at the begin of each generated name.
+# Unique - only one unit can carry it at a time.
+# Generic - are used when all unique are used. Those have numbers appended at the end.

@@ -1,0 +1,304 @@
+GER_decisions = {
+	YUG_civil_war = {
+		icon = GFX_decision_war
+		available = {
+			YUG = {
+				has_war = no
+			}
+		}
+		activation = {
+			YUG = {
+				has_war_with = ROM
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 124
+		timeout_effect = {
+			YUG = {
+				white_peace = ROM
+				every_core_state = {
+					limit = {
+						NOT = {
+							OR = {
+								is_core_of = BUL
+								is_core_of = ALB
+							}
+						}
+					}
+					add_core_of = CRO
+				}
+				remove_ideas = YUG_the_communalists
+			}
+			CRO = {
+				transfer_state = 377
+				transfer_state = 375
+				transfer_state = 380
+				transfer_state = 393
+				transfer_state = 400
+				transfer_state = 417
+				transfer_state = 419
+				add_ideas = GER_german_aligned
+				add_ideas = EU_treaty_of_bern
+				YUG = {
+					transfer_units_fraction= {
+						target = PREV
+						size = 0.5
+						stockpile_ratio = 0.5
+						army_ratio = 0.5
+						air_ratio = 0.5
+					}
+				}
+				declare_war_on = {
+					target = YUG
+					type = annex_puppet_wargoal
+				}
+			}
+			GER = {
+				add_to_faction = CRO
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	NOR_SWE_war = {
+		icon = GFX_decision_war
+		available = {
+			hidden_trigger = {
+				has_global_flag = scandinavian_conflict_started
+			}
+		}
+		activation = {
+			#
+		}
+		fire_only_once = yes
+		days_mission_timeout = 570
+		timeout_effect = {
+			NOR = {
+				country_event = norway_event.1
+			}
+			SWE = {
+				country_event = sweden_event.1
+			}
+			hidden_effect = {
+				GER = {
+					country_event = {
+						id = german_event.3
+						days = 6
+					}
+				}
+				SCO = {
+					country_event = {
+						id = scotland_event.2
+						days = 6
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	POL_LAT_war = {
+		icon = GFX_decision_war
+		available = {
+			hidden_trigger = {
+				has_global_flag = LAT_ahti_bad_news
+			}
+		}
+		activation = {
+			#
+		}
+		fire_only_once = yes
+		days_mission_timeout = 203
+		timeout_effect = {
+			set_global_flag = LAT_ahti_bad_news
+			LAT = {
+				country_event = baltic_event.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#########################################
+
+	GER_invite_green_soil_enjoyers = {
+		icon = GFX_decision_integr
+		fire_only_once = no
+		state_target = yes
+		on_map_mode = map_only
+		cost = 100
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OWNER = {
+					has_idea = GER_german_aligned
+					is_in_faction = no
+					NOT = {
+						OR = {
+							has_war_with = ROOT
+							ROOT = {
+								any_allied_country = {
+									has_war_with = FROM.OWNER
+								}
+							}					
+						}
+					}
+				}
+			}
+		}
+		days_remove = 100
+		remove_effect = {
+			custom_effect_tooltip = add_infamy_low
+			add_to_variable = {
+				var = global.integrinfamy_var
+				value = 1
+			}
+			add_to_faction = FROM.OWNER
+			FROM.OWNER = {
+				if = {
+					limit = {
+						tag = UKR
+					}
+					remove_ideas = UKR_all_slavs
+				}
+				add_to_array = {
+					array = global.just_joined_integr
+					value = THIS.id
+					index = 0
+				}
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						capital_scope = {
+							is_on_continent = europe
+						}
+					}
+					country_event = german_event.8
+				}
+			}			
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	GER_influence_politics = {
+		icon = GFX_decision_integr
+		fire_only_once = no
+		state_target = yes
+		on_map_mode = map_only
+		cost = 100
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OWNER = {
+					has_idea = GER_eurasian_aligned
+					is_in_faction = no
+					NOT = {
+						OR = {
+							has_war_with = ROOT
+							ROOT = {
+								any_allied_country = {
+									has_war_with = FROM.OWNER
+								}
+							}					
+						}
+					}
+				}
+			}
+		}
+		days_remove = 80
+		remove_effect = {
+			FROM.OWNER = {
+				swap_ideas = {
+					remove_idea = GER_eurasian_aligned
+					add_idea = GER_german_eurasian_aligned
+				}
+				if = {
+					limit = {
+						tag = UKR
+					}
+					remove_ideas = UKR_eurasian_dominance
+				}
+				add_popularity = {
+					ideology = harmony
+					popularity = 0.05
+				}
+			}			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	GER_industrial_investment = {
+		icon = GFX_decision_integr
+		fire_only_once = no
+		state_target = yes
+		on_map_mode = map_only
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = industrial_power
+					value = 100
+					compare = greater_than_or_equals
+				}
+				tooltip = state_decisions_cost_industrial_100
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OWNER = {
+					has_idea = GER_german_eurasian_aligned
+					is_in_faction = no
+					NOT = {
+						OR = {
+							has_war_with = ROOT
+							ROOT = {
+								any_allied_country = {
+									has_war_with = FROM.OWNER
+								}
+							}					
+						}
+					}
+				}
+			}
+		}
+		days_remove = 80
+		complete_effect = {
+			subtract_from_variable = {
+				industrial_power = 100
+			}
+		}
+		remove_effect = {
+			FROM.OWNER = {
+				swap_ideas = {
+					remove_idea = GER_german_eurasian_aligned
+					add_idea = GER_german_aligned
+				}
+				if = {
+					limit = {
+						tag = UKR
+					}
+					remove_ideas = UKR_country_life_support
+				}
+				add_popularity = {
+					ideology = harmony
+					popularity = 0.05
+				}
+				add_timed_idea = {
+					idea = GER_green_soil_plan
+					days = 200
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}

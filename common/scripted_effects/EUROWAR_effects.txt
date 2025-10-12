@@ -1,0 +1,222 @@
+check_europe_war_progress = {
+	if = {
+		limit = {
+			check_variable = {
+				var = global.europewarprogress_var
+				value = 100
+				compare = greater_than_or_equals
+			}
+		}
+		every_country = {
+			limit = {
+				has_idea = EU_treaty_of_bern
+			}
+			remove_ideas = EU_treaty_of_bern
+		}
+		###
+		if = {
+			limit = {
+				FRA = {
+					has_war_with = TUN
+				}
+			}
+			FRA = {
+				white_peace = TUN
+			}
+		}
+		###
+		FRA = {
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = SCO
+					}
+				}
+				declare_war_on = {
+					target = SCO
+					type = annex_puppet_wargoal
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = GER
+					}
+				}
+				declare_war_on = {
+					target = GER
+					type = annex_puppet_wargoal
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = SOV
+					}
+				}
+				declare_war_on = {
+					target = SOV
+					type = annex_puppet_wargoal
+				}
+			}
+		}
+		SCO = {
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = FRA
+					}
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_puppet_wargoal
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = GER
+					}
+				}
+				declare_war_on = {
+					target = GER
+					type = annex_puppet_wargoal
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = SOV
+					}
+				}
+				declare_war_on = {
+					target = SOV
+					type = annex_puppet_wargoal
+				}
+			}
+		}
+		GER = {
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = SCO
+					}
+				}
+				declare_war_on = {
+					target = SCO
+					type = annex_puppet_wargoal
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = FRA
+					}
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_puppet_wargoal
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = SOV
+					}
+				}
+				declare_war_on = {
+					target = SOV
+					type = annex_puppet_wargoal
+				}
+			}
+		}
+		SOV = {
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = SCO
+					}
+				}
+				declare_war_on = {
+					target = SCO
+					type = annex_puppet_wargoal
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = GER
+					}
+				}
+				declare_war_on = {
+					target = GER
+					type = annex_puppet_wargoal
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = FRA
+					}
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_puppet_wargoal
+				}
+			}
+		}
+		set_global_flag = euro_war_happened
+		news_event = news_event.17
+	}
+}
+
+check_infamy = {
+	if = {
+		limit = {
+			AND = {
+				check_variable = { global.nsainfamy_var > 9.9 }
+				NOT = {
+					has_global_flag = nsa_infamous
+				}
+			}
+		}
+		set_global_flag = nsa_infamous
+		add_to_variable = { global.ewpgain_var = 0.5 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { global.francoinfamy_var > 9.9 }
+				NOT = {
+					has_global_flag = franco_infamous
+				}
+			}
+		}
+		set_global_flag = franco_infamous
+		add_to_variable = { global.ewpgain_var = 0.5 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { global.integrinfamy_var > 9.9 }
+				NOT = {
+					has_global_flag = integr_infamous
+				}
+			}
+		}
+		set_global_flag = integr_infamous
+		add_to_variable = { global.ewpgain_var = 0.5 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { global.slavicinfamy_var > 9.9 }
+				NOT = {
+					has_global_flag = slavic_infamous
+				}
+			}
+		}
+		set_global_flag = slavic_infamous
+		add_to_variable = { global.ewpgain_var = 0.5 }
+	}
+}

@@ -1,0 +1,27 @@
+state={
+	id=266
+	name="STATE_NAME_0266"
+	resources={
+		superalloys = 80
+		electronics = 65
+	}
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 4
+			military_complex = 1
+		}
+		victory_points = {
+			3914 20 
+		}
+		victory_points = {
+			3918 10 
+		}
+	}
+	provinces={
+		3771 3841 3863 3871 3878 3879 3880 3889 3892 3914 3918 
+	}
+	manpower=9102339
+	state_category=state_10
+}

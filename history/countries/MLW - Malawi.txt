@@ -1,0 +1,46 @@
+﻿
+
+oob = "MLW_2200"
+
+capital = 535
+
+set_politics = {
+	ruling_party = mastery
+	last_election = "2200.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	mastery = 60
+	purity = 39
+	harmony = 1
+	neutral = 0
+	supremacy = 0
+	synergy = 0
+	divinity = 0
+}
+
+set_technology = {
+    heavy_weapons = 1
+	mbt_tech = 1
+    
+    automation = 1
+    sresearch_lines = 1
+    light_weapons = 1
+
+    apc_tech = 1
+    be_tech_support = 1
+    
+    
+    be_logistics_tech = 1
+    
+    be_prototype_maglev = 1
+    
+    advanced_infantry_weapons = 1
+    crawler = 1
+	rover_tech = 1
+}
+
+
+set_stability = 0.35
+set_war_support = 0.22

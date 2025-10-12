@@ -1,0 +1,40 @@
+ideas = {
+
+	country = {
+		PER_humiliation = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+                war_support_factor = 0.1
+				#conscription = 0.0025
+				production_speed_military_complex_factor = 0.1
+			}
+		}
+		PER_squeezing_blood_from_asteroids = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+                war_support_factor = 0.1
+				production_speed_spaceship_complex_factor = 0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+		PER_winning_minds_not_hearts = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = -0.1
+			}
+		}
+	}
+}

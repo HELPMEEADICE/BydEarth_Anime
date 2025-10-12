@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		ANG_mpla_resurgent = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				recruitable_population_factor = -0.05
+				stability_factor = -0.2
+				surrender_limit = -0.2
+			}
+		}
+	}
+}

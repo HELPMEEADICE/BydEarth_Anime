@@ -1,0 +1,72 @@
+ideas = {
+	country = {
+		PAD_fi_tension = {
+
+			cancel = {
+				OR = {
+					has_war_with = FRA
+					is_puppet = yes
+				}
+			}
+	
+			modifier = {
+
+			}
+		}
+		PAD_fi_tension_good = {
+			name = PAD_fi_tension
+
+			cancel = {
+				OR = {
+					has_war_with = FRA
+					is_puppet = yes
+				}
+			}
+	
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}
+		PAD_fi_tension_bad = {
+			name = PAD_fi_tension
+
+			cancel = {
+				OR = {
+					has_war_with = FRA
+					is_puppet = yes
+				}
+			}
+	
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		#
+		PAD_ita_tension = {
+
+			cancel = {
+				OR = {
+					has_war_with = ITA
+					is_puppet = yes
+				}
+			}
+	
+			modifier = {
+
+			}
+		}
+		PAD_homeland_ofthe_rich = {
+
+			cancel = {
+				OR = {
+					has_capitulated = yes
+					is_puppet = yes
+				}
+			}
+	
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+	}
+}

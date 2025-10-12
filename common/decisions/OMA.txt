@@ -1,0 +1,147 @@
+OMA_decisions = {
+	OMA_al_falah_decisions = {
+		icon = GFX_decision_falah
+		state_target = yes
+		on_map_mode = map_only
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			#
+		}
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OWNER = {
+					OR = {
+						tag = YEM
+						tag = QAT
+						tag = SAU
+						tag = LEB
+						tag = SYR
+						tag = ISR
+						tag = PAL
+						tag = TUR
+						tag = EGY
+						tag = PER
+					}
+					OR = {
+						is_neighbor_of = ROOT
+						ROOT = {
+							any_country = {
+								OR = {
+									is_puppet_of = PREV
+									is_in_faction_with = PREV
+								}
+								is_neighbor_of = FROM.OWNER
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							is_puppet_of = ROOT
+							has_war_with = ROOT
+							is_in_faction_with = ROOT
+						}					
+					}
+				}
+			}
+		}
+		fire_only_once = no
+		days_remove = 30
+		war_with_target_on_remove = yes
+		remove_effect = {
+			declare_war_on = {
+				target = FROM.OWNER
+				type = annex_puppet_wargoal
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				FROM.OWNER = {
+					tag = QAT
+				}
+				add = 100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = YEM
+				}
+				QAT = {
+					is_puppet_of = ROOT
+				}
+				add = 100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = SAU
+				}
+				YEM = {
+					is_puppet_of = ROOT
+				}
+				add = 100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = LEB
+				}
+				SAU = {
+					is_puppet_of = ROOT
+				}
+				add = 100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = SYR
+				}
+				LEB = {
+					is_puppet_of = ROOT
+				}
+				add = 100
+			}
+			modifier = {
+				FROM.OWNER = {
+					OR = {
+						tag = PAL
+						tag = ISR
+					}
+				}
+				SYR = {
+					is_puppet_of = ROOT
+				}
+				add = 100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = TUR
+				}
+				has_cosmetic_tag = OMA_al_falah
+				check_variable = {
+					var = num_divisions
+					value = division_limit
+					compare = greater_than_or_equals
+				}
+				add = 100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = EGY
+				}
+				TUR = {
+					is_puppet_of = ROOT
+				}				
+				add = 100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = PER
+				}
+				EGY = {
+					is_puppet_of = ROOT
+				}				
+				add = 100
+			}
+		}
+	}
+}

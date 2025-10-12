@@ -1,0 +1,823 @@
+scripted_map_modes = {
+    economic_map_mode = {
+		top = {
+			type = country
+
+			targets = {
+			}
+
+			color = {
+				FROM = {
+					if = {
+						limit = {
+                            has_idea = civilian_economy
+                        }
+						set_temp_variable = { red = 0 }
+						set_temp_variable = { green = 0.41 }
+						set_temp_variable = { blue = 0 }
+					}
+					else_if = {
+						limit = {
+                            has_idea = deregulated_economy
+                        }
+						set_temp_variable = { red = 0.40 }
+						set_temp_variable = { green = 0.74 }
+						set_temp_variable = { blue = 0.39 }
+					}
+					else_if = {
+						limit = {
+                            has_idea = mixed_economy
+                        }
+						set_temp_variable = { red = 1 }
+						set_temp_variable = { green = 0.88 }
+						set_temp_variable = { blue = 0.55 }
+					}
+					else_if = {
+						limit = {
+                            has_idea = war_economy
+                        }
+						set_temp_variable = { red = 0.96 }
+						set_temp_variable = { green = 0.43 }
+						set_temp_variable = { blue = 0.26 }
+					}
+
+					set_temp_variable = { alpha = 0.25 }
+				}
+			}
+
+			thickness = yes
+		}
+		bottom = {
+			type = country
+
+			targets = {
+			}
+
+			color = {
+				FROM = {
+					set_temp_variable = { red = 0 }
+					set_temp_variable = { green = 0 }
+					set_temp_variable = { blue = 0 }
+					set_temp_variable = { alpha = 0.75 }
+				}
+			}
+
+			thickness = yes
+		}
+
+		far_text = country
+		near_text = state
+	}
+###
+    political_system_map_mode = {
+		top = {
+			type = country
+
+			targets = {
+			}
+
+			color = {
+				FROM = {
+					if = {
+						limit = {
+                            has_idea = oligarchic_government
+                        }
+						set_temp_variable = { red = 0.8 }
+						set_temp_variable = { green = 0 }
+						set_temp_variable = { blue = 0.8 }
+					}
+					else_if = {
+						limit = {
+                            has_idea = minarchist_state
+                        }
+						set_temp_variable = { red = 0.40 }
+						set_temp_variable = { green = 0.74 }
+						set_temp_variable = { blue = 0.39 }
+					}
+					else_if = {
+						limit = {
+                            has_idea = digital_democracy
+                        }
+						set_temp_variable = { red = 0.5 }
+						set_temp_variable = { green = 0.6 }
+						set_temp_variable = { blue = 1 }
+					}
+					else_if = {
+						limit = {
+                            has_idea = communal_parity
+                        }
+						set_temp_variable = { red = 1 }
+						set_temp_variable = { green = 0.4 }
+						set_temp_variable = { blue = 0.4 }
+					}
+					else_if = {
+						limit = {
+                            has_idea = autocratic_authority
+                        }
+						set_temp_variable = { red = 1 }
+						set_temp_variable = { green = 0.7 }
+						set_temp_variable = { blue = 0.4 }
+					}
+					else_if = {
+						limit = {
+                            has_idea = unstable_leadership
+                        }
+						set_temp_variable = { red = 0.40 }
+						set_temp_variable = { green = 0.40 }
+						set_temp_variable = { blue = 0.40 }
+					}
+
+					set_temp_variable = { alpha = 0.25 }
+                }
+			}
+
+			thickness = yes
+		}
+		bottom = {
+			type = country
+
+			targets = {
+			}
+
+			color = {
+				FROM = {
+					set_temp_variable = { red = 0 }
+					set_temp_variable = { green = 0 }
+					set_temp_variable = { blue = 0 }
+					set_temp_variable = { alpha = 0.75 }
+				}
+			}
+
+			thickness = yes
+		}
+
+		far_text = country
+		near_text = state
+	}
+###
+    ecobalance_map_mode = {
+		top = {
+			type = state
+
+			targets = {
+			}
+
+			color = {
+				FROM = {
+					if = {
+						limit = {
+                            THIS = {
+                                has_dynamic_modifier = {
+                                    modifier = counter_ecobalance
+                                }
+                            }
+                        }
+						set_temp_variable = { red = 1 }
+						set_temp_variable = { green = 0.7 }
+						set_temp_variable = { blue = 0.0 }
+					}
+					else_if = {
+						limit = {
+                            THIS = {
+                                has_dynamic_modifier = {
+                                    modifier = no_ecobalance
+                                }
+                            }
+                        }
+						set_temp_variable = { red = 0 }
+						set_temp_variable = { green = 1 }
+						set_temp_variable = { blue = 0.7 }
+					}
+					else_if = {
+						limit = {
+                            THIS = {
+                                has_dynamic_modifier = {
+                                    modifier = minor_ecobalance
+                                }
+                            }
+                        }
+						set_temp_variable = { red = 0.2 }
+						set_temp_variable = { green = 0.8 }
+						set_temp_variable = { blue = 0 }
+					}
+					else_if = {
+						limit = {
+                            THIS = {
+                                has_dynamic_modifier = {
+                                    modifier = notable_ecobalance
+                                }
+                            }
+                        }
+						set_temp_variable = { red = 0.4 }
+						set_temp_variable = { green = 0.6 }
+						set_temp_variable = { blue = 0 }
+					}
+					else_if = {
+						limit = {
+                            THIS = {
+                                has_dynamic_modifier = {
+                                    modifier = major_ecobalance
+                                }
+                            }
+                        }
+						set_temp_variable = { red = 0.6 }
+						set_temp_variable = { green = 0.4 }
+						set_temp_variable = { blue = 0 }
+					}
+					else_if = {
+						limit = {
+                            THIS = {
+                                has_dynamic_modifier = {
+                                    modifier = significant_ecobalance
+                                }
+                            }
+                        }
+						set_temp_variable = { red = 0.8 }
+						set_temp_variable = { green = 0.2 }
+						set_temp_variable = { blue = 0 }
+					}
+					else_if = {
+						limit = {
+                            THIS = {
+                                has_dynamic_modifier = {
+                                    modifier = terminal_ecobalance
+                                }
+                            }
+                        }
+						set_temp_variable = { red = 1 }
+						set_temp_variable = { green = 0 }
+						set_temp_variable = { blue = 0 }
+					}
+
+					set_temp_variable = { alpha = 0.6 }
+				}
+			}
+
+			thickness = yes
+		}
+		bottom = {
+			type = country
+
+			targets = {
+			}
+
+			color = {
+				FROM = {
+					set_temp_variable = { red = 0 }
+					set_temp_variable = { green = 0 }
+					set_temp_variable = { blue = 0 }
+					set_temp_variable = { alpha = 0.75 }
+				}
+			}
+
+			thickness = yes
+		}
+
+		far_text = country
+		near_text = state
+	}
+###
+	nau_legitimacy_map_mode = {
+		top = {
+			type = country
+
+			targets = {
+			}
+
+			color = {
+				FROM = {
+					if = {
+						limit = {
+							check_variable = {
+								nau_legitimacy = 0
+							}
+							check_variable = {
+								arc_legitimacy = 0
+							}
+						}
+						set_temp_variable = { red = 0 }
+						set_temp_variable = { green = 0 }
+						set_temp_variable = { blue = 0 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								nau_legitimacy < arc_legitimacy
+							}
+						}
+						set_temp_variable = { red = 0.8 }  
+						set_temp_variable = { green = 0.8 }
+						set_temp_variable = { blue = 1.0 }
+					}
+					else = {
+						set_temp_variable = { red = 0.5 }  
+						set_temp_variable = { green = 0.5 }
+						set_temp_variable = { blue = 0.8 }
+					}
+
+					set_temp_variable = { alpha = 0.25 }
+				}
+			}
+
+			thickness = yes
+		}
+		bottom = {
+			type = country
+
+			targets = {
+			}
+
+			color = {
+				FROM = {
+					set_temp_variable = { red = 0 }
+					set_temp_variable = { green = 0 }
+					set_temp_variable = { blue = 0 }
+					set_temp_variable = { alpha = 0.75 }
+				}
+			}
+
+			thickness = yes
+		}
+
+		far_text = country
+		near_text = country
+	}
+###
+#	imperium_mapmode = {
+#		top = {
+#			type = country
+#
+#			targets = {
+#			}
+#
+#			color = {
+#				FROM = {
+#					if = {
+#						limit = {
+#							check_variable = {
+#								imperium_CHI_var = 1
+#							}
+#						}
+#						set_temp_variable = { red = 0.8 }
+#						set_temp_variable = { green = 0.0 }
+#						set_temp_variable = { blue = 0.2 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_CHI_var > 0.75
+#							}
+#						}
+#						set_temp_variable = { red = 0.7 }
+#						set_temp_variable = { green = 0.0 }
+#						set_temp_variable = { blue = 0.2 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_CHI_var > 0.5
+#							}
+#						}
+#						set_temp_variable = { red = 0.6 }
+#						set_temp_variable = { green = 0.0 }
+#						set_temp_variable = { blue = 0.2 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_CHI_var > 0.25
+#							}
+#						}
+#						set_temp_variable = { red = 0.4 }
+#						set_temp_variable = { green = 0.0 }
+#						set_temp_variable = { blue = 0.1 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_TZN_var = 1
+#							}
+#						}
+#						set_temp_variable = { red = 0.6 }
+#						set_temp_variable = { green = 0.2 }
+#						set_temp_variable = { blue = 0.1 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_TZN_var > 0.75
+#							}
+#						}
+#						set_temp_variable = { red = 0.5 }
+#						set_temp_variable = { green = 0.1 }
+#						set_temp_variable = { blue = 0.1 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_TZN_var > 0.5
+#							}
+#						}
+#						set_temp_variable = { red = 0.3 }
+#						set_temp_variable = { green = 0.1 }
+#						set_temp_variable = { blue = 0.1 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_TZN_var > 0.25
+#							}
+#						}
+#						set_temp_variable = { red = 0.3 }
+#						set_temp_variable = { green = 0.1 }
+#						set_temp_variable = { blue = 0.0 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_BRA_var = 1
+#							}
+#						}
+#						set_temp_variable = { red = 0.1 }
+#						set_temp_variable = { green = 0.8 }
+#						set_temp_variable = { blue = 0.1 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_BRA_var > 0.75
+#							}
+#						}
+#						set_temp_variable = { red = 0.1 }
+#						set_temp_variable = { green = 0.6 }
+#						set_temp_variable = { blue = 0.1 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_BRA_var > 0.5
+#							}
+#						}
+#						set_temp_variable = { red = 0.0 }
+#						set_temp_variable = { green = 0.5 }
+#						set_temp_variable = { blue = 0.0 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_BRA_var > 0.25
+#							}
+#						}
+#						set_temp_variable = { red = 0.0 }
+#						set_temp_variable = { green = 0.3 }
+#						set_temp_variable = { blue = 0.0 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_SOV_var = 1
+#							}
+#						}
+#						set_temp_variable = { red = 0.2 }
+#						set_temp_variable = { green = 0.6 }
+#						set_temp_variable = { blue = 0.5 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_SOV_var > 0.75
+#							}
+#						}
+#						set_temp_variable = { red = 0.2 }
+#						set_temp_variable = { green = 0.5 }
+#						set_temp_variable = { blue = 0.4 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_SOV_var > 0.5
+#							}
+#						}
+#						set_temp_variable = { red = 0.2 }
+#						set_temp_variable = { green = 0.4 }
+#						set_temp_variable = { blue = 0.3 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_SOV_var > 0.25
+#							}
+#						}
+#						set_temp_variable = { red = 0.0 }
+#						set_temp_variable = { green = 0.3 }
+#						set_temp_variable = { blue = 0.2 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_GER_var = 1
+#							}
+#						}
+#						set_temp_variable = { red = 0.5 }
+#						set_temp_variable = { green = 0.5 }
+#						set_temp_variable = { blue = 0.5 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_GER_var > 0.75
+#							}
+#						}
+#						set_temp_variable = { red = 0.4 }
+#						set_temp_variable = { green = 0.4 }
+#						set_temp_variable = { blue = 0.4 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_GER_var > 0.5
+#							}
+#						}
+#						set_temp_variable = { red = 0.3 }
+#						set_temp_variable = { green = 0.3 }
+#						set_temp_variable = { blue = 0.3 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_GER_var > 0.25
+#							}
+#						}
+#						set_temp_variable = { red = 0.2 }
+#						set_temp_variable = { green = 0.2 }
+#						set_temp_variable = { blue = 0.2 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_FRA_var = 1
+#							}
+#						}
+#						set_temp_variable = { red = 0.7 }
+#						set_temp_variable = { green = 0.7 }
+#						set_temp_variable = { blue = 0.8 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_FRA_var > 0.75
+#							}
+#						}
+#						set_temp_variable = { red = 0.6 }
+#						set_temp_variable = { green = 0.6 }
+#						set_temp_variable = { blue = 0.7 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_FRA_var > 0.5
+#							}
+#						}
+#						set_temp_variable = { red = 0.5 }
+#						set_temp_variable = { green = 0.5 }
+#						set_temp_variable = { blue = 0.6 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_FRA_var > 0.25
+#							}
+#						}
+#						set_temp_variable = { red = 0.4 }
+#						set_temp_variable = { green = 0.4 }
+#						set_temp_variable = { blue = 0.5 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_PNM_var = 1
+#							}
+#						}
+#						set_temp_variable = { red = 0.2 }
+#						set_temp_variable = { green = 0.5 }
+#						set_temp_variable = { blue = 0.8 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_PNM_var > 0.75
+#							}
+#						}
+#						set_temp_variable = { red = 0.2 }
+#						set_temp_variable = { green = 0.4 }
+#						set_temp_variable = { blue = 0.7 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_PNM_var > 0.5
+#							}
+#						}
+#						set_temp_variable = { red = 0.1 }
+#						set_temp_variable = { green = 0.2 }
+#						set_temp_variable = { blue = 0.5 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_PNM_var > 0.25
+#							}
+#						}
+#						set_temp_variable = { red = 0.0 }
+#						set_temp_variable = { green = 0.2 }
+#						set_temp_variable = { blue = 0.4 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_BHR_var = 1
+#							}
+#						}
+#						set_temp_variable = { red = 0.7 }
+#						set_temp_variable = { green = 0.4 }
+#						set_temp_variable = { blue = 0.7 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_BHR_var > 0.75
+#							}
+#						}
+#						set_temp_variable = { red = 0.6 }
+#						set_temp_variable = { green = 0.3 }
+#						set_temp_variable = { blue = 0.6 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_BHR_var > 0.5
+#							}
+#						}
+#						set_temp_variable = { red = 0.5 }
+#						set_temp_variable = { green = 0.2 }
+#						set_temp_variable = { blue = 0.5 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_BHR_var > 0.25
+#							}
+#						}
+#						set_temp_variable = { red = 0.4 }
+#						set_temp_variable = { green = 0.1 }
+#						set_temp_variable = { blue = 0.4 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_OMA_var = 1
+#							}
+#						}
+#						set_temp_variable = { red = 0.8 }
+#						set_temp_variable = { green = 0.8 }
+#						set_temp_variable = { blue = 0.3 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_OMA_var > 0.75
+#							}
+#						}
+#						set_temp_variable = { red = 0.75 }
+#						set_temp_variable = { green = 0.75 }
+#						set_temp_variable = { blue = 0.2 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_OMA_var > 0.5
+#							}
+#						}
+#						set_temp_variable = { red = 0.6 }
+#						set_temp_variable = { green = 0.6 }
+#						set_temp_variable = { blue = 0.1 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_OMA_var > 0.25
+#							}
+#						}
+#						set_temp_variable = { red = 0.45 }
+#						set_temp_variable = { green = 0.45 }
+#						set_temp_variable = { blue = 0.0 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_SCO_var = 1
+#							}
+#						}
+#						set_temp_variable = { red = 0.1 }
+#						set_temp_variable = { green = 0.6 }
+#						set_temp_variable = { blue = 0.6 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_SCO_var > 0.75
+#							}
+#						}
+#						set_temp_variable = { red = 0.0 }
+#						set_temp_variable = { green = 0.5 }
+#						set_temp_variable = { blue = 0.5 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_SCO_var > 0.5
+#							}
+#						}
+#						set_temp_variable = { red = 0.0 }
+#						set_temp_variable = { green = 0.4 }
+#						set_temp_variable = { blue = 0.4 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_SCO_var > 0.25
+#							}
+#						}
+#						set_temp_variable = { red = 0.0 }
+#						set_temp_variable = { green = 0.3 }
+#						set_temp_variable = { blue = 0.3 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_INS_var = 1
+#							}
+#						}
+#						set_temp_variable = { red = 0.6 }
+#						set_temp_variable = { green = 0.8 }
+#						set_temp_variable = { blue = 0.4 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_INS_var > 0.75
+#							}
+#						}
+#						set_temp_variable = { red = 0.5 }
+#						set_temp_variable = { green = 0.7 }
+#						set_temp_variable = { blue = 0.3 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_INS_var > 0.5
+#							}
+#						}
+#						set_temp_variable = { red = 0.4 }
+#						set_temp_variable = { green = 0.6 }
+#						set_temp_variable = { blue = 0.2 }
+#					}
+#					else_if = {
+#						limit = {
+#							check_variable = {
+#								imperium_INS_var > 0.25
+#							}
+#						}
+#						set_temp_variable = { red = 0.3 }
+#						set_temp_variable = { green = 0.5 }
+#						set_temp_variable = { blue = 0.1 }
+#					}
+#
+#					set_temp_variable = { alpha = 0.5 }					
+#				}
+#			}
+#
+#			thickness = yes
+#		}
+#		bottom = {
+#			type = country
+#
+#			targets = {
+#			}
+#
+#			color = {
+#				FROM = {
+#					set_temp_variable = { red = 0 }
+#					set_temp_variable = { green = 0 }
+#					set_temp_variable = { blue = 0 }
+#					set_temp_variable = { alpha = 0.75 }
+#				}
+#			}
+#
+#			thickness = yes
+#		}
+#
+#		far_text = country
+#		near_text = country
+#	}
+#}

@@ -1,0 +1,14 @@
+﻿characters = {
+	JAP_iwata_masahiro = {
+		name = JAP_iwata_masahiro
+		portraits = {
+			civilian = {
+				large = GFX_portrait_JAP_iwata_masahiro
+			}
+		}
+		country_leader = {
+			desc = "JAP_iwata_masahiro_desc"
+			ideology = supremacy_ideology
+		}
+	}
+}

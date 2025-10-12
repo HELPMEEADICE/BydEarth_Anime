@@ -1,0 +1,266 @@
+USA_rebuilding_america = {
+	USA_integrate_districts = {
+		icon = GFX_decision_arc
+		state_target = yes
+		on_map_mode = map_only
+		fire_only_once = no
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OWNER = {
+					OR = {
+						is_nau_tag = yes
+						tag = PNM
+					}
+					OR = {
+						is_in_faction_with = ROOT
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		days_remove = 100
+		remove_effect = {
+			FROM.OWNER = {
+				every_core_state = {
+					add_core_of = USA
+				}
+				USA = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	USA_integrate_bluehelmets = {
+		icon = GFX_decision_war
+		available = {
+			TRE = {
+				exists = no
+			}
+		}
+		visible = {
+			#
+		}
+        cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			hidden_effect = {
+                load_oob = ONU_OOB
+            }
+            custom_effect_tooltip = USA_bluehelmets_tooltip
+		}
+
+		ai_will_do = {
+			factor = 10
+        }
+	}
+	USA_reclaim_new_york = {
+		icon = GFX_decision_unity
+		available = {
+			ARC = {
+				is_puppet_of = USA
+			}
+		}
+		visible = {
+			#
+		}
+        cost = 200
+		fire_only_once = yes
+		days_remove = 90
+        remove_effect = {
+			ARC = {
+				every_core_state = {
+					add_core_of = ROOT
+				}
+				every_owned_state = {
+					transfer_state_to = ROOT
+				}
+			}
+            set_province_name = { id = 1833 name = "New York City" }
+            set_province_name = { id = 1825 name = "Trenton" }
+            set_province_name = { id = 1788 name = "Philadelphia" }                                      
+            113 = { set_state_name = "[NEW YORK] ▀" }
+            106 = { set_state_name = "[PHILADELPHIA] ▀" }
+            custom_effect_tooltip = USA_arc_defeat_tooltip
+        }   
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+###
+	USA_integrate_quebec = {
+		icon = GFX_decision_political
+		available = {
+			#
+		}
+		visible = {
+			has_global_flag = usa_was_reunited_flag
+		}
+        cost = 200
+		targets = { QUE }
+		fire_only_once = yes
+		days_remove = 200
+		complete_effect = {
+			CAN = {
+				annex_country = {
+					target = QUE
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+        }
+	}
+	USA_our_southern_territories = {
+		icon = GFX_decision_war
+		available = {
+			#
+		}
+		visible = {
+			has_global_flag = usa_was_reunited_flag
+		}
+		fire_only_once = yes
+		targets = { MEX }
+		war_with_on_remove = MEX
+		days_remove = 30
+		remove_effect = {
+			declare_war_on = {
+				target = MEX
+				type = annex_puppet_wargoal
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+        }
+	}
+}
+
+#YOU HAVE TO RENABLE THE FOCUS TREES THEN RENABLE THESE DECISIONS
+#USA_debug_category = {
+#	USA_load_initial_tree = {
+#		icon = generic_industry
+#		
+#		available = {
+#			is_debug = yes
+#		}
+#		visible = {
+#			is_debug = yes
+#		}
+#	
+#		fire_only_once = no
+#	
+#		cost = 0
+#	
+#		complete_effect = {
+#			load_focus_tree = usa_initial
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+#	USA_load_second_tree = {
+#		icon = generic_industry
+#		
+#		available = {
+#			is_debug = yes
+#		}
+#		visible = {
+#			is_debug = yes
+#		}
+#	
+#		fire_only_once = no
+#	
+#		cost = 0
+#	
+#		complete_effect = {
+#			load_focus_tree = usa_second
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+#	USA_load_final_tree = {
+#		icon = generic_industry
+#		
+#		available = {
+#			is_debug = yes
+#		}
+#		visible = {
+#			is_debug = yes
+#		}
+#	
+#		fire_only_once = no
+#	
+#		cost = 0
+#	
+#		complete_effect = {
+#			load_focus_tree = usa_final
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+#	USA_a_true_democracy_decision = {
+#		icon = generic_industry
+#		
+#		available = {
+#			is_debug = yes
+#		}
+#		visible = {
+#			is_debug = yes
+#		}
+#	
+#		fire_only_once = no
+#	
+#		cost = 0
+#	
+#		complete_effect = {
+#			set_country_flag = USA_true_democracy
+#			clr_country_flag = USA_ulrik_democracy
+#			mark_focus_tree_layout_dirty = yes
+#			custom_effect_tooltip = USA_a_true_democracy_decision_tt
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+#	USA_ulriks_democracy_decision = {
+#		icon = generic_industry
+#		
+#		available = {
+#			is_debug = yes
+#		}
+#		visible = {
+#			is_debug = yes
+#		}
+#	
+#		fire_only_once = no
+#	
+#		cost = 0
+#	
+#		complete_effect = {
+#			set_country_flag = USA_ulrik_democracy
+#			clr_country_flag = USA_true_democracy
+#			mark_focus_tree_layout_dirty = yes
+#			custom_effect_tooltip = USA_ulriks_democracy_decision_tt
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+#}

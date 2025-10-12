@@ -1,0 +1,113 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			set_variable = { global.ewpgain_var = 0 }
+		}
+	}
+###
+	on_weekly_GER = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = euro_war_happened
+					}
+				}
+				add_to_variable = { global.ewpgain_var = global.nsainfamy_var }
+				add_to_variable = { global.ewpgain_var = global.francoinfamy_var }
+				add_to_variable = { global.ewpgain_var = global.integrinfamy_var }
+				add_to_variable = { global.ewpgain_var = global.slavicinfamy_var }
+				divide_variable = { global.ewpgain_var = 100 }
+				every_country = {
+					limit = {
+						has_war = yes
+						capital_scope = {
+							is_on_continent = europe
+						}
+					}
+					add_to_variable = { global.ewpgain_var = 0.05 }
+				}
+				add_to_variable = {
+					var = global.europewarprogress_var
+					value = global.ewpgain_var
+				}
+				check_europe_war_progress = yes
+				check_infamy = yes
+			}
+			else = {
+				#
+			}
+		}
+	}
+###
+	on_startup = {
+		effect = {
+			SCO = {
+				add_ideas = EU_treaty_of_bern
+			}
+			FRA = {
+				add_ideas = EU_treaty_of_bern
+			}
+			GER = {
+				add_ideas = EU_treaty_of_bern
+			}
+			SOV = {
+				add_ideas = EU_treaty_of_bern
+			}
+			GRN = {
+				add_ideas = EU_treaty_of_bern
+			}
+			ICE = {
+				add_ideas = EU_treaty_of_bern
+			}
+			ENG = {
+				add_ideas = EU_treaty_of_bern
+			}
+			IRE = {
+				add_ideas = EU_treaty_of_bern
+			}
+			NOR = {
+				add_ideas = EU_treaty_of_bern
+			}
+			SWE = {
+				add_ideas = EU_treaty_of_bern
+			}
+			FIN = {
+				add_ideas = EU_treaty_of_bern
+			}
+			LAT = {
+				add_ideas = EU_treaty_of_bern
+			}
+			UKR = {
+				add_ideas = EU_treaty_of_bern
+			}
+			POL = {
+				add_ideas = EU_treaty_of_bern
+			}
+			ROM = {
+				add_ideas = EU_treaty_of_bern
+			}
+			#HUN = {
+			#	add_ideas = EU_treaty_of_bern
+			#}
+			SLO = {
+				add_ideas = EU_treaty_of_bern
+			}
+			CZE = {
+				add_ideas = EU_treaty_of_bern
+			}
+			YUG = {
+				add_ideas = EU_treaty_of_bern
+			}
+			GRE = {
+				add_ideas = EU_treaty_of_bern
+			}
+			PAD = {
+				add_ideas = EU_treaty_of_bern
+			}
+			ITA = {
+				add_ideas = EU_treaty_of_bern
+			}
+		}
+	}
+}

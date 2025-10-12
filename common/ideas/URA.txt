@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		URA_siberia_burns = {
+
+			cancel = {
+				is_puppet = yes
+			}
+	
+			modifier = {
+				#
+			}
+		}
+		URA_high_hopes = {
+			targeted_modifier = {
+				tag = KAZ
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+	}
+}

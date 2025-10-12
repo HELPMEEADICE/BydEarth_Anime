@@ -1,0 +1,161 @@
+matters_of_the_urals = {
+	URA_eurasian_mercenaries = {
+		icon = GFX_decision_political
+		available = {
+			KAZ = {
+				exists = yes
+			}
+			has_war = no
+		}
+		visible = {
+			KAZ = {
+				exists = yes
+			}
+			has_war = no
+		}
+        cost = 80
+		fire_only_once = no
+		days_remove = 30
+		remove_effect = {
+			hidden_effect = {
+				load_oob = URA_OOB
+			}
+            custom_effect_tooltip = URA_eurasian_mercenaries_tooltip
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	the_sky_blue = {
+		icon = GFX_decision_war
+		available = {
+			KAZ = {
+				OR = {
+					exists = no
+					is_puppet = yes
+				}
+			}
+		}
+		visible = {
+			#
+		}    
+		fire_only_once = yes
+		war_with_on_timeout = KAZ
+		days_mission_timeout = 210
+		timeout_effect = {
+            declare_war_on = {
+				type = annex_puppet_wargoal
+				target = KAZ
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_sky_white = {
+		icon = GFX_decision_war
+		available = {
+			KAZ = {
+				exists = no
+			}
+		}
+		visible = {
+			KAZ = {
+				exists = no
+			}
+		}
+		fire_only_once = yes
+		targets = { SIB }
+		war_with_on_remove = SIB
+		days_remove = 30
+		remove_effect = {
+            declare_war_on = {
+				type = annex_puppet_wargoal
+				target = SIB
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				any_neighbor_country = {
+					has_war_with = ROOT
+				}
+				factor = 0
+			}
+		}
+	}
+	the_sky_red = {
+		icon = GFX_decision_war
+		available = {
+			KAZ = {
+				exists = no
+			}
+			NOT = {
+				is_in_faction_with = SOV
+			}
+		}
+		visible = {
+			KAZ = {
+				exists = no
+			}
+			SIB = {
+				exists = no
+			}
+			NOT = {
+				is_in_faction_with = SOV
+			}
+		}    
+		fire_only_once = yes
+		targets = { SOV }
+		war_with_on_remove = SOV
+		days_remove = 30
+		remove_effect = {
+            declare_war_on = {
+				type = annex_puppet_wargoal
+				target = SOV
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_army_manpower = {
+					size > 600000
+				}
+				add = 100
+			}
+			modifier = {
+				any_neighbor_country = {
+					has_war_with = ROOT
+				}
+				factor = 0
+			}
+		}
+	}
+	URA_victory_over_KAZ = {
+		icon = GFX_decision_political
+		available = {
+			KAZ = {
+				is_puppet_of = URA
+			}
+		}
+		visible = {
+			country_exists = KAZ
+		}    
+		fire_only_once = yes
+		cost = 100
+		days_remove = 60
+		remove_effect = {
+            remove_ideas = URA_no_army
+			add_ideas = autocratic_authority
+			hidden_effect = {
+				delete_unit_template_and_units = {
+					division_template = "Eurasian Mercenary"
+				}
+			}
+			custom_effect_tooltip = URA_victory_over_KAZ_tooltip
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+}

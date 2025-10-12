@@ -1,0 +1,161 @@
+
+###############################
+########### IMPERIUM ##########
+###############################
+
+#defined_text = {
+#	name = GETimperium_alignment
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				imperium_CHI_var > 0
+#			}
+#		}
+#		localization_key = imperium_CHI
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				imperium_TZN_var > 0
+#			}
+#		}
+#		localization_key = imperium_TZN
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				imperium_SOv_var > 0
+#			}
+#		}
+#		localization_key = imperium_SOV
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				imperium_BRA_var > 0
+#			}
+#		}
+#		localization_key = imperium_BRA
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				imperium_GER_var > 0
+#			}
+#		}
+#		localization_key = imperium_GER
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				imperium_PNM_var > 0
+#			}
+#		}
+#		localization_key = imperium_PNM
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				imperium_FRA_var > 0
+#			}
+#		}
+#		localization_key = imperium_FRA
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				imperium_BHR_var > 0
+#			}
+#		}
+#		localization_key = imperium_BHR
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				imperium_OMA_var > 0
+#			}
+#		}
+#		localization_key = imperium_OMA
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				imperium_SCO_var > 0
+#			}
+#		}
+#		localization_key = imperium_SCO
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = {
+#				imperium_INS_var > 0
+#			}
+#		}
+#		localization_key = imperium_INS
+#	}
+#	text = {
+#		localization_key = imperium_unaligned
+#	}
+#}
+
+###############################
+########## EQUIPMENT ##########
+###############################
+
+defined_text = {
+	name = GETlogistics_amount_tt_light
+	text = {
+		trigger = {
+			check_variable = {
+				var = num_target_equipment_in_armies@light_equipment_0
+				value = num_equipment_in_armies@light_equipment_0
+				compare = greater_than
+			}
+		}
+		localization_key = logistics_amount_tt_no_light
+	}
+	text = {
+		localization_key = logistics_amount_tt_ye_light
+	}
+}
+defined_text = {
+	name = GETlogistics_amount_tt_heavy
+	text = {
+		trigger = {
+			check_variable = {
+				var = num_target_equipment_in_armies@heavy_equipment_0
+				value = num_equipment_in_armies@heavy_equipment_0
+				compare = greater_than
+			}
+		}
+		localization_key = logistics_amount_tt_no_heavy
+	}
+	text = {
+		localization_key = logistics_amount_tt_ye_heavy
+	}
+}
+
+###############################
+####### DIVISION LIMIT ########
+###############################
+
+defined_text = {
+	name = GETdivision_limit_tooltip
+	text = {
+		trigger = {
+			check_variable = {
+				var = num_battalions
+				value = division_limit
+				compare = greater_than
+			}
+		}
+		localization_key = division_limit_tt2bad
+	}
+	text = {
+		localization_key = division_limit_tt2good
+	}
+}
+
+###############################
+###############################
+###############################

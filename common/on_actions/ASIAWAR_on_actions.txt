@@ -1,0 +1,29 @@
+on_actions = {
+	###
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_in_faction_with = CHI
+						tag = CHI
+					}
+				}
+				add_ideas = CHI_strategic_cooperation_organization_member
+				country_lock_all_division_template = yes
+			}
+			#CHI
+			#MON
+			#AMU
+			#KOR
+			#NEP
+			#ASM
+			#BRM
+			#VIN
+			#LAO
+			#CAM
+			#SIA
+		}
+	}
+	###
+}

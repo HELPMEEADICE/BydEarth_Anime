@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		COG_mwitanzige_crisis = {
+			
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.1
+				stability_factor = -0.1
+				recruitable_population_factor = -0.025
+			}
+		}
+	}
+}

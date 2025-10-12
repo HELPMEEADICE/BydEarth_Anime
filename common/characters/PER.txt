@@ -1,0 +1,14 @@
+﻿characters = {
+	PER_farhad_hushang = {
+		name = PER_farhad_hushang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PER_farhad_hushang
+			}
+		}
+		country_leader = {
+			desc = "PER_farhad_hushang_desc"
+			ideology = supremacy_ideology
+		}
+	}
+}

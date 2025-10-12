@@ -1,0 +1,404 @@
+is_india_tag = { #except for BHR and KAV
+	OR = {
+		original_tag = KAS
+		original_tag = PUN
+		original_tag = SIN
+		original_tag = RAJ
+		original_tag = NAX
+		original_tag = MAH
+		original_tag = ODS
+		original_tag = KRT
+		original_tag = KRL
+		original_tag = TAM
+		original_tag = BNG
+		original_tag = SRL
+	}
+}
+is_nau_tag = { #except for PNM and ARC
+	OR = {
+		original_tag = OCH
+		original_tag = SIT
+		original_tag = SEI
+		original_tag = CIN
+		original_tag = CUA
+		original_tag = TRE
+		original_tag = DOS
+		original_tag = ONE
+		original_tag = CAS
+		original_tag = RSA
+	}
+}
+is_china_tag = {
+	OR = {
+		original_tag = CHI
+		original_tag = DNG
+		original_tag = IMO
+		original_tag = XIN
+		original_tag = GAN
+		original_tag = SHA
+		original_tag = QIN
+		original_tag = TIB
+		original_tag = SIC
+		original_tag = CHO
+		original_tag = YAN
+		original_tag = ZHE
+		original_tag = FUJ
+		original_tag = GUI
+		original_tag = TAI
+		original_tag = GND
+		original_tag = GNX
+		original_tag = HAN
+		original_tag = YNN
+		original_tag = KAC
+		original_tag = WAA
+		original_tag = AMU
+	}
+}
+is_eng_tag = {
+	OR = {
+		original_tag = ENG
+		original_tag = HNG
+		original_tag = CNG
+		original_tag = JNG
+	}
+}
+is_nsa_tag = {
+	OR = {
+		original_tag = SCO
+		original_tag = NOR
+		original_tag = IRE
+		original_tag = ENG
+		original_tag = GRN
+		original_tag = ICE
+		original_tag = SWE
+		original_tag = FIN
+		original_tag = LAT
+		original_tag = LIT
+	}
+}
+is_bra_tag = {
+	OR = {
+		original_tag = BRA
+		original_tag = NCB
+		original_tag = ECB
+		original_tag = SCB
+		original_tag = LEG
+		original_tag = GRP
+		original_tag = LAM
+	}
+}
+is_minor_tag = {
+	OR = {
+		original_tag = USA
+		original_tag = SIL
+		original_tag = LEG
+		original_tag = GRP
+		original_tag = ONU
+		original_tag = KAR
+		original_tag = CAL
+		original_tag = COS
+		original_tag = MLW
+		original_tag = GNA
+		original_tag = TOG
+		original_tag = RWA
+		original_tag = BRD
+		if = {
+			limit = {
+				FROM = {
+					tag = CRO
+				}
+			}
+			original_tag = YUG
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					tag = YUG
+				}
+			}
+			original_tag = CRO
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					is_eng_tag = yes
+				}
+			}
+			is_eng_tag = yes
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					tag = DOS
+				}
+			}
+			original_tag = CAS
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					tag = CAS
+				}
+			}
+			original_tag = DOS
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					tag = CIN
+				}
+			}
+			original_tag = RSA
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					tag = RSA
+				}
+			}
+			original_tag = CIN
+		}
+		else = {
+			always = no
+		}
+	}
+}
+####
+
+can_ROOT_get_wargoal_on_THIS = {
+	exists = yes
+	NOT = { is_in_faction_with = ROOT }
+	NOT = { is_subject_of = ROOT }
+}
+
+#Country scope
+is_border_conflict_defender_vs_FROM = {
+	has_variable = ROOT.defender_state_vs_@FROM
+}
+
+has_not_initiated_border_incident_with_FROM = {
+	custom_trigger_tooltip = {
+		tooltip = not_initiated_border_incident_with_FROM
+		NOT = {
+			any_state = {
+				check_variable = { FROM.defender_state_vs_@PREV = id }
+			}
+		}
+	}
+}
+
+has_not_initiated_border_incident_with_ROOT = {
+	custom_trigger_tooltip = {
+		tooltip = not_initiated_border_incident_with_ROOT
+		NOT = {
+			any_state = {
+				check_variable = { ROOT.defender_state_vs_@PREV = id }
+			}
+		}
+	}
+}
+
+#State scope
+has_ROOT_at_least_1_div_in_current_state_scope = {
+	custom_trigger_tooltip = {
+		tooltip = at_least_one_division_in_state
+		ROOT = { divisions_in_state = { state = PREV size > 0 } }
+	}
+}
+
+#State scope
+is_controlled_by_ROOT_or_subject = {
+	custom_trigger_tooltip = {
+		tooltip = is_controlled_by_ROOT_or_subject
+		CONTROLLER = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+			}
+		}
+	}
+}
+
+#Country scope
+is_free_or_subject_of_root = {
+	OR = {
+		is_subject = no
+		is_subject_of = ROOT
+	}
+}
+
+#State scope
+is_controlled_by_ROOT_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = is_controlled_by_ROOT_or_ally
+		CONTROLLER = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+}
+
+#is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
+#	NOT = {
+#		any_country_with_original_tag = {
+#			original_tag_to_check = FROM
+#			is_puppet_of = PREV # if already created one do not create another
+#			has_autonomy_state = autonomy_collaboration_government
+#		}
+#	}
+#}
+
+has_large_ally_not_pick_closed_economy = {
+	any_of_scopes = {
+		array = faction_members
+
+		NOT = { tag = PREV }
+		num_of_military_factories > 30
+	}
+}
+
+owns_or_subject_of = {
+	custom_trigger_tooltip = {
+		tooltip = owns_or_subject_of_tt
+		owner = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+			}
+		}
+	}
+}
+
+controls_or_subject_of = {
+	custom_trigger_tooltip = {
+		tooltip = controls_or_subject_of_tt
+		controller = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+			}
+		}
+	}
+}
+
+is_core_or_compliance_60 = {
+	custom_trigger_tooltip = {
+		tooltip = is_core_or_compliance_60_tt
+		OR = {
+			controller = {
+				PREV = { is_core_of = PREV }
+			}
+			compliance > 60
+		}
+	}
+}
+
+#has_same_ideology = {
+#	custom_trigger_tooltip = {
+#		tooltip = has_same_ideology_tt
+#		OR = {
+#			AND = {
+#				has_government = democratic
+#				ROOT = { has_government = democratic }
+#			}
+#			AND = {
+#				has_government = fascism
+#				ROOT = { has_government = fascism }
+#			}
+#			AND = {
+#				has_government = communism
+#				ROOT = { has_government = communism }
+#			}
+#			AND = {
+#				has_government = neutrality
+#				ROOT = { has_government = neutrality }
+#			}
+#		}
+#	}
+#}
+
+is_major_not_original_tag_root = {
+	is_major = yes
+	hidden_trigger = {
+		NOT = { original_tag = ROOT }
+	}
+}
+
+has_war_with_non_exiled_country = {
+	custom_trigger_tooltip = {
+		tooltip = has_war_with_non_exiled_country_tt
+		has_war = yes
+		any_enemy_country = {
+			is_government_in_exile = no
+		}
+	}
+
+}
+
+is_at_peace_exiled_countries_excluded = {
+	custom_trigger_tooltip = {
+		tooltip = is_at_peace_exiled_countries_excluded_tt
+		NOT = {
+			any_enemy_country = {
+				is_government_in_exile = no
+			}
+		}
+	}
+}
+
+#State scope
+state_is_fully_controlled_by_ROOT_or_subject = {
+	custom_trigger_tooltip = {
+		tooltip = state_is_fully_controlled_by_ROOT_or_subject_tt
+		OR = {
+			is_fully_controlled_by = ROOT
+			controller = {
+				is_subject_of = ROOT
+				has_full_control_of_state = PREV
+			}
+		}
+	}
+}
+
+state_has_any_resource = {
+	OR = {
+		has_resources_amount = {
+			resource = energy
+			amount > 0
+		}
+		has_resources_amount = {
+			resource = polymers
+			amount > 0
+		}
+		has_resources_amount = {
+			resource = lithium
+			amount > 0
+		}
+		has_resources_amount = {
+			resource = electronics
+			amount > 0
+		}
+		has_resources_amount = {
+			resource = superalloys
+			amount > 0
+		}
+		has_resources_amount = {
+			resource = superconductors
+			amount > 0
+		}
+	}
+}
+
+country_can_be_reasonable_target_of_wargoal = { #Expected scopes: Target country is THIS, country getting wargoal is PREV
+	NOT = {
+		has_war_with = ROOT
+		is_in_faction_with = PREV
+		has_guaranteed = PREV
+		is_guaranteed_by = PREV
+		has_non_aggression_pact_with = PREV
+		is_subject_of = PREV
+	}
+}

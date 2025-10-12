@@ -1,0 +1,14 @@
+﻿characters = {
+	SIT_spencer_morgan = {
+		name = SIT_spencer_morgan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SIT_spencer_morgan
+			}
+		}
+		country_leader = {
+			desc = "SIT_spencer_morgan_desc"
+			ideology = purity_ideology
+		}
+	}
+}

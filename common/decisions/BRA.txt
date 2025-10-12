@@ -1,0 +1,375 @@
+BRA_the_inevitable = {
+	BRA_cross_the_andes = {
+		icon = GFX_decision_unknown
+		available = {
+			PRU = {
+				OR = {
+					is_puppet = yes
+					exists = no
+					has_war_with = BRA
+				}
+			}
+		}
+		activation = {
+			#
+		}
+		fire_only_once = yes
+		war_with_on_timeout = PRU
+		days_mission_timeout = 250
+		timeout_effect = {
+			BRA = {
+				#country_event = {
+				#	id = brazil.5
+				#}
+				declare_war_on = {
+					target = PRU
+					type = annex_puppet_wargoal
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	BRA_conquer_the_acre_line = {
+		icon = GFX_decision_unknown
+		available = {
+			PRU = {
+				surrender_progress > 0.5
+			}
+		}
+		activation = { 
+			BRA = {
+				has_war_with = PRU
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 104
+		timeout_effect = {
+			custom_effect_tooltip = BRA_start_civil_war_tt
+			hidden_effect = {
+				set_global_flag = brazil_civil_war
+				BRA_set_borders = yes
+			}
+		}
+		complete_effect = {
+			add_war_support = 1
+			add_stability = 0.2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+BRA_the_recovery = {
+	BRA_recovering_cores = {
+		icon = GFX_decision_brasilia
+		state_target = yes
+		on_map_mode = map_only
+		available = {
+			#
+		}
+		visible = {
+			is_puppet = no
+			is_faction_leader = yes
+		}
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OWNER = {
+					NOT = {
+						tag = PRU
+					}
+					any_owned_state = {
+						is_core_of = ROOT
+					}
+					is_neighbor_of = ROOT
+				}
+			}
+		}
+		fire_only_once = no
+		days_remove = 30
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = going_to_war
+					days = 30
+					value = 1
+				}
+			}
+		}
+		war_with_target_on_remove = yes
+		remove_effect = {
+			if = {
+				limit = {
+					FROM.OWNER = {
+						tag = URG
+					}
+				}
+				URG = {
+					every_core_state = {
+						add_core_of = BRA
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.OWNER = {
+						tag = ECB
+					}
+					country_exists = LEG
+				}
+				declare_war_on = {
+					target = LEG
+					type = annex_puppet_wargoal
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.OWNER = {
+						tag = SCB
+					}
+					country_exists = GRP
+				}
+				declare_war_on = {
+					target = GRP
+					type = annex_puppet_wargoal
+				}
+			}
+			else = {
+				#
+			}
+			declare_war_on = {
+				target = FROM.OWNER
+				type = annex_puppet_wargoal
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				FROM.OWNER = {
+					check_variable = {
+						THIS.num_divisions < ROOT.num_divisions
+					}
+				}
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_country_flag = going_to_war
+				add = -1000
+			}
+		}
+	}
+	BRA_invite_commands = {
+		icon = GFX_decision_brasilia2
+		state_target = yes
+		on_map_mode = map_only
+		available = {
+			#
+		}
+		visible = {
+			is_puppet = no
+			is_faction_leader = yes
+		}
+		cost = 20
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OWNER = {
+					OR = {
+						tag = NCB
+						tag = ECB
+						tag = SCB
+					}
+				}
+			}
+		}
+		fire_only_once = no
+		days_remove = 30
+		remove_effect = {
+			FROM.OWNER = {
+				country_event = brazil.34
+			}
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+###
+	BRA_cross_the_andes_again = {
+		icon = GFX_decision_war
+		available = {
+			LAM = {
+				OR = {
+					exists = no
+					is_in_faction_with = BRA
+				}
+			}
+			URG = {
+				OR = {
+					exists = no
+					is_in_faction_with = BRA
+				}
+			}
+			LEG = {
+				OR = {
+					exists = no
+					is_in_faction_with = BRA
+				}
+			}
+			GRP = {
+				OR = {
+					exists = no
+					is_in_faction_with = BRA
+				}
+			}
+			NCB = {
+				OR = {
+					exists = no
+					is_in_faction_with = BRA
+				}
+			}
+			ECB = {
+				OR = {
+					exists = no
+					is_in_faction_with = BRA
+				}
+			}
+			SCB = {
+				OR = {
+					exists = no
+					is_in_faction_with = BRA
+				}
+			}
+		}
+		visible = {
+			#
+		}
+		targets = { PRU }
+		war_with_on_remove = PRU
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			declare_war_on = {
+				target = PRU
+				type = annex_puppet_wargoal
+			}
+			170 = {
+				add_core_of = BRA
+			}
+			141 = {
+				add_core_of = BRA
+			}
+			112 = {
+				add_core_of = BRA
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+###
+	BRA_brasilia_destiny = {
+		icon = GFX_decision_brasilia
+		state_target = yes
+		on_map_mode = map_only
+		available = {
+			#
+		}
+		visible = {
+			PRU = {
+				is_puppet_of = BRA
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OWNER = {
+					OR = {
+						capital_scope = {
+							is_on_continent = south_america
+						}
+						tag = CUB
+						tag = JAM
+					}
+					OR = {
+						is_neighbor_of = ROOT
+						ROOT = {
+							any_country = {
+								OR = {
+									is_puppet_of = PREV
+									is_in_faction_with = PREV
+								}
+								is_neighbor_of = FROM.OWNER
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							is_puppet_of = ROOT
+							has_war_with = ROOT
+							is_in_faction_with = ROOT
+						}					
+					}
+				}
+			}
+		}
+		fire_only_once = no
+		days_remove = 30
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = going_to_war
+					days = 30
+					value = 1
+				}
+			}
+		}
+		war_with_target_on_remove = yes
+		remove_effect = {
+			declare_war_on = {
+				target = FROM.OWNER
+				type = annex_puppet_wargoal
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						FROM.OWNER = {
+							tag = COL
+						}
+					}
+					add_state_core = 105
+					add_state_core = 107
+					add_state_core = 145
+					add_state_core = 146
+					add_state_core = 115
+				}
+				if = {
+					limit = {
+						FROM.OWNER = {
+							tag = GYA
+						}
+					}
+					FROM.OWNER = {
+						every_core_state = {
+							add_core_of = BRA
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_country_flag = going_to_war
+				add = -1000
+			}
+		}
+	}
+}

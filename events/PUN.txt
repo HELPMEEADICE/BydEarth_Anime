@@ -1,0 +1,13 @@
+add_namespace = punjab_event
+
+country_event = {
+	id = punjab_event.1
+	title = punjab_event.1.t
+	desc = punjab_event.1.d
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = punjab_event.1.a
+	}
+}

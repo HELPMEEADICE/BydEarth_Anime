@@ -1,0 +1,204 @@
+scotland_formable = {
+	ENG_civil_war_part_1 = {
+		icon = GFX_decision_unknown
+		available = {
+			hidden_trigger = {
+				has_global_flag = birmingham_uproar
+			}			
+		}
+		activation = {
+			#
+		}
+		fire_only_once = yes
+		days_mission_timeout = 70
+		timeout_effect = {
+			ENG = {
+				country_event = england_event.1
+			}
+			activate_mission = ENG_civil_war_part_2
+			set_global_flag = birmingham_uproar
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ENG_civil_war_part_2 = {
+		icon = GFX_decision_unknown
+		available = {
+			hidden_trigger = {
+				has_global_flag = ECW_start
+			}
+		}
+		activation = {
+			has_global_flag = birmingham_uproar
+		}
+		fire_only_once = yes
+		days_mission_timeout = 25
+		timeout_effect = {
+			ENG = {
+				news_event = england_event.2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	SCO_reach_finland = {
+		icon = GFX_decision_political
+		available = {
+			NOR = {
+				has_war_with = SWE
+			}
+			FIN = {
+				is_in_faction = no
+			}
+		}
+		visible = {
+			NOR = {
+				exists = yes
+				has_war_with = SWE
+			}
+		}
+		cost = 100
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			FIN = {	
+				declare_war_on = {
+					type = annex_puppet_wargoal
+					target = SWE
+				}
+			}
+			SCO = {
+				add_to_faction = FIN
+			}			
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	SCO_integration_phase_1 = {
+		icon = GFX_decision_nsa
+		state_target = yes
+		on_map_mode = map_only
+		fire_only_once = no
+		available = {
+			is_faction_leader = yes
+		}
+		cost = 100
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OWNER = {
+					NOT = {
+						tag = SCO
+					}
+					is_in_faction_with = SCO
+					NOT = {
+						has_idea = SCO_nsa_aligned
+					}
+					is_nsa_tag = yes
+				}
+			}
+		}
+		days_remove = 100
+		remove_effect = {
+			FROM.OWNER = {
+				add_ideas = SCO_nsa_aligned
+			}			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	SCO_integration_phase_2 = {
+		icon = GFX_decision_nsa
+		state_target = yes
+		on_map_mode = map_only
+		fire_only_once = no
+		available = {
+			is_faction_leader = yes
+		}
+		cost = 100
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OWNER = {
+					all_core_state = {
+						is_controlled_by = PREV
+					}
+					OR = {
+						is_puppet_of = ROOT
+						is_puppet = no
+					}
+					has_idea = SCO_nsa_aligned
+					NOT = {
+						tag = SCO
+					}
+					is_in_faction_with = SCO
+					is_nsa_tag = yes
+				}
+			}
+		}
+		days_remove = 120
+		remove_effect = {
+			custom_effect_tooltip = add_infamy_low
+			add_to_variable = {
+				var = global.nsainfamy_var
+				value = 1
+			}
+			FROM.OWNER = {
+				every_subject_country = {
+					SCO = {
+						puppet = PREV
+					}
+					puppet_government_too = yes
+				}
+				every_core_state = {
+					add_core_of = SCO
+				}
+				add_to_array = {
+					array = global.just_joined_nsa
+					value = THIS.id
+					index = 0
+				}
+				ROOT = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						capital_scope = {
+							is_on_continent = europe
+						}
+					}
+					country_event = scotland_event.10
+				}
+			}
+			SCO = {
+				if = {
+					limit = {
+						NOT = {
+							has_cosmetic_tag = SCO_NSA
+						}
+						NOT = {
+							has_cosmetic_tag = SCO_EU
+						}
+					}
+					set_cosmetic_tag = SCO_NSA
+					add_state_core = 326
+				}				
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}

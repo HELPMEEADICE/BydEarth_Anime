@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		ARG_alienated_montoneros = {
+
+			cancel = {
+				is_puppet = yes
+			}
+	
+			modifier = {
+				supply_consumption_factor = 0.1
+				war_support_factor = -0.05
+				army_defence_factor = -0.05
+				army_speed_factor = -0.05
+			}
+		}
+		ARG_alienated_federales = {
+
+			cancel = {
+				is_puppet = yes
+			}
+	
+			modifier = {
+				army_org_factor = -0.05
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		ARG_embraced_urbanites = {
+
+			cancel = {
+				is_puppet = yes
+			}
+	
+			modifier = {
+				research_speed_factor = 0.025
+				consumer_goods_factor = -0.05
+			}
+		}
+		ARG_embraced_argentinists = {
+
+			cancel = {
+				is_puppet = yes
+			}
+	
+			modifier = {
+				army_attack_factor = 0.05
+				recruitable_population_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+	}
+}

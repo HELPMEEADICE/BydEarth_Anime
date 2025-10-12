@@ -1,0 +1,48 @@
+ideas = {
+	country = {		
+		UKR_eurasian_dominance = {
+
+			cancel = {
+				OR = {
+					SOV = {
+						OR = {
+							exists = no
+							is_puppet = yes
+						}
+					}
+					is_puppet = yes
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				custom_modifier_tooltip = UKR_eurasian_dominance_red
+			}
+		}
+
+		UKR_all_slavs = {
+
+			cancel = {
+				is_puppet = yes
+			}
+	
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.2
+				custom_modifier_tooltip = UKR_all_slavs_red
+			}
+		}	
+
+		UKR_country_life_support = {
+
+			cancel = {
+				is_puppet = yes
+			}
+	
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.3
+			}
+		}
+	}
+}

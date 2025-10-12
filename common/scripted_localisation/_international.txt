@@ -1,0 +1,138 @@
+#
+defined_text = {
+	name = GETspaceship_contribution_text_tt
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = international_member
+			}
+		}
+		localization_key = spaceship_contribution_text_tt_disabled
+	}
+	text = {
+		localization_key = spaceship_contribution_text_tt
+	}
+}
+#
+defined_text = {
+	name = GETmodule_one_location
+	text = {
+		trigger = {
+			any_state = {
+                has_dynamic_modifier = {
+                    modifier = bridge_location_modifier
+                }
+				NOT = {
+					controller = {
+						has_country_flag = spaceship_internationalized_flag
+					}
+				}
+			}
+		}
+		localization_key = module_one_builder
+	}
+	text = {
+		localization_key = module_not_built
+	}
+}
+
+defined_text = {
+	name = GETmodule_two_location
+	text = {
+		trigger = {
+			any_state = {
+                has_dynamic_modifier = {
+                    modifier = quarters_location_modifier
+                }
+				NOT = {
+					controller = {
+						has_country_flag = spaceship_internationalized_flag
+					}
+				}
+			}
+		}
+		localization_key = module_two_builder
+	}
+	text = {
+		localization_key = module_not_built
+	}
+}
+
+defined_text = {
+	name = GETmodule_three_location
+	text = {
+		trigger = {
+			any_state = {
+                has_dynamic_modifier = {
+                    modifier = support_location_modifier
+                }
+				NOT = {
+					controller = {
+						has_country_flag = spaceship_internationalized_flag
+					}
+				}
+			}
+		}
+		localization_key = module_three_builder
+	}
+	text = {
+		localization_key = module_not_built
+	}
+}
+
+defined_text = {
+	name = GETmodule_four_location
+	text = {
+		trigger = {
+			any_state = {
+                has_dynamic_modifier = {
+                    modifier = storage_location_modifier
+                }
+				NOT = {
+					controller = {
+						has_country_flag = spaceship_internationalized_flag
+					}
+				}
+			}
+		}
+		localization_key = module_four_builder
+	}
+	text = {
+		localization_key = module_not_built
+	}
+}
+
+defined_text = {
+	name = GETmodule_five_location
+	text = {
+		trigger = {
+			any_state = {
+                has_dynamic_modifier = {
+                    modifier = engine_location_modifier
+                }
+				NOT = {
+					controller = {
+						has_country_flag = spaceship_internationalized_flag
+					}
+				}
+			}
+		}
+		localization_key = module_five_builder
+	}
+	text = {
+		localization_key = module_not_built
+	}
+}
+
+defined_text = {
+	name = GETspaceship_completion_time
+	text = {
+		trigger = {
+			has_global_flag = module_5_completed_flag
+		}
+		localization_key = spaceship_finished
+	}
+	text = {
+		localization_key = spaceship_completion_countdown
+	}
+}

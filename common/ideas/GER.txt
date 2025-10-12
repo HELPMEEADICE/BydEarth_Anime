@@ -1,0 +1,104 @@
+ideas = {
+	country = {
+		GER_anti_franco_iberian = {
+
+			cancel = {
+				is_puppet = yes
+			}
+			
+			modifier = {
+				#purity_acceptance = -50
+			}
+		}
+		GER_transhumanism = {
+
+			cancel = {
+				is_puppet = yes
+			}
+			
+			modifier = {
+				stability_weekly = 0.001
+				monthly_population = 0.1
+			}
+		}
+		GER_green_austerity = {
+
+			cancel = {
+				is_puppet = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = -0.1				
+			}
+		}
+
+		GER_green_soil_plan = {
+
+			cancel = {
+				is_puppet = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		GER_eurasian_aligned = {
+
+			cancel = {
+				OR = {
+					is_puppet = yes
+					GER = {
+						OR = {
+							is_puppet = yes
+							is_faction_leader = no
+						}
+					}
+				}
+			}
+			
+			modifier = {
+				war_support_weekly = -0.001
+			}
+		}
+
+		GER_german_aligned = {
+
+			cancel = {
+				OR = {
+					is_puppet = yes
+					GER = {
+						OR = {
+							is_puppet = yes
+							is_faction_leader = no
+						}
+					}
+				}
+			}
+			
+			modifier = {
+				war_support_weekly = 0.002
+			}
+		}
+
+		GER_german_eurasian_aligned = {
+
+			cancel = {
+				OR = {
+					is_puppet = yes
+					GER = {
+						OR = {
+							is_puppet = yes
+							is_faction_leader = no
+						}
+					}
+				}
+			}
+			
+			modifier = {
+				war_support_weekly = 0.001
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+﻿
+oob = "AAA_filler"
+
+set_technology = {
+    heavy_weapons = 1
+	mbt_tech = 1
+    
+    
+    
+    
+    hovercraft_tech = 1
+    automation = 1
+    sresearch_lines = 1
+    light_weapons = 1
+
+    apc_tech = 1
+    be_tech_support = 1
+    be_prototype_maglev = 1
+    
+    advanced_infantry_weapons = 1
+    crawler = 1
+	
+}
+
+capital = 139
+
+set_politics = {
+	ruling_party = supremacy
+	last_election = "2200.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	supremacy = 60
+	purity = 8
+	mastery = 29
+	harmony = 1
+	neutral = 2
+	synergy = 0
+	divinity = 0
+}
+
+
+set_stability = 0.59
+set_war_support = 0.24

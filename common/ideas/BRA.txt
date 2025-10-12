@@ -1,0 +1,147 @@
+ideas = {
+	country = {
+		BRA_one_last_shot = {
+
+			cancel = {
+				OR = {
+					PRU = {
+						is_puppet_of = BRA
+					}
+					is_puppet = yes
+				}
+			}
+		
+			modifier = {
+				war_support_factor = 0.6
+				offensive_war_stability_factor = -0.3
+			}
+		}		
+		BRA_its_all_crashing_down = {
+
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+
+			on_remove = {
+				country_lock_all_division_template = no
+			}
+
+			cancel = {
+				OR = {
+					PRU = {
+						is_puppet_of = BRA
+					}
+					is_puppet = yes
+				}
+			}
+		
+			modifier = {
+				stability_weekly = -0.005
+				political_power_gain = -0.5
+				custom_modifier_tooltip = SPR_military_disloyalty_tt
+			}
+		}		
+		BRA_lack_of_cohesion = {
+
+			cancel = {
+				OR = {
+					PRU = {
+						is_puppet_of = BRA
+					}
+					is_puppet = yes
+				}
+			}
+		
+			modifier = {
+				army_org_factor = -0.2
+			}
+		}
+				
+		BRA_universities_closed_down = {
+
+			cancel = {
+				is_puppet = yes
+			}
+		
+			modifier = {
+				research_speed_factor = -0.03
+			}
+		}
+	}
+	
+	#Brazilian Government
+	country = {
+		BRA_army_of_lions_led_by_lions = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+	}
+	
+	#Legiao Sertao
+	country = {
+		LEG_apex_predators = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_speed_factor = 0.1
+				army_strength_factor = 0.1
+			}
+		}
+	}
+	
+	#Governo Republicano Provisório
+	country = {		
+		GRP_captains_of_industry = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				industry_free_repair_factor = 0.25
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		GRP_low_legitimacy = {
+
+			cancel = {
+				is_puppet = yes
+			}
+		
+			modifier = {
+				conscription_factor = -0.5
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+	
+	#Lamentadores
+	country = {		
+		LAM_state_of_the_revolution_guerrila_warfare = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				equipment_capture_factor = 0.25
+				army_org_factor = 0.1
+				consumer_goods_factor = 0.25
+			}
+		}
+	}
+}

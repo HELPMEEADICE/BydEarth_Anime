@@ -1,0 +1,51 @@
+ideas = {
+	country = {
+		SCO_the_nsa = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				research_speed_factor = 0.1 
+			}
+		}
+		SCO_the_arks = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				monthly_population = 0.1				
+			}
+		}
+		SCO_sea_never_sleeps = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		#for faction members
+		SCO_nsa_aligned = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.02
+				research_speed_factor = 0.05
+			}
+			
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+	}
+}

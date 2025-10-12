@@ -1,0 +1,394 @@
+add_namespace = tzn
+
+country_event = { #Kubwa Mjomba
+	id = tzn.1
+	title = tzn.1.t
+	desc = tzn.1.d
+
+	is_triggered_only = yes
+	
+	option = {
+		name = tzn.1.a
+	}
+}
+
+country_event = { #The Election Looms
+	id = tzn.2
+	title = tzn.2.t
+	desc = tzn.2.d
+
+	is_triggered_only = yes
+	
+	option = {
+		name = tzn.2.a
+	}
+}
+
+country_event = { #The Congo Crisis
+	id = tzn.3
+	title = tzn.3.t
+	desc = tzn.3.d
+
+	is_triggered_only = yes
+	
+	option = {
+		name = tzn.3.a
+	}
+}
+
+news_event = { #Conflict Erupts on Mwitanzige Rift
+	id = tzn.4
+	title = tzn.4.t
+	desc = tzn.4.d
+	picture = GFX_tzn.5 #.4
+
+	is_triggered_only = yes
+	
+	option = {
+		name = tzn.4.a
+		trigger = {
+			tag = TZN
+		}
+	}
+
+	option = {
+		name = tzn.4.b
+		trigger = {
+			tag = COG
+		}
+	}
+
+	option = {
+		name = tzn.4.c
+		trigger = {
+			NOT = {
+				tag = COG
+				tag = TZN
+			}
+		}
+	}
+}
+
+news_event = { #East African Federation Unites Africa
+	id = tzn.5
+	title = tzn.5.t
+	desc = {
+		text = tzn.5.d.a
+		trigger = {
+			TZN = {
+				has_government = purity
+			}
+		}
+	}
+	desc = {
+		text = tzn.5.d.b
+		trigger = {
+			TZN = {
+				has_government = neutral
+			}
+		}
+	}
+	desc = {
+		text = tzn.5.d.c
+		trigger = {
+			TZN = {
+				has_government = mastery
+			}
+		}
+	}
+	desc = {
+		text = tzn.5.d.a
+		trigger = {
+			TZN = {
+				has_government = supremacy
+			}
+		}
+	}
+
+	picture = GFX_tzn.5
+
+	is_triggered_only = yes
+	
+	option = {
+		name = tzn.5.a.a
+		trigger = {
+			tag = TZN
+			has_government = purity
+		}
+	}
+	option = {
+		name = tzn.5.a.b
+		trigger = {
+			tag = TZN
+			has_government = neutral
+		}
+	}
+	option = {
+		name = tzn.5.a.c
+		trigger = {
+			tag = TZN
+			has_government = mastery
+		}
+	}
+	option = {
+		name = tzn.5.a.d
+		trigger = {
+			tag = TZN
+			has_government = supremacy
+		}
+	}
+	option = {
+		name = tzn.5.b
+		trigger = {
+			NOT = {
+				tag = TZN
+			}
+		}
+	}
+}
+
+country_event = { #Sauti ya Watu
+	id = tzn.6
+	title = tzn.6.t
+	desc = tzn.6.de
+
+	is_triggered_only = yes
+	
+	option = {
+		name = tzn.6.a
+		hidden_effect = {
+			set_popularities = {
+				harmony = 11
+				supremacy = 14
+				purity = 27
+				neutral = 24
+				divinity = 4
+				synergy = 3
+				mastery = 17
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = tzn.6.b
+		hidden_effect = {
+			set_country_leader_ideology = neutral_ideology
+			set_politics = {
+				ruling_party = neutral
+			}
+			set_popularities = {
+				harmony = 7
+				supremacy = 15
+				purity = 22
+				neutral = 24
+				divinity = 13
+				synergy = 7
+				mastery = 12
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = tzn.6.c
+		hidden_effect = {
+			set_country_leader_ideology = mastery_ideology
+			set_politics = {
+				ruling_party = mastery
+			}
+			set_popularities = {
+				harmony = 12
+				supremacy = 13
+				purity = 21
+				neutral = 16
+				divinity = 9
+				synergy = 5
+				mastery = 24
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = tzn.6.d
+		hidden_effect = {
+			set_country_leader_ideology = supremacy_ideology
+			set_politics = {
+				ruling_party = supremacy
+			}
+			set_popularities = {
+				harmony = 8
+				supremacy = 24
+				purity = 21
+				neutral = 19
+				divinity = 7
+				synergy = 4
+				mastery = 17
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { #Along the Shore
+	id = tzn.7
+	title = tzn.7.t
+	desc = tzn.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = tzn.7.a
+	}
+}
+
+country_event = { #Thicker Than Water
+	id = tzn.8
+	title = tzn.8.t
+	desc = tzn.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = tzn.8.a
+	}
+}
+
+country_event = { #Hambalyo
+	id = tzn.9
+	title = tzn.9.t
+	desc = tzn.9.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = tzn.9.a
+	}
+}
+
+country_event = { #A Tale of Two Brothers
+	id = tzn.10
+	title = tzn.10.t
+	desc = tzn.10.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = tzn.10.a
+	}
+}
+
+country_event = { ##Send faction invite
+	id = tzn.11
+	title = tzn.11.t
+	desc = tzn.11.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = tzn.11.a
+		TZN = {
+			add_to_faction = ROOT
+		}
+		if = {
+			limit = {
+				tag = ORO
+				TZN = {
+					has_war_with = ETH
+				}
+			}
+			declare_war_on = {
+				target = ETH
+				type = annex_puppet_wargoal
+			}
+		}
+		else_if = {
+			limit = {
+				tag = ETH
+				TZN = {
+					has_war_with = ORO
+				}
+			}
+			declare_war_on = {
+				target = ORO
+				type = annex_puppet_wargoal
+			}
+		}
+		else_if = {
+			limit = {
+				tag = SIE
+				TZN = {
+					has_war_with = NUE
+				}
+			}
+			declare_war_on = {
+				target = NUE
+				type = annex_puppet_wargoal
+			}
+		}
+		else_if = {
+			limit = {
+				tag = NUE
+				TZN = {
+					has_war_with = SIE
+				}
+			}
+			declare_war_on = {
+				target = SIE
+				type = annex_puppet_wargoal
+			}
+		}
+		else = {
+			#
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				capital_scope = {
+					is_on_continent = africa
+				}
+				factor = 1000
+			}
+		}
+	}
+	option = {
+		name = tzn.11.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				capital_scope = {
+					is_on_continent = africa
+				}
+				factor = 0
+			}
+		}
+	}
+}
+
+#country_event = { ##Accepted invitation
+#	id = tzn.12
+#	title = tzn.12.t
+#	desc = tzn.12.d
+#
+#	is_triggered_only = yes
+#	option = {
+#		name = tzn.12.a
+#	}
+#}
+#
+#country_event = { ##Rejected Invitation
+#	id = tzn.13
+#	title = tzn.13.t
+#	desc = tzn.13.d
+#
+#	is_triggered_only = yes
+#	option = {
+#		name = tzn.13.a
+#	}
+#}

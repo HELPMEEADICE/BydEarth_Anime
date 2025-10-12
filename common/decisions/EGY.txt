@@ -1,0 +1,64 @@
+egypt_expansion = {
+	EGY_LBA_war = {
+		icon = GFX_decision_war
+		available = {
+			#
+		}
+		visible = {
+			#
+		}
+		fire_only_once = yes
+		targets = { LBA }
+		war_with_on_remove = LBA
+		days_remove = 30
+		remove_effect = {
+			declare_war_on = {
+				type = annex_puppet_wargoal
+				target = LBA
+			}
+			#every_state = {
+			#	limit = {
+			#		is_core_of = LBA
+			#	}
+			#	add_core_of = EGY
+			#}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				SUD = {
+					is_puppet_of = ROOT
+				}
+				add = 100
+			}
+		}
+	}
+	EGY_SUD_war = {
+		icon = GFX_decision_war
+		available = {
+			#
+		}
+		visible = {
+			#
+		}
+		fire_only_once = yes
+		targets = { SUD }
+		war_with_on_remove = SUD
+		days_remove = 30
+		remove_effect = {
+			declare_war_on = {
+				type = annex_puppet_wargoal
+				target = SUD
+			}
+			#566 = {
+			#	add_core_of = EGY
+			#}
+			#507 = {
+			#	add_core_of = EGY
+			#}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

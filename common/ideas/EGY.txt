@@ -1,0 +1,38 @@
+ideas = {
+	country = {
+		EGY_floods_in_the_nile = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		EGY_dream_never_die = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.2
+				#conscription = 0.002
+			}
+		}
+
+		EGY_new_cairo_megacity = {
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+default_occupation_law = {
+	default_law = yes
+
+	state_modifier = {
+		required_garrison_factor = -100
+	}
+	starting_law = yes
+
+	ai_will_do = {
+		base = 1
+	}
+}

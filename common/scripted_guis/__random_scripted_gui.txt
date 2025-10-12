@@ -1,0 +1,710 @@
+scripted_gui = {
+
+###############################
+######## SCRIPTED GUIS ########
+###############################
+
+	logistics_info_gui = {
+		context_type = player_context
+		parent_window_token = top_bar
+		
+		window_name = "logistics_info"
+
+        visible = {
+			always = yes
+        }
+
+		properties = {
+			pol_power_bar = {
+				frame = ROOT.political_power
+			}
+			industrial_power_bar = {
+				frame = ROOT.industrial_power
+			}
+			light_weapons_bar = {
+				frame = ROOT.light_equipment_in_army
+			}
+			heavy_weapons_bar = {
+				frame = ROOT.heavy_equipment_in_army
+			}
+		}
+
+        ai_enabled = {
+            always = no
+        }
+    } 
+
+	tech_gui_window_gui = {
+		context_type = player_context
+		parent_window_name = "be_tech_folder"
+		
+		window_name = "tech_gui_window"
+
+        visible = {
+			always = yes
+        }
+
+        ai_enabled = {
+            always = no
+        }
+    } 
+
+	nuke_gui = {
+		context_type = selected_state_context
+		parent_window_token = selected_state_view
+
+		window_name = "nuke_gui_window"
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			nuke_state_click = {
+				ROOT = {
+					launch_nuke = {
+						state = PREV
+						use_nuke = yes
+					}
+				}
+			}
+		}
+
+		triggers = {
+            nuke_state_click_enabled = {
+                ROOT = {
+                    has_tech = kinetic_theory
+                    num_of_nukes > 0
+                }
+                THIS = {
+                    OWNER = { has_war_with = ROOT }
+                }
+            }
+		}
+
+		ai_enabled = {
+            always = yes
+        }
+
+        ai_test_interval = 300
+
+        ai_check = {
+            num_of_nukes > 0
+			has_war = yes
+		}
+
+        ai_weights = {
+            nuke_state_click = {
+                ai_will_do = {
+                    factor = 0
+                    modifier = {
+                        CONTROLLER = {
+							has_war_with = ROOT
+                        }
+                        add = 100
+			        }
+                }
+            }
+		}
+	}
+
+	ONU_focus_details_gui = {
+		context_type = player_context
+		parent_window_name = "zoom_slider_container"
+		
+		window_name = "ONU_focus_details"
+
+        visible = {
+			has_focus_tree = united_nations
+        }
+
+        ai_enabled = {
+            always = no
+        }
+    } 
+	TZN_focus_details_gui = {
+		context_type = player_context
+		parent_window_name = "zoom_slider_container"
+		
+		window_name = "TZN_focus_details"
+
+        visible = {
+			has_focus_tree = eastafricanfederation
+        }
+
+        ai_enabled = {
+            always = no
+        }
+    } 
+	PNM_focus_details_gui = {
+		context_type = player_context
+		parent_window_name = "zoom_slider_container"
+		
+		window_name = "PNM_focus_details"
+
+        visible = {
+			has_focus_tree = pnm
+        }
+
+        ai_enabled = {
+            always = no
+        }
+    } 
+	###
+#    declare_war_window_gui = {
+#		context_type = player_context
+#		
+#		window_name = "declare_war_window"
+#
+#        visible = {
+#            has_country_flag = war_has_been_declared
+#            is_ai = no
+#        }
+#
+#        ai_enabled = {
+#            always = no
+#        }
+#
+#        effects = {
+#            ok_button_click = {
+#                clr_country_flag = war_has_been_declared
+#            }
+#		}
+#
+#		triggers = {
+#            #
+#        }
+#    }
+#	###
+#    surrender_window_gui = {
+#		context_type = player_context
+#		
+#		window_name = "surrender_window"
+#
+#        visible = {
+#            has_country_flag = country_has_been_defeated
+#            is_ai = no
+#        }
+#
+#        ai_enabled = {
+#            always = no
+#        }
+#
+#        effects = {
+#            ok_button_click = {
+#                clr_country_flag = country_has_been_defeated
+#            }
+#		}
+#
+#		triggers = {
+#            #
+#        }
+#    } 
+    ###
+    political_info_entry_diplo_gui = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		
+		window_name = "extra_political_stuff"
+
+        ai_enabled = {
+            always = no
+        }
+		
+		effects = {
+            #
+		}
+
+		triggers = {
+			TZN_pol_detail_visible = {
+				capital_scope = {
+					is_on_continent = africa
+				}
+				NOT = {
+					tag = EGY
+					tag = TUN
+					tag = LBA
+				}
+			}
+			ONU_pol_detail_visible = {
+				tag = ONU
+			}
+			#
+            agrarian_dudes_visible = {
+				has_idea = agrarian_stage
+			}
+			developing_dudes_visible = {
+				has_idea = developing_stage
+			}
+			developed_dudes_visible = {
+				has_idea = developed_stage
+			}
+			regional_powerhouse_dudes_visible = {
+				has_idea = regional_stage
+			}
+            continental_powerhouse_dudes_visible = {
+				has_idea = continental_stage
+			}
+			global_powerhouse_dudes_visible = {
+				has_idea = global_stage
+			}
+            #
+            optimum_ecobalance_dudes_visible = {
+				has_idea = optimum_ecobalance
+			}
+			favorable_ecobalance_dudes_visible = {
+				has_idea = favorable_ecobalance
+			}
+			neutral_ecobalance_dudes_visible = {
+				has_idea = neutral_ecobalance
+			}
+			precarious_ecobalance_dudes_visible = {
+				has_idea = precarious_ecobalance
+			}
+			dangerous_ecobalance_dudes_visible = {
+				has_idea = dangerous_ecobalance
+			}
+			disastrous_ecobalance_dudes_visible = {
+				has_idea = disastrous_ecobalance
+			}
+            #
+			digital_democracy_dudes_visible = {
+				has_idea = digital_democracy
+			}
+			oligarchic_dudes_visible = {
+				has_idea = oligarchic_government
+			}
+			minarchist_dudes_visible = {
+				has_idea = minarchist_state
+			}
+			communal_dudes_visible = {
+				has_idea = communal_parity
+			}
+			autocratic_dudes_visible = {
+				has_idea = autocratic_authority
+			}
+			anarchy_dudes_visible = {
+				has_idea = unstable_leadership
+			}
+
+			#####################
+
+			economy4_visible = {
+				has_idea = civilian_economy
+			}
+			economy3_visible = {
+				has_idea = deregulated_economy
+			}
+			economy2_visible = {
+				has_idea = mixed_economy
+			}
+			economy1_visible = {
+				has_idea = war_economy
+			}
+
+			#####################
+
+			mobilization4_visible = {
+				has_idea = volunteer_only
+			}
+			mobilization3_visible = {
+				has_idea = limited_conscription
+			}
+			mobilization2_visible = {
+				has_idea = extensive_conscription
+			}
+			mobilization1_visible = {
+				has_idea = service_by_requirement
+			}
+
+			#####################
+
+			trade4_visible = {
+				has_idea = free_trade
+			}
+			trade3_visible = {
+				has_idea = export_focus
+			}
+			trade2_visible = {
+				has_idea = limited_exports
+			}
+			trade1_visible = {
+				has_idea = closed_economy
+			}
+		}
+	}
+
+	industrial_power_gui = {
+		context_type = player_context
+		parent_window_name = topbar
+		
+		window_name = "industrial_power_container"
+		
+		visible = {
+            always = yes
+		}
+
+		triggers = {
+			division_limit_warning_visible = {
+				check_variable = {
+					var = num_battalions
+					value = division_limit
+					compare = greater_than
+				}
+			}
+			default_risk_warning_visible = {
+				has_dynamic_modifier = {
+					modifier = too_many_building_resources_used
+				}
+			}
+		}
+
+        ai_enabled = {
+            always = no
+        }
+	}
+
+	spaceship_button_gui = {
+		window_name = "spaceship_button_window"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+    	    always = yes
+		}
+		effects = {
+            spaceship_button_click = {
+                if = {
+                    limit = {
+                        has_country_flag = international_moment_flag
+                    }
+                    clr_country_flag = international_moment_flag
+                }
+				else_if = {
+					limit = {
+						has_country_flag = virtues_and_culture_moment_flag
+					}
+					clr_country_flag = virtues_and_culture_moment_flag
+					set_country_flag = international_moment_flag
+				}
+				else_if = {
+					limit = {
+						has_country_flag = south_pole_moment_flag
+					}
+					clr_country_flag = south_pole_moment_flag
+					set_country_flag = international_moment_flag
+				}
+                else = {
+                    set_country_flag = international_moment_flag
+                }
+            }
+        }
+
+        ai_enabled = {
+            always = no
+        }
+	}
+
+	sectors_button_gui = {
+		window_name = "sectors_button_window"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+    	    always = yes
+		}
+		effects = {
+            sectors_button_click = {
+                if = {
+                    limit = {
+                        has_country_flag = south_pole_moment_flag
+                    }
+                    clr_country_flag = south_pole_moment_flag
+                }
+				else_if = {
+					limit = {
+						has_country_flag = virtues_and_culture_moment_flag
+					}
+					clr_country_flag = virtues_and_culture_moment_flag
+					set_country_flag = south_pole_moment_flag
+				}
+				else_if = {
+					limit = {
+						has_country_flag = international_moment_flag
+					}
+					clr_country_flag = international_moment_flag
+					set_country_flag = south_pole_moment_flag
+				}
+                else = {
+                    set_country_flag = south_pole_moment_flag
+                }
+            }
+        }
+
+        ai_enabled = {
+            always = no
+        }
+	}
+
+	virtues_button_gui = {
+		window_name = "virtues_button_window"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+    	    always = yes
+		}
+		effects = {
+            virtues_button_click = {
+                if = {
+                    limit = {
+                        has_country_flag = south_pole_moment_flagvirtues_and_culture_moment_flag
+                    }
+                    clr_country_flag = south_pole_moment_flagvirtues_and_culture_moment_flag
+                }
+				else_if = {
+					limit = {
+						has_country_flag = south_pole_moment_flag
+					}
+					clr_country_flag = south_pole_moment_flag
+					set_country_flag = virtues_and_culture_moment_flag
+				}
+				else_if = {
+					limit = {
+						has_country_flag = international_moment_flag
+					}
+					clr_country_flag = international_moment_flag
+					set_country_flag = virtues_and_culture_moment_flag
+				}
+                else = {
+                    set_country_flag = virtues_and_culture_moment_flag
+                }
+            }
+        }
+
+        ai_enabled = {
+            always = no
+        }
+	}
+
+	extra_buttons_gui = {
+		window_name = "help_button"
+		context_type = player_context
+		parent_window_name = topbar
+		
+		visible = {
+    	    always = yes
+		}
+        effects = {
+			help_button_click = {
+				if = {
+					limit = {
+						has_country_flag = scan_mode_on
+					}
+					clr_country_flag = scan_mode_on
+				}
+				else = {
+					set_country_flag = scan_mode_on
+				}
+				clr_country_flag = scan_mode_on_glow
+			}
+        }
+        
+        triggers = {
+			help_button_glow_visible = {
+				has_country_flag = scan_mode_on_glow
+			}
+			help_button_red_visible = {
+				has_country_flag = scan_mode_on_glow
+			}
+			#
+			energy_topbar_visible = {
+				NOT = {
+					check_variable = {
+						resource@energy < 0
+					}
+				}
+			}
+			polymers_topbar_visible = {
+				NOT = {
+					check_variable = {
+						resource@polymers < 0
+					}
+				}
+			}
+			lithium_topbar_visible = {
+				NOT = {
+					check_variable = {
+						resource@lithium < 0
+					}
+				}
+			}
+			electronics_topbar_visible = {
+				NOT = {
+					check_variable = {
+						resource@electronics < 0
+					}
+				}
+			}
+			superalloys_topbar_visible = {
+				NOT = {
+					check_variable = {
+						resource@superalloys < 0
+					}
+				}
+			}
+			superconductors_topbar_visible = {
+				NOT = {
+					check_variable = {
+						resource@superconductors < 0
+					}
+				}
+			}
+			#
+			energy_visible = {
+				NOT = {
+					check_variable = {
+						resource@energy < 0
+					}
+				}
+			}
+			polymers_visible = {
+				NOT = {
+					check_variable = {
+						resource@polymers < 0
+					}
+				}
+			}
+			lithium_visible = {
+				NOT = {
+					check_variable = {
+						resource@lithium < 0
+					}
+				}
+			}
+			electronics_visible = {
+				NOT = {
+					check_variable = {
+						resource@electronics < 0
+					}
+				}
+			}
+			superalloys_visible = {
+				NOT = {
+					check_variable = {
+						resource@superalloys < 0
+					}
+				}
+			}
+			superconductors_visible = {
+				NOT = {
+					check_variable = {
+						resource@superconductors < 0
+					}
+				}
+			}
+			#
+			energy_topbar_missing_visible = {
+				check_variable = {
+					resource@energy < 0
+				}
+			}
+			polymers_topbar_missing_visible = {
+				check_variable = {
+					resource@polymers < 0
+				}
+			}
+			lithium_topbar_missing_visible = {
+				check_variable = {
+					resource@lithium < 0
+				}
+			}
+			electronics_topbar_missing_visible = {
+				check_variable = {
+					resource@electronics < 0
+				}
+			}
+			superalloys_topbar_missing_visible = {
+				check_variable = {
+					resource@superalloys < 0
+				}
+			}
+			superconductors_topbar_missing_visible = {
+				check_variable = {
+					resource@superconductors < 0
+				}
+			}
+			#
+			energy_missing_visible = {
+				check_variable = {
+					resource@energy < 0
+				}
+			}
+			polymers_missing_visible = {
+				check_variable = {
+					resource@polymers < 0
+				}
+			}
+			lithium_missing_visible = {
+				check_variable = {
+					resource@lithium < 0
+				}
+			}
+			electronics_missing_visible = {
+				check_variable = {
+					resource@electronics < 0
+				}
+			}
+			superalloys_missing_visible = {
+				check_variable = {
+					resource@superalloys < 0
+				}
+			}
+			superconductors_missing_visible = {
+				check_variable = {
+					resource@superconductors < 0
+				}
+			}
+        }
+
+		properties = {
+			energy_bar = {
+				frame = ROOT.resource@energy
+			}
+			polymers_bar = {
+				frame = ROOT.resource@polymers
+			}
+			lithium_bar = {
+				frame = ROOT.resource@lithium
+			}
+			electronics_bar = {
+				frame = ROOT.resource@electronics
+			}
+			superalloys_bar = {
+				frame = ROOT.resource@superalloys
+			}
+			superconductors_bar = {
+				frame = ROOT.resource@superconductors
+			}
+			#
+			stability = {
+				frame = ROOT.stability_100
+			}
+			war_support = {
+				frame = ROOT.has_war_support_100
+			}
+			#
+			ff_bar = {
+				frame = ROOT.free_factory_progress
+			}
+		}
+
+        ai_enabled = {
+            always = no
+        }        
+	}
+}
+
+###############################
+###############################
+###############################

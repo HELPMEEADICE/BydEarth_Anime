@@ -1,0 +1,117 @@
+
+technology_categories = {
+	generation
+	recycling
+
+	##Beyond Earth Tags Below
+	be_naval_tech
+	be_sub_tech
+	be_torpedo_tech
+	be_naval_equip
+	be_gunboat_tech
+	be_destroyer_tech
+	be_battlecruiser_hull
+	be_battlecruiser_tech
+	be_light_gun_tech
+	be_medium_gun_tech
+	be_heavy_gun_tech
+	be_transport_tech
+	be_mine_tech
+	be_secondary_gun_tech
+	be_infantry_tech
+	be_support_tech
+	be_special_forces_tech
+	be_apc_tech
+	be_artillery_tech
+	be_rocket_tech
+	be_anti_air_tech
+	be_anti_tank_tech
+	be_support_company_tech
+	be_logistics_tech
+	be_armor_tech
+	be_walker_tech
+	be_land_tech
+	be_air_tech
+	be_cas_tech
+	be_fighter_tech
+	be_tac_tech
+	be_augment_tech
+	be_wonders
+	be_train_tech
+	be_supply_tech
+	be_land_doctrine
+	be_mobility_doctrine
+	be_flexibility_doctrine
+	be_integrity_doctrine
+	be_initiative_doctrine
+	be_orbital_tech
+	be_hegemony_doctrine
+	be_adequacy_doctrine
+	be_naval_doctrine
+	be_air_doctrine
+	be_tactical_layer_doctrine
+	be_strategic_layer_doctrine
+	be_gun_tech
+	be_rover_bonus_tech
+	be_mbt_bonus_tech
+	be_carrier_tech
+	be_drone_tech
+	be_industry
+
+	##Vanilla Techs Below
+	armor
+	artillery
+	cat_anti_tank
+	naval_air
+	infantry_weapons
+	motorized_equipment
+	cat_mechanized_equipment
+	naval_equipment
+	rocketry
+	nuclear
+	industry
+	land_doctrine
+	air_doctrine
+	naval_doctrine
+	strategic_destruction_tree
+	battlefield_support_tree
+	operational_integrity_tree
+	jet_technology
+	trade_interdiction_tree
+	convoy_defense_tree
+	light_fighter
+	cat_heavy_fighter
+	tactical_bomber
+	cat_strategic_bomber
+	naval_bomber
+	cas_bomber
+	synth_resources
+	fleet_in_being_tree
+	encryption_tech
+	decryption_tech
+	computing_tech
+	radar_tech
+	infantry_tech
+	marine_tech
+	construction_tech
+	excavation_tech
+	submarine_doctrine
+	air_equipment
+	base_strike_main
+	support_tech
+	engineers_tech
+	recon_tech
+	hospital_tech
+	logistics_tech
+	signal_company_tech
+	maintenance_company_tech
+}
+
+technology_folders = {
+	be_tech_folder = {
+		ledger = hidden
+		available = {
+			always = yes
+		}
+	}
+}
