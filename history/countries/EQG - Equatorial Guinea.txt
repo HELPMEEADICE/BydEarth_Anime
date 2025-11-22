@@ -1,10 +1,10 @@
-﻿oob = "EQG_2200"
+﻿oob = "EQG_2100"
 
 capital = 309
 
 set_politics = {
 	ruling_party = social_democrat
-	last_election = "2200.1.1"
+	last_election = "2100.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

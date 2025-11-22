@@ -86,8 +86,8 @@ if __name__ == "__main__":
     TARGET_DIRECTORY = '.' 
     
     # 定义要替换的单词
-    OLD_WORD = "BGD"
-    NEW_WORD = "BGD"
+    OLD_WORD = "2100"
+    NEW_WORD = "2100"
 
     # --- 执行区域 ---
     # 在执行前，给一个最终确认的机会

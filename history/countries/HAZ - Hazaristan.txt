@@ -1,4 +1,4 @@
-﻿oob = "HAZ_2200"
+﻿oob = "HAZ_2100"
 
 set_technology = {
     heavy_weapons = 1
@@ -29,7 +29,7 @@ starting_train_buffer = 0.1 #High: 1.0-1.5, Med: 0.5-1.0, Low: 0-0.5
 
 set_politics = {
 	ruling_party = communist
-	last_election = "2200.1.1"
+	last_election = "2100.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

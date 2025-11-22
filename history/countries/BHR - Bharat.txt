@@ -1,5 +1,5 @@
 ﻿capital = 795
-oob = "BHR_2200"
+oob = "BHR_2100"
 
 
 set_stability = 0.6

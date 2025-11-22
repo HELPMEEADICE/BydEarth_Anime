@@ -1,7 +1,7 @@
 ﻿## Andean Compact
 set_politics = {
 	ruling_party = eco_socialism
-	last_election = "2200.1.1"
+	last_election = "2100.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -20,7 +20,7 @@ capital = 104
 create_faction = "Andean Compact"
 add_to_faction = PRU
 
-oob = "PRU_2200"
+oob = "PRU_2100"
 
 set_technology = {
     heavy_weapons = 1

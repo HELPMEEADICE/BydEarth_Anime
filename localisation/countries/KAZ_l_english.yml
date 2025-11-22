@@ -71,7 +71,7 @@
  centralasia_event_option.9.a: "Give the builders more funding."
  centralasia_event_option.9.b: "A wall should be enough."
 
- centralasia_event.10.t: "The Elections of 2200"
+ centralasia_event.10.t: "The Elections of 2100"
  centralasia_event.10.d: "The votes are in and the elections are over. Across the Federation, millions stare at telescreens in anticipation of the results. The parties have given their all to secure a majority in Parliament, but the current government has also run a successful media campaign. This election will surely determine the future of the country for the next 6 years."
  centralasia_event_option.10.a: "And the winner is…"
 
@@ -111,7 +111,7 @@
  KAZ_digitalize_ballots: "Digitalize Ballots"
  KAZ_the_gift_of_media: "The Gift Of Media"
  KAZ_request_additional_guards: "Request Additional Guards"
- KAZ_election_of_2201: "Election Of 2200"
+ KAZ_election_of_2201: "Election Of 2100"
  KAZ_we_all_do_what_we_must: "§RWe All Do What We Must§!"
  KAZ_declare_martial_law: "Declare Martial Law"
  KAZ_salvage_the_situation: "Salvage The Situation"

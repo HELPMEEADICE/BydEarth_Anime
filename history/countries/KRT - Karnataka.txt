@@ -1,5 +1,5 @@
 ﻿capital = 779
-oob = "KRT_2200"
+oob = "KRT_2100"
 
 
 set_stability = 0.6

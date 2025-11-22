@@ -2,7 +2,7 @@
 
 set_cosmetic_tag = VIN_SCO
 
-oob = "VIN_2200"
+oob = "VIN_2100"
 
 
 
@@ -45,7 +45,7 @@ starting_train_buffer = 0.2 #High: 1.0-1.5, Med: 0.5-1.0, Low: 0-0.5
 
 set_politics = {
 	ruling_party = social_democrat
-	last_election = "2200.1.1"
+	last_election = "2100.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

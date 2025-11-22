@@ -1,24 +1,92 @@
 ﻿
 
-oob = "AFG_2200"
+oob = "AFG_2100"
 
 set_technology = {
-    heavy_weapons = 1
-	mbt_tech = 1
-    
-
-    automation = 1
-    sresearch_lines = 1
-    light_weapons = 1
-
-    apc_tech = 1
-    be_tech_support = 1
-    be_prototype_maglev = 1
-    light_weapons = 1
-    advanced_infantry_weapons = 1
-    crawler = 1
+	## Infantry ##
 	
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	infantry_weapons3 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	infantry_rifle_upgrade2 = 1
+	infantry_rifle_upgrade3 = 1
+	upgraded_infantry_weapons1 = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	support_weapons3 = 1
+	night_vision = 1
+	night_vision2 = 1
+	night_vision3 = 1
+	body_armor = 1
+	body_armor2 = 1
+	body_armor3 = 1
+	camouflage = 1
+	camouflage2 = 1
+	camouflage3 = 1
+	tech_mountaineers = 1
+	tech_rangers = 1
+	paratroopers = 1
+	marines = 1
+	basic_train = 1
 	
+	## Support Companies ##
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	mechanised_infantry1 = 1
+	mechanised_infantry2 = 1
+	mechanised_infantry3 = 1
+	light_mechanized_infantry1 = 1
+	light_mechanized_infantry2 = 1
+	light_mechanized_infantry3 = 1
+	self_propelled_aa1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	rocket_artillery = 1
+	interwar_artillery = 1
+	sp_artillery1 = 1
+	self_propelled_aa1 = 1
+	artillery1 = 1
+	antitank1 = 1
+	antitank2 = 1
+	antiair1 = 1
+	antiair2 = 1
+	antiair3 = 1
+	
+	## Air ##
+	attack_helicopter_1 = 1
+	utility_helicopter_1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	radio = 1
+	power_plants = 1
+	power_plants1 = 1
+	nuclear_reactors = 1
+	energy_farms = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	synth_oil_experiments = 1
+	
+	## Doctrines ##
+	mobile_warfare = 1
+	fleet_in_being = 1
+	formation_flying = 1
 }
 
 capital = 727
@@ -29,7 +97,7 @@ starting_train_buffer = 0.2 #High: 1.0-1.5, Med: 0.5-1.0, Low: 0-0.5
 
 set_politics = {
 	ruling_party = eco_socialism
-	last_election = "2200.1.1"
+	last_election = "2100.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

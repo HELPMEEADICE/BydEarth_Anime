@@ -283,7 +283,7 @@
  LOAD_GFX_PDXMAP_TREES:0 "[加载慕尼黑理工学院]"
  LOAD_GFX_PDXMAP_RIVERS:0 "[加载生态平衡]"
  LOAD_GFX_PDXMAP_STATIC_OBJECTS:0 "[加载诸联邦]"
- LOAD_INIT:0 "[加载公元2200年]"
+ LOAD_INIT:0 "[加载公元2100年]"
  LOAD_EVENTS:0 "[加载大洪灾]"
  weather_none:0 "晴朗"
  weather_mud:0 "泥泞"

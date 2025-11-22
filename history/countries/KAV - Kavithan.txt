@@ -1,5 +1,5 @@
 ﻿capital = 780
-oob = "KAV_2200"
+oob = "KAV_2100"
 
 
 set_stability = 0.5

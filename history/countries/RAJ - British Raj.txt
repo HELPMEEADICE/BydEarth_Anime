@@ -1,5 +1,5 @@
 ﻿capital = 764
-oob = "RAJ_2200"
+oob = "RAJ_2100"
 
 
 set_stability = 0.5

@@ -1,5 +1,5 @@
 ﻿capital = 773
-oob = "KAS_2200"
+oob = "KAS_2100"
 
 
 set_stability = 0.6

@@ -1,5 +1,5 @@
 ﻿capital = 791
-oob = "TAM_2200"
+oob = "TAM_2100"
 
 
 set_stability = 0.6

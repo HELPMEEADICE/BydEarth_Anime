@@ -1,6 +1,6 @@
 ﻿set_politics = {
 	ruling_party = social_liberal
-	last_election = "2200.1.1"
+	last_election = "2100.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -48,7 +48,7 @@ set_technology = {
 	rover_tech = 1
 }
 
-oob = "SIT_2200"
+oob = "SIT_2100"
 
 recruit_character = SIT_spencer_morgan
 

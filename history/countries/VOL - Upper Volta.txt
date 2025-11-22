@@ -1,4 +1,4 @@
-﻿oob = "VOL_2200"
+﻿oob = "VOL_2100"
 
 set_technology = {
 	sresearch_lines = 1
@@ -32,7 +32,7 @@ capital = 269
 
 set_politics = {
 	ruling_party = eco_socialism
-	last_election = "2200.1.1"
+	last_election = "2100.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

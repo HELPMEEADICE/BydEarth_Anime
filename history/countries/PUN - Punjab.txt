@@ -1,5 +1,5 @@
 ﻿capital = 763
-oob = "PUN_2200"
+oob = "PUN_2100"
 
 
 set_stability = 0.3

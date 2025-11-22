@@ -1,7 +1,7 @@
 ﻿
 capital = 695
 
-oob = "PER_2200"
+oob = "PER_2100"
 
 set_stability = 0.4
 set_war_support = 0.5
@@ -17,7 +17,7 @@ add_ideas = {
 
 set_politics = {
 	ruling_party = fascist
-	last_election = "2200.1.1"
+	last_election = "2100.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

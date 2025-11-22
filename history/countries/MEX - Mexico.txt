@@ -1,6 +1,6 @@
 ﻿set_politics = {
 	ruling_party = eco_socialism
-	last_election = "2200.1.1"
+	last_election = "2100.1.1"
 	election_frequency = 49
 	elections_allowed = no
 }
@@ -11,7 +11,7 @@ set_popularities = {
 	eco_socialism = 75
 }
 
-oob = "MEX_2200"
+oob = "MEX_2100"
 
 
 set_stability = 0.5

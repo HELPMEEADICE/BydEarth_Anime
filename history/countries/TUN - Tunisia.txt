@@ -1,6 +1,6 @@
 ﻿
 
-oob = "TUN_2200"
+oob = "TUN_2100"
 
 add_ideas = {
     digital_democracy
@@ -46,7 +46,7 @@ set_technology = {
 
 set_politics = {
 	ruling_party = social_democrat
-	last_election = "2200.1.1"
+	last_election = "2100.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
